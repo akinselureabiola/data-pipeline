@@ -1,0 +1,24 @@
+[2023-08-14T15:09:09.798+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: my_new_dag.multiplication scheduled__2023-08-07T00:00:00+00:00 [queued]>
+[2023-08-14T15:09:09.842+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: my_new_dag.multiplication scheduled__2023-08-07T00:00:00+00:00 [queued]>
+[2023-08-14T15:09:09.844+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2023-08-14T15:09:09.845+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2023-08-14T15:09:09.851+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2023-08-14T15:09:09.915+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): multiplication> on 2023-08-07 00:00:00+00:00
+[2023-08-14T15:09:09.981+0000] {standard_task_runner.py:55} INFO - Started process 159 to run task
+[2023-08-14T15:09:10.114+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'my_new_dag', 'multiplication', 'scheduled__2023-08-07T00:00:00+00:00', '--job-id', '4014', '--raw', '--subdir', 'DAGS_FOLDER/new.py', '--cfg-path', '/tmp/tmpq329xs3s']
+[2023-08-14T15:09:10.117+0000] {standard_task_runner.py:83} INFO - Job 4014: Subtask multiplication
+[2023-08-14T15:09:10.613+0000] {task_command.py:388} INFO - Running <TaskInstance: my_new_dag.multiplication scheduled__2023-08-07T00:00:00+00:00 [running]> on host 25f6b46723d1
+[2023-08-14T15:09:11.284+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=my_new_dag
+AIRFLOW_CTX_TASK_ID=multiplication
+AIRFLOW_CTX_EXECUTION_DATE=2023-08-07T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-08-07T00:00:00+00:00
+[2023-08-14T15:09:11.321+0000] {logging_mixin.py:137} INFO - 25
+[2023-08-14T15:09:11.323+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-08-14T15:09:11.386+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=my_new_dag, task_id=multiplication, execution_date=20230807T000000, start_date=20230814T150909, end_date=20230814T150911
+[2023-08-14T15:09:11.709+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2023-08-14T15:09:11.744+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

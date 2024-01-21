@@ -1,0 +1,48 @@
+[2023-04-19T12:48:43.479+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: age_check.multiplication scheduled__2023-02-18T00:00:00+00:00 [queued]>
+[2023-04-19T12:48:43.542+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: age_check.multiplication scheduled__2023-02-18T00:00:00+00:00 [queued]>
+[2023-04-19T12:48:43.545+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-19T12:48:43.548+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 4
+[2023-04-19T12:48:43.550+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-19T12:48:43.608+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): multiplication> on 2023-02-18 00:00:00+00:00
+[2023-04-19T12:48:43.643+0000] {standard_task_runner.py:55} INFO - Started process 24540 to run task
+[2023-04-19T12:48:43.656+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'age_check', 'multiplication', 'scheduled__2023-02-18T00:00:00+00:00', '--job-id', '1838', '--raw', '--subdir', 'DAGS_FOLDER/age.py', '--cfg-path', '/tmp/tmphi0lf0zm']
+[2023-04-19T12:48:43.658+0000] {standard_task_runner.py:83} INFO - Job 1838: Subtask multiplication
+[2023-04-19T12:48:43.876+0000] {task_command.py:388} INFO - Running <TaskInstance: age_check.multiplication scheduled__2023-02-18T00:00:00+00:00 [running]> on host fe34f61acbb3
+[2023-04-19T12:48:44.120+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=age_check
+AIRFLOW_CTX_TASK_ID=multiplication
+AIRFLOW_CTX_EXECUTION_DATE=2023-02-18T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-02-18T00:00:00+00:00
+[2023-04-19T12:48:44.123+0000] {logging_mixin.py:137} INFO - 25
+[2023-04-19T12:48:44.124+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-04-19T12:48:44.148+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=age_check, task_id=multiplication, execution_date=20230218T000000, start_date=20230419T124843, end_date=20230419T124844
+[2023-04-19T12:48:44.198+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2023-04-19T12:48:44.284+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-05-20T20:59:46.181+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: age_check.multiplication scheduled__2023-02-18T00:00:00+00:00 [queued]>
+[2023-05-20T20:59:46.281+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: age_check.multiplication scheduled__2023-02-18T00:00:00+00:00 [queued]>
+[2023-05-20T20:59:46.287+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-20T20:59:46.298+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 4
+[2023-05-20T20:59:46.300+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-20T20:59:46.439+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): multiplication> on 2023-02-18 00:00:00+00:00
+[2023-05-20T20:59:46.474+0000] {standard_task_runner.py:55} INFO - Started process 1258 to run task
+[2023-05-20T20:59:46.546+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'age_check', 'multiplication', 'scheduled__2023-02-18T00:00:00+00:00', '--job-id', '1394', '--raw', '--subdir', 'DAGS_FOLDER/age.py', '--cfg-path', '/tmp/tmpsfsq440q']
+[2023-05-20T20:59:46.567+0000] {standard_task_runner.py:83} INFO - Job 1394: Subtask multiplication
+[2023-05-20T20:59:46.984+0000] {task_command.py:388} INFO - Running <TaskInstance: age_check.multiplication scheduled__2023-02-18T00:00:00+00:00 [running]> on host 242f95e3e8a8
+[2023-05-20T20:59:47.355+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=age_check
+AIRFLOW_CTX_TASK_ID=multiplication
+AIRFLOW_CTX_EXECUTION_DATE=2023-02-18T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-02-18T00:00:00+00:00
+[2023-05-20T20:59:47.361+0000] {logging_mixin.py:137} INFO - 25
+[2023-05-20T20:59:47.363+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-05-20T20:59:47.397+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=age_check, task_id=multiplication, execution_date=20230218T000000, start_date=20230520T205946, end_date=20230520T205947
+[2023-05-20T20:59:47.607+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2023-05-20T20:59:47.665+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

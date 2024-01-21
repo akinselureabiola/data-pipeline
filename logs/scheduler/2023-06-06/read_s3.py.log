@@ -1,0 +1,406 @@
+[2023-06-06T01:01:19.785+0000] {processor.py:153} INFO - Started process (PID=31370) to work on /opt/airflow/dags/read_s3.py
+[2023-06-06T01:01:19.787+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/read_s3.py for tasks to queue
+[2023-06-06T01:01:19.788+0000] {logging_mixin.py:137} INFO - [2023-06-06T01:01:19.788+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/read_s3.py
+[2023-06-06T01:01:19.850+0000] {logging_mixin.py:137} INFO - [2023-06-06T01:01:19.846+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/read_s3.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/read_s3.py", line 6, in <module>
+    import awswrangler as wr
+ModuleNotFoundError: No module named 'awswrangler'
+[2023-06-06T01:01:19.851+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/read_s3.py
+[2023-06-06T01:01:19.875+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/read_s3.py took 0.093 seconds
+[2023-06-06T02:41:16.192+0000] {processor.py:153} INFO - Started process (PID=31451) to work on /opt/airflow/dags/read_s3.py
+[2023-06-06T02:41:16.198+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/read_s3.py for tasks to queue
+[2023-06-06T02:41:16.217+0000] {logging_mixin.py:137} INFO - [2023-06-06T02:41:16.217+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/read_s3.py
+[2023-06-06T02:41:16.550+0000] {logging_mixin.py:137} INFO - [2023-06-06T02:41:16.546+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/read_s3.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/read_s3.py", line 6, in <module>
+    import awswrangler as wr
+ModuleNotFoundError: No module named 'awswrangler'
+[2023-06-06T02:41:16.552+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/read_s3.py
+[2023-06-06T02:41:16.582+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/read_s3.py took 0.393 seconds
+[2023-06-06T04:18:16.355+0000] {processor.py:153} INFO - Started process (PID=31525) to work on /opt/airflow/dags/read_s3.py
+[2023-06-06T04:18:16.360+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/read_s3.py for tasks to queue
+[2023-06-06T04:18:16.361+0000] {logging_mixin.py:137} INFO - [2023-06-06T04:18:16.361+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/read_s3.py
+[2023-06-06T04:18:16.455+0000] {logging_mixin.py:137} INFO - [2023-06-06T04:18:16.451+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/read_s3.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/read_s3.py", line 6, in <module>
+    import awswrangler as wr
+ModuleNotFoundError: No module named 'awswrangler'
+[2023-06-06T04:18:16.457+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/read_s3.py
+[2023-06-06T04:18:16.491+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/read_s3.py took 0.139 seconds
+[2023-06-06T05:42:17.830+0000] {processor.py:153} INFO - Started process (PID=31608) to work on /opt/airflow/dags/read_s3.py
+[2023-06-06T05:42:17.833+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/read_s3.py for tasks to queue
+[2023-06-06T05:42:17.837+0000] {logging_mixin.py:137} INFO - [2023-06-06T05:42:17.837+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/read_s3.py
+[2023-06-06T05:42:18.180+0000] {logging_mixin.py:137} INFO - [2023-06-06T05:42:18.157+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/read_s3.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/read_s3.py", line 6, in <module>
+    import awswrangler as wr
+ModuleNotFoundError: No module named 'awswrangler'
+[2023-06-06T05:42:18.182+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/read_s3.py
+[2023-06-06T05:42:18.511+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/read_s3.py took 0.684 seconds
+[2023-06-06T07:23:05.624+0000] {processor.py:153} INFO - Started process (PID=31679) to work on /opt/airflow/dags/read_s3.py
+[2023-06-06T07:23:05.625+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/read_s3.py for tasks to queue
+[2023-06-06T07:23:05.626+0000] {logging_mixin.py:137} INFO - [2023-06-06T07:23:05.626+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/read_s3.py
+[2023-06-06T07:23:05.670+0000] {logging_mixin.py:137} INFO - [2023-06-06T07:23:05.668+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/read_s3.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/read_s3.py", line 6, in <module>
+    import awswrangler as wr
+ModuleNotFoundError: No module named 'awswrangler'
+[2023-06-06T07:23:05.671+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/read_s3.py
+[2023-06-06T07:23:05.688+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/read_s3.py took 0.066 seconds
+[2023-06-06T08:10:43.797+0000] {processor.py:153} INFO - Started process (PID=31764) to work on /opt/airflow/dags/read_s3.py
+[2023-06-06T08:10:43.799+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/read_s3.py for tasks to queue
+[2023-06-06T08:10:43.800+0000] {logging_mixin.py:137} INFO - [2023-06-06T08:10:43.800+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/read_s3.py
+[2023-06-06T08:10:43.856+0000] {logging_mixin.py:137} INFO - [2023-06-06T08:10:43.854+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/read_s3.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/read_s3.py", line 6, in <module>
+    import awswrangler as wr
+ModuleNotFoundError: No module named 'awswrangler'
+[2023-06-06T08:10:43.857+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/read_s3.py
+[2023-06-06T08:10:43.875+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/read_s3.py took 0.081 seconds
+[2023-06-06T09:33:25.696+0000] {processor.py:153} INFO - Started process (PID=31835) to work on /opt/airflow/dags/read_s3.py
+[2023-06-06T09:33:25.698+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/read_s3.py for tasks to queue
+[2023-06-06T09:33:25.699+0000] {logging_mixin.py:137} INFO - [2023-06-06T09:33:25.699+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/read_s3.py
+[2023-06-06T09:33:25.779+0000] {logging_mixin.py:137} INFO - [2023-06-06T09:33:25.774+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/read_s3.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/read_s3.py", line 6, in <module>
+    import awswrangler as wr
+ModuleNotFoundError: No module named 'awswrangler'
+[2023-06-06T09:33:25.782+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/read_s3.py
+[2023-06-06T09:33:25.811+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/read_s3.py took 0.122 seconds
+[2023-06-06T10:12:46.247+0000] {processor.py:153} INFO - Started process (PID=31918) to work on /opt/airflow/dags/read_s3.py
+[2023-06-06T10:12:46.249+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/read_s3.py for tasks to queue
+[2023-06-06T10:12:46.250+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:12:46.250+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/read_s3.py
+[2023-06-06T10:12:46.310+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:12:46.308+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/read_s3.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/read_s3.py", line 6, in <module>
+    import awswrangler as wr
+ModuleNotFoundError: No module named 'awswrangler'
+[2023-06-06T10:12:46.319+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/read_s3.py
+[2023-06-06T10:12:46.336+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/read_s3.py took 0.091 seconds
+[2023-06-06T10:13:17.052+0000] {processor.py:153} INFO - Started process (PID=31990) to work on /opt/airflow/dags/read_s3.py
+[2023-06-06T10:13:17.053+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/read_s3.py for tasks to queue
+[2023-06-06T10:13:17.054+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:13:17.054+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/read_s3.py
+[2023-06-06T10:13:17.103+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:13:17.101+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/read_s3.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/read_s3.py", line 6, in <module>
+    import awswrangler as wr
+ModuleNotFoundError: No module named 'awswrangler'
+[2023-06-06T10:13:17.105+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/read_s3.py
+[2023-06-06T10:13:17.122+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/read_s3.py took 0.073 seconds
+[2023-06-06T10:13:47.781+0000] {processor.py:153} INFO - Started process (PID=32073) to work on /opt/airflow/dags/read_s3.py
+[2023-06-06T10:13:47.783+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/read_s3.py for tasks to queue
+[2023-06-06T10:13:47.784+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:13:47.784+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/read_s3.py
+[2023-06-06T10:13:47.831+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:13:47.828+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/read_s3.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/read_s3.py", line 6, in <module>
+    import awswrangler as wr
+ModuleNotFoundError: No module named 'awswrangler'
+[2023-06-06T10:13:47.833+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/read_s3.py
+[2023-06-06T10:13:47.850+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/read_s3.py took 0.073 seconds
+[2023-06-06T10:14:18.811+0000] {processor.py:153} INFO - Started process (PID=32155) to work on /opt/airflow/dags/read_s3.py
+[2023-06-06T10:14:18.813+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/read_s3.py for tasks to queue
+[2023-06-06T10:14:18.815+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:14:18.814+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/read_s3.py
+[2023-06-06T10:14:18.865+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:14:18.863+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/read_s3.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/read_s3.py", line 6, in <module>
+    import awswrangler as wr
+ModuleNotFoundError: No module named 'awswrangler'
+[2023-06-06T10:14:18.866+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/read_s3.py
+[2023-06-06T10:14:18.885+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/read_s3.py took 0.077 seconds
+[2023-06-06T10:14:49.950+0000] {processor.py:153} INFO - Started process (PID=32225) to work on /opt/airflow/dags/read_s3.py
+[2023-06-06T10:14:49.952+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/read_s3.py for tasks to queue
+[2023-06-06T10:14:49.953+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:14:49.953+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/read_s3.py
+[2023-06-06T10:14:50.005+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:14:50.003+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/read_s3.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/read_s3.py", line 6, in <module>
+    import awswrangler as wr
+ModuleNotFoundError: No module named 'awswrangler'
+[2023-06-06T10:14:50.005+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/read_s3.py
+[2023-06-06T10:14:50.023+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/read_s3.py took 0.077 seconds
+[2023-06-06T10:15:20.569+0000] {processor.py:153} INFO - Started process (PID=32309) to work on /opt/airflow/dags/read_s3.py
+[2023-06-06T10:15:20.572+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/read_s3.py for tasks to queue
+[2023-06-06T10:15:20.573+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:15:20.572+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/read_s3.py
+[2023-06-06T10:15:20.634+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:15:20.632+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/read_s3.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/read_s3.py", line 6, in <module>
+    import awswrangler as wr
+ModuleNotFoundError: No module named 'awswrangler'
+[2023-06-06T10:15:20.636+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/read_s3.py
+[2023-06-06T10:15:20.655+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/read_s3.py took 0.089 seconds
+[2023-06-06T10:15:50.762+0000] {processor.py:153} INFO - Started process (PID=32391) to work on /opt/airflow/dags/read_s3.py
+[2023-06-06T10:15:50.764+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/read_s3.py for tasks to queue
+[2023-06-06T10:15:50.766+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:15:50.766+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/read_s3.py
+[2023-06-06T10:15:50.824+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:15:50.820+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/read_s3.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/read_s3.py", line 6, in <module>
+    import awswrangler as wr
+ModuleNotFoundError: No module named 'awswrangler'
+[2023-06-06T10:15:50.825+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/read_s3.py
+[2023-06-06T10:15:50.851+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/read_s3.py took 0.092 seconds
+[2023-06-06T10:24:54.178+0000] {processor.py:153} INFO - Started process (PID=32462) to work on /opt/airflow/dags/read_s3.py
+[2023-06-06T10:24:54.179+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/read_s3.py for tasks to queue
+[2023-06-06T10:24:54.181+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:24:54.181+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/read_s3.py
+[2023-06-06T10:24:54.229+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:24:54.227+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/read_s3.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/read_s3.py", line 6, in <module>
+    import awswrangler as wr
+ModuleNotFoundError: No module named 'awswrangler'
+[2023-06-06T10:24:54.231+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/read_s3.py
+[2023-06-06T10:24:54.250+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/read_s3.py took 0.074 seconds
+[2023-06-06T10:25:24.282+0000] {processor.py:153} INFO - Started process (PID=32544) to work on /opt/airflow/dags/read_s3.py
+[2023-06-06T10:25:24.284+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/read_s3.py for tasks to queue
+[2023-06-06T10:25:24.285+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:25:24.285+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/read_s3.py
+[2023-06-06T10:25:24.353+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:25:24.347+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/read_s3.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/read_s3.py", line 6, in <module>
+    import awswrangler as wr
+ModuleNotFoundError: No module named 'awswrangler'
+[2023-06-06T10:25:24.354+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/read_s3.py
+[2023-06-06T10:25:24.380+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/read_s3.py took 0.101 seconds
+[2023-06-06T10:25:54.551+0000] {processor.py:153} INFO - Started process (PID=32616) to work on /opt/airflow/dags/read_s3.py
+[2023-06-06T10:25:54.553+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/read_s3.py for tasks to queue
+[2023-06-06T10:25:54.555+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:25:54.554+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/read_s3.py
+[2023-06-06T10:25:54.606+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:25:54.604+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/read_s3.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/read_s3.py", line 6, in <module>
+    import awswrangler as wr
+ModuleNotFoundError: No module named 'awswrangler'
+[2023-06-06T10:25:54.607+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/read_s3.py
+[2023-06-06T10:25:54.625+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/read_s3.py took 0.082 seconds
+[2023-06-06T10:26:25.493+0000] {processor.py:153} INFO - Started process (PID=32700) to work on /opt/airflow/dags/read_s3.py
+[2023-06-06T10:26:25.495+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/read_s3.py for tasks to queue
+[2023-06-06T10:26:25.497+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:26:25.497+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/read_s3.py
+[2023-06-06T10:26:25.548+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:26:25.546+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/read_s3.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/read_s3.py", line 6, in <module>
+    import awswrangler as wr
+ModuleNotFoundError: No module named 'awswrangler'
+[2023-06-06T10:26:25.549+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/read_s3.py
+[2023-06-06T10:26:25.566+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/read_s3.py took 0.076 seconds
+[2023-06-06T10:26:55.878+0000] {processor.py:153} INFO - Started process (PID=32784) to work on /opt/airflow/dags/read_s3.py
+[2023-06-06T10:26:55.880+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/read_s3.py for tasks to queue
+[2023-06-06T10:26:55.881+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:26:55.881+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/read_s3.py
+[2023-06-06T10:26:55.949+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:26:55.947+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/read_s3.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/read_s3.py", line 6, in <module>
+    import awswrangler as wr
+ModuleNotFoundError: No module named 'awswrangler'
+[2023-06-06T10:26:55.952+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/read_s3.py
+[2023-06-06T10:26:55.975+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/read_s3.py took 0.100 seconds
+[2023-06-06T11:23:20.973+0000] {processor.py:153} INFO - Started process (PID=32855) to work on /opt/airflow/dags/read_s3.py
+[2023-06-06T11:23:20.975+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/read_s3.py for tasks to queue
+[2023-06-06T11:23:20.980+0000] {logging_mixin.py:137} INFO - [2023-06-06T11:23:20.980+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/read_s3.py
+[2023-06-06T11:23:21.148+0000] {logging_mixin.py:137} INFO - [2023-06-06T11:23:21.142+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/read_s3.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/read_s3.py", line 6, in <module>
+    import awswrangler as wr
+ModuleNotFoundError: No module named 'awswrangler'
+[2023-06-06T11:23:21.151+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/read_s3.py
+[2023-06-06T11:23:21.195+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/read_s3.py took 0.235 seconds
+[2023-06-06T12:30:50.838+0000] {processor.py:153} INFO - Started process (PID=32934) to work on /opt/airflow/dags/read_s3.py
+[2023-06-06T12:30:50.844+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/read_s3.py for tasks to queue
+[2023-06-06T12:30:50.846+0000] {logging_mixin.py:137} INFO - [2023-06-06T12:30:50.846+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/read_s3.py
+[2023-06-06T12:30:51.119+0000] {logging_mixin.py:137} INFO - [2023-06-06T12:30:51.115+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/read_s3.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/read_s3.py", line 6, in <module>
+    import awswrangler as wr
+ModuleNotFoundError: No module named 'awswrangler'
+[2023-06-06T12:30:51.122+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/read_s3.py
+[2023-06-06T12:30:51.158+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/read_s3.py took 0.337 seconds
+[2023-06-06T13:55:35.479+0000] {processor.py:153} INFO - Started process (PID=33009) to work on /opt/airflow/dags/read_s3.py
+[2023-06-06T13:55:35.481+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/read_s3.py for tasks to queue
+[2023-06-06T13:55:35.482+0000] {logging_mixin.py:137} INFO - [2023-06-06T13:55:35.482+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/read_s3.py
+[2023-06-06T13:55:35.532+0000] {logging_mixin.py:137} INFO - [2023-06-06T13:55:35.529+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/read_s3.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/read_s3.py", line 6, in <module>
+    import awswrangler as wr
+ModuleNotFoundError: No module named 'awswrangler'
+[2023-06-06T13:55:35.533+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/read_s3.py
+[2023-06-06T13:55:35.549+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/read_s3.py took 0.072 seconds
+[2023-06-06T15:19:50.663+0000] {processor.py:153} INFO - Started process (PID=33092) to work on /opt/airflow/dags/read_s3.py
+[2023-06-06T15:19:50.672+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/read_s3.py for tasks to queue
+[2023-06-06T15:19:50.676+0000] {logging_mixin.py:137} INFO - [2023-06-06T15:19:50.676+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/read_s3.py
+[2023-06-06T15:19:50.758+0000] {logging_mixin.py:137} INFO - [2023-06-06T15:19:50.754+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/read_s3.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/read_s3.py", line 6, in <module>
+    import awswrangler as wr
+ModuleNotFoundError: No module named 'awswrangler'
+[2023-06-06T15:19:50.761+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/read_s3.py
+[2023-06-06T15:19:50.782+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/read_s3.py took 0.123 seconds
+[2023-06-06T16:41:25.479+0000] {processor.py:153} INFO - Started process (PID=33162) to work on /opt/airflow/dags/read_s3.py
+[2023-06-06T16:41:25.486+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/read_s3.py for tasks to queue
+[2023-06-06T16:41:25.488+0000] {logging_mixin.py:137} INFO - [2023-06-06T16:41:25.488+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/read_s3.py
+[2023-06-06T16:41:25.594+0000] {logging_mixin.py:137} INFO - [2023-06-06T16:41:25.590+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/read_s3.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/read_s3.py", line 6, in <module>
+    import awswrangler as wr
+ModuleNotFoundError: No module named 'awswrangler'
+[2023-06-06T16:41:25.599+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/read_s3.py
+[2023-06-06T16:41:25.622+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/read_s3.py took 0.149 seconds
+[2023-06-06T18:05:15.228+0000] {processor.py:153} INFO - Started process (PID=33245) to work on /opt/airflow/dags/read_s3.py
+[2023-06-06T18:05:15.232+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/read_s3.py for tasks to queue
+[2023-06-06T18:05:15.234+0000] {logging_mixin.py:137} INFO - [2023-06-06T18:05:15.233+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/read_s3.py
+[2023-06-06T18:05:15.329+0000] {logging_mixin.py:137} INFO - [2023-06-06T18:05:15.321+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/read_s3.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/read_s3.py", line 6, in <module>
+    import awswrangler as wr
+ModuleNotFoundError: No module named 'awswrangler'
+[2023-06-06T18:05:15.331+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/read_s3.py
+[2023-06-06T18:05:15.395+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/read_s3.py took 0.172 seconds
+[2023-06-06T19:27:17.219+0000] {processor.py:153} INFO - Started process (PID=33316) to work on /opt/airflow/dags/read_s3.py
+[2023-06-06T19:27:17.231+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/read_s3.py for tasks to queue
+[2023-06-06T19:27:17.233+0000] {logging_mixin.py:137} INFO - [2023-06-06T19:27:17.233+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/read_s3.py
+[2023-06-06T19:27:17.417+0000] {logging_mixin.py:137} INFO - [2023-06-06T19:27:17.413+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/read_s3.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/read_s3.py", line 6, in <module>
+    import awswrangler as wr
+ModuleNotFoundError: No module named 'awswrangler'
+[2023-06-06T19:27:17.419+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/read_s3.py
+[2023-06-06T19:27:17.454+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/read_s3.py took 0.241 seconds
+[2023-06-06T20:45:44.516+0000] {processor.py:153} INFO - Started process (PID=33400) to work on /opt/airflow/dags/read_s3.py
+[2023-06-06T20:45:44.517+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/read_s3.py for tasks to queue
+[2023-06-06T20:45:44.518+0000] {logging_mixin.py:137} INFO - [2023-06-06T20:45:44.518+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/read_s3.py
+[2023-06-06T20:45:45.060+0000] {logging_mixin.py:137} INFO - [2023-06-06T20:45:45.053+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/read_s3.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/read_s3.py", line 6, in <module>
+    import awswrangler as wr
+ModuleNotFoundError: No module named 'awswrangler'
+[2023-06-06T20:45:45.061+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/read_s3.py
+[2023-06-06T20:45:45.096+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/read_s3.py took 0.583 seconds
+[2023-06-06T22:08:28.262+0000] {processor.py:153} INFO - Started process (PID=33478) to work on /opt/airflow/dags/read_s3.py
+[2023-06-06T22:08:28.264+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/read_s3.py for tasks to queue
+[2023-06-06T22:08:28.265+0000] {logging_mixin.py:137} INFO - [2023-06-06T22:08:28.265+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/read_s3.py
+[2023-06-06T22:08:28.328+0000] {logging_mixin.py:137} INFO - [2023-06-06T22:08:28.325+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/read_s3.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/read_s3.py", line 6, in <module>
+    import awswrangler as wr
+ModuleNotFoundError: No module named 'awswrangler'
+[2023-06-06T22:08:28.329+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/read_s3.py
+[2023-06-06T22:08:28.359+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/read_s3.py took 0.101 seconds
+[2023-06-06T23:29:31.233+0000] {processor.py:153} INFO - Started process (PID=33554) to work on /opt/airflow/dags/read_s3.py
+[2023-06-06T23:29:31.235+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/read_s3.py for tasks to queue
+[2023-06-06T23:29:31.236+0000] {logging_mixin.py:137} INFO - [2023-06-06T23:29:31.236+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/read_s3.py
+[2023-06-06T23:29:31.286+0000] {logging_mixin.py:137} INFO - [2023-06-06T23:29:31.284+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/read_s3.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/read_s3.py", line 6, in <module>
+    import awswrangler as wr
+ModuleNotFoundError: No module named 'awswrangler'
+[2023-06-06T23:29:31.289+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/read_s3.py
+[2023-06-06T23:29:31.306+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/read_s3.py took 0.075 seconds

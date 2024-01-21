@@ -1,0 +1,23 @@
+[2023-04-19T00:17:18.147+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: age_performer.multiplication scheduled__2023-04-18T00:00:00+00:00 [queued]>
+[2023-04-19T00:17:18.154+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: age_performer.multiplication scheduled__2023-04-18T00:00:00+00:00 [queued]>
+[2023-04-19T00:17:18.155+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-19T00:17:18.157+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 4
+[2023-04-19T00:17:18.158+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-19T00:17:18.180+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): multiplication> on 2023-04-18 00:00:00+00:00
+[2023-04-19T00:17:18.188+0000] {standard_task_runner.py:55} INFO - Started process 14241 to run task
+[2023-04-19T00:17:18.192+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'age_performer', 'multiplication', 'scheduled__2023-04-18T00:00:00+00:00', '--job-id', '436', '--raw', '--subdir', 'DAGS_FOLDER/main.py', '--cfg-path', '/tmp/tmpwhgsc32d']
+[2023-04-19T00:17:18.195+0000] {standard_task_runner.py:83} INFO - Job 436: Subtask multiplication
+[2023-04-19T00:17:18.276+0000] {task_command.py:388} INFO - Running <TaskInstance: age_performer.multiplication scheduled__2023-04-18T00:00:00+00:00 [running]> on host fe34f61acbb3
+[2023-04-19T00:17:18.361+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=age_performer
+AIRFLOW_CTX_TASK_ID=multiplication
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-18T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-04-18T00:00:00+00:00
+[2023-04-19T00:17:18.365+0000] {python.py:177} INFO - Done. Returned value was: 4
+[2023-04-19T00:17:18.392+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=age_performer, task_id=multiplication, execution_date=20230418T000000, start_date=20230419T001718, end_date=20230419T001718
+[2023-04-19T00:17:18.449+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2023-04-19T00:17:18.477+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

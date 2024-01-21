@@ -1,0 +1,24 @@
+[2023-07-02T16:16:31.838+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: my_new_dag.hello_world_task manual__2023-07-02T16:16:31.027888+00:00 [queued]>
+[2023-07-02T16:16:31.845+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: my_new_dag.hello_world_task manual__2023-07-02T16:16:31.027888+00:00 [queued]>
+[2023-07-02T16:16:31.846+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-02T16:16:31.847+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2023-07-02T16:16:31.848+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-02T16:16:31.859+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): hello_world_task> on 2023-07-02 16:16:31.027888+00:00
+[2023-07-02T16:16:31.865+0000] {standard_task_runner.py:55} INFO - Started process 61484 to run task
+[2023-07-02T16:16:31.870+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'my_new_dag', 'hello_world_task', 'manual__2023-07-02T16:16:31.027888+00:00', '--job-id', '2873', '--raw', '--subdir', 'DAGS_FOLDER/new.py', '--cfg-path', '/tmp/tmp5sibzaxy']
+[2023-07-02T16:16:31.872+0000] {standard_task_runner.py:83} INFO - Job 2873: Subtask hello_world_task
+[2023-07-02T16:16:31.959+0000] {task_command.py:388} INFO - Running <TaskInstance: my_new_dag.hello_world_task manual__2023-07-02T16:16:31.027888+00:00 [running]> on host 242f95e3e8a8
+[2023-07-02T16:16:32.053+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=my_new_dag
+AIRFLOW_CTX_TASK_ID=hello_world_task
+AIRFLOW_CTX_EXECUTION_DATE=2023-07-02T16:16:31.027888+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-07-02T16:16:31.027888+00:00
+[2023-07-02T16:16:32.055+0000] {new.py:8} INFO - Hello World Desmond
+[2023-07-02T16:16:32.056+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-07-02T16:16:32.070+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=my_new_dag, task_id=hello_world_task, execution_date=20230702T161631, start_date=20230702T161631, end_date=20230702T161632
+[2023-07-02T16:16:32.124+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2023-07-02T16:16:32.162+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check

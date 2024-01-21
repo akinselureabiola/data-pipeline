@@ -1,0 +1,14 @@
+[2023-12-12T00:26:31.319+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: my_mulitiplication.add scheduled__2023-12-11T00:00:00+00:00 [queued]>
+[2023-12-12T00:26:31.338+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: my_mulitiplication.add scheduled__2023-12-11T00:00:00+00:00 [queued]>
+[2023-12-12T00:26:31.340+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 4
+[2023-12-12T00:26:31.354+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): add> on 2023-12-11 00:00:00+00:00
+[2023-12-12T00:26:31.364+0000] {standard_task_runner.py:57} INFO - Started process 6248 to run task
+[2023-12-12T00:26:31.372+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'my_mulitiplication', 'add', 'scheduled__2023-12-11T00:00:00+00:00', '--job-id', '6219', '--raw', '--subdir', 'DAGS_FOLDER/new_dag.py', '--cfg-path', '/tmp/tmpciu01lmg']
+[2023-12-12T00:26:31.375+0000] {standard_task_runner.py:85} INFO - Job 6219: Subtask add
+[2023-12-12T00:26:31.477+0000] {task_command.py:415} INFO - Running <TaskInstance: my_mulitiplication.add scheduled__2023-12-11T00:00:00+00:00 [running]> on host 533efb53d454
+[2023-12-12T00:26:31.556+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='my_mulitiplication' AIRFLOW_CTX_TASK_ID='add' AIRFLOW_CTX_EXECUTION_DATE='2023-12-11T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-11T00:00:00+00:00'
+[2023-12-12T00:26:31.559+0000] {logging_mixin.py:151} INFO - 75
+[2023-12-12T00:26:31.560+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-12-12T00:26:31.574+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=my_mulitiplication, task_id=add, execution_date=20231211T000000, start_date=20231212T002631, end_date=20231212T002631
+[2023-12-12T00:26:31.624+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-12T00:26:31.644+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

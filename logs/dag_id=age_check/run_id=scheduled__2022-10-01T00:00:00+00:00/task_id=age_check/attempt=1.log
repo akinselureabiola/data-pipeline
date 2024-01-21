@@ -1,0 +1,68 @@
+[2023-04-19T12:40:00.786+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: age_check.age_check scheduled__2022-10-01T00:00:00+00:00 [queued]>
+[2023-04-19T12:40:00.812+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: age_check.age_check scheduled__2022-10-01T00:00:00+00:00 [queued]>
+[2023-04-19T12:40:00.816+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-19T12:40:00.819+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 4
+[2023-04-19T12:40:00.821+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-19T12:40:00.848+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): age_check> on 2022-10-01 00:00:00+00:00
+[2023-04-19T12:40:00.863+0000] {standard_task_runner.py:55} INFO - Started process 22306 to run task
+[2023-04-19T12:40:00.903+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'age_check', 'age_check', 'scheduled__2022-10-01T00:00:00+00:00', '--job-id', '939', '--raw', '--subdir', 'DAGS_FOLDER/age.py', '--cfg-path', '/tmp/tmpz7r1sw8l']
+[2023-04-19T12:40:00.910+0000] {standard_task_runner.py:83} INFO - Job 939: Subtask age_check
+[2023-04-19T12:40:01.376+0000] {task_command.py:388} INFO - Running <TaskInstance: age_check.age_check scheduled__2022-10-01T00:00:00+00:00 [running]> on host fe34f61acbb3
+[2023-04-19T12:40:01.788+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=age_check
+AIRFLOW_CTX_TASK_ID=age_check
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-10-01T00:00:00+00:00
+[2023-04-19T12:40:01.821+0000] {taskinstance.py:1768} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/age.py", line 35, in age_check
+    birth_year = int(Variable.get('birth_year'))
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 141, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable birth_year does not exist'
+[2023-04-19T12:40:01.914+0000] {taskinstance.py:1323} INFO - Marking task as UP_FOR_RETRY. dag_id=age_check, task_id=age_check, execution_date=20221001T000000, start_date=20230419T124000, end_date=20230419T124001
+[2023-04-19T12:40:01.987+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 939 for task age_check ('Variable birth_year does not exist'; 22306)
+[2023-04-19T12:40:02.136+0000] {local_task_job.py:208} INFO - Task exited with return code 1
+[2023-04-19T12:40:02.205+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-05-17T09:55:20.679+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: age_check.age_check scheduled__2022-10-01T00:00:00+00:00 [queued]>
+[2023-05-17T09:55:20.705+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: age_check.age_check scheduled__2022-10-01T00:00:00+00:00 [queued]>
+[2023-05-17T09:55:20.712+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-17T09:55:20.714+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 4
+[2023-05-17T09:55:20.716+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-17T09:55:20.744+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): age_check> on 2022-10-01 00:00:00+00:00
+[2023-05-17T09:55:20.755+0000] {standard_task_runner.py:55} INFO - Started process 4888 to run task
+[2023-05-17T09:55:20.765+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'age_check', 'age_check', 'scheduled__2022-10-01T00:00:00+00:00', '--job-id', '458', '--raw', '--subdir', 'DAGS_FOLDER/age.py', '--cfg-path', '/tmp/tmpqs3__j07']
+[2023-05-17T09:55:20.771+0000] {standard_task_runner.py:83} INFO - Job 458: Subtask age_check
+[2023-05-17T09:55:20.964+0000] {task_command.py:388} INFO - Running <TaskInstance: age_check.age_check scheduled__2022-10-01T00:00:00+00:00 [running]> on host 242f95e3e8a8
+[2023-05-17T09:55:21.151+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=age_check
+AIRFLOW_CTX_TASK_ID=age_check
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-10-01T00:00:00+00:00
+[2023-05-17T09:55:21.171+0000] {taskinstance.py:1768} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/age.py", line 35, in age_check
+    birth_year = int(Variable.get('birth_year'))
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 141, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable birth_year does not exist'
+[2023-05-17T09:55:21.187+0000] {taskinstance.py:1323} INFO - Marking task as UP_FOR_RETRY. dag_id=age_check, task_id=age_check, execution_date=20221001T000000, start_date=20230517T095520, end_date=20230517T095521
+[2023-05-17T09:55:21.204+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 458 for task age_check ('Variable birth_year does not exist'; 4888)
+[2023-05-17T09:55:21.268+0000] {local_task_job.py:208} INFO - Task exited with return code 1
+[2023-05-17T09:55:21.328+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

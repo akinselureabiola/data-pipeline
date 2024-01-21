@@ -1,0 +1,272 @@
+[2023-06-13T01:05:02.366+0000] {processor.py:153} INFO - Started process (PID=62630) to work on /opt/airflow/dags/s3_create.py
+[2023-06-13T01:05:02.370+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/s3_create.py for tasks to queue
+[2023-06-13T01:05:02.376+0000] {logging_mixin.py:137} INFO - [2023-06-13T01:05:02.376+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/s3_create.py
+[2023-06-13T01:05:02.683+0000] {logging_mixin.py:137} INFO - [2023-06-13T01:05:02.673+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/s3_create.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/s3_create.py", line 9, in <module>
+    aws_access_key_id=Variable.get('access_key'),
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 141, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable access_key does not exist'
+[2023-06-13T01:05:02.687+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/s3_create.py
+[2023-06-13T01:05:02.727+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/s3_create.py took 0.370 seconds
+[2023-06-13T02:21:18.695+0000] {processor.py:153} INFO - Started process (PID=62712) to work on /opt/airflow/dags/s3_create.py
+[2023-06-13T02:21:18.700+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/s3_create.py for tasks to queue
+[2023-06-13T02:21:18.703+0000] {logging_mixin.py:137} INFO - [2023-06-13T02:21:18.703+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/s3_create.py
+[2023-06-13T02:21:18.986+0000] {logging_mixin.py:137} INFO - [2023-06-13T02:21:18.980+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/s3_create.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/s3_create.py", line 9, in <module>
+    aws_access_key_id=Variable.get('access_key'),
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 141, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable access_key does not exist'
+[2023-06-13T02:21:18.988+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/s3_create.py
+[2023-06-13T02:21:19.005+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/s3_create.py took 0.315 seconds
+[2023-06-13T03:45:59.740+0000] {processor.py:153} INFO - Started process (PID=62795) to work on /opt/airflow/dags/s3_create.py
+[2023-06-13T03:45:59.746+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/s3_create.py for tasks to queue
+[2023-06-13T03:45:59.750+0000] {logging_mixin.py:137} INFO - [2023-06-13T03:45:59.749+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/s3_create.py
+[2023-06-13T03:45:59.955+0000] {logging_mixin.py:137} INFO - [2023-06-13T03:45:59.951+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/s3_create.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/s3_create.py", line 9, in <module>
+    aws_access_key_id=Variable.get('access_key'),
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 141, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable access_key does not exist'
+[2023-06-13T03:45:59.958+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/s3_create.py
+[2023-06-13T03:45:59.973+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/s3_create.py took 0.237 seconds
+[2023-06-13T05:06:45.776+0000] {processor.py:153} INFO - Started process (PID=62866) to work on /opt/airflow/dags/s3_create.py
+[2023-06-13T05:06:45.779+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/s3_create.py for tasks to queue
+[2023-06-13T05:06:45.784+0000] {logging_mixin.py:137} INFO - [2023-06-13T05:06:45.784+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/s3_create.py
+[2023-06-13T05:06:45.966+0000] {logging_mixin.py:137} INFO - [2023-06-13T05:06:45.962+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/s3_create.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/s3_create.py", line 9, in <module>
+    aws_access_key_id=Variable.get('access_key'),
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 141, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable access_key does not exist'
+[2023-06-13T05:06:45.967+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/s3_create.py
+[2023-06-13T05:06:45.979+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/s3_create.py took 0.209 seconds
+[2023-06-13T06:29:10.390+0000] {processor.py:153} INFO - Started process (PID=62949) to work on /opt/airflow/dags/s3_create.py
+[2023-06-13T06:29:10.391+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/s3_create.py for tasks to queue
+[2023-06-13T06:29:10.392+0000] {logging_mixin.py:137} INFO - [2023-06-13T06:29:10.392+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/s3_create.py
+[2023-06-13T06:29:10.466+0000] {logging_mixin.py:137} INFO - [2023-06-13T06:29:10.464+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/s3_create.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/s3_create.py", line 9, in <module>
+    aws_access_key_id=Variable.get('access_key'),
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 141, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable access_key does not exist'
+[2023-06-13T06:29:10.467+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/s3_create.py
+[2023-06-13T06:29:10.474+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/s3_create.py took 0.087 seconds
+[2023-06-13T07:50:58.429+0000] {processor.py:153} INFO - Started process (PID=63020) to work on /opt/airflow/dags/s3_create.py
+[2023-06-13T07:50:58.434+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/s3_create.py for tasks to queue
+[2023-06-13T07:50:58.436+0000] {logging_mixin.py:137} INFO - [2023-06-13T07:50:58.436+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/s3_create.py
+[2023-06-13T07:50:58.650+0000] {logging_mixin.py:137} INFO - [2023-06-13T07:50:58.644+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/s3_create.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/s3_create.py", line 9, in <module>
+    aws_access_key_id=Variable.get('access_key'),
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 141, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable access_key does not exist'
+[2023-06-13T07:50:58.653+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/s3_create.py
+[2023-06-13T07:50:58.679+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/s3_create.py took 0.254 seconds
+[2023-06-13T09:14:14.366+0000] {processor.py:153} INFO - Started process (PID=63102) to work on /opt/airflow/dags/s3_create.py
+[2023-06-13T09:14:14.367+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/s3_create.py for tasks to queue
+[2023-06-13T09:14:14.368+0000] {logging_mixin.py:137} INFO - [2023-06-13T09:14:14.368+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/s3_create.py
+[2023-06-13T09:14:14.449+0000] {logging_mixin.py:137} INFO - [2023-06-13T09:14:14.446+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/s3_create.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/s3_create.py", line 9, in <module>
+    aws_access_key_id=Variable.get('access_key'),
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 141, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable access_key does not exist'
+[2023-06-13T09:14:14.450+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/s3_create.py
+[2023-06-13T09:14:14.457+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/s3_create.py took 0.094 seconds
+[2023-06-13T10:35:55.080+0000] {processor.py:153} INFO - Started process (PID=63173) to work on /opt/airflow/dags/s3_create.py
+[2023-06-13T10:35:55.081+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/s3_create.py for tasks to queue
+[2023-06-13T10:35:55.083+0000] {logging_mixin.py:137} INFO - [2023-06-13T10:35:55.083+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/s3_create.py
+[2023-06-13T10:35:55.157+0000] {logging_mixin.py:137} INFO - [2023-06-13T10:35:55.155+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/s3_create.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/s3_create.py", line 9, in <module>
+    aws_access_key_id=Variable.get('access_key'),
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 141, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable access_key does not exist'
+[2023-06-13T10:35:55.158+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/s3_create.py
+[2023-06-13T10:35:55.165+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/s3_create.py took 0.090 seconds
+[2023-06-13T11:58:01.135+0000] {processor.py:153} INFO - Started process (PID=63256) to work on /opt/airflow/dags/s3_create.py
+[2023-06-13T11:58:01.137+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/s3_create.py for tasks to queue
+[2023-06-13T11:58:01.138+0000] {logging_mixin.py:137} INFO - [2023-06-13T11:58:01.138+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/s3_create.py
+[2023-06-13T11:58:01.230+0000] {logging_mixin.py:137} INFO - [2023-06-13T11:58:01.228+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/s3_create.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/s3_create.py", line 9, in <module>
+    aws_access_key_id=Variable.get('access_key'),
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 141, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable access_key does not exist'
+[2023-06-13T11:58:01.233+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/s3_create.py
+[2023-06-13T11:58:01.253+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/s3_create.py took 0.122 seconds
+[2023-06-13T13:22:14.312+0000] {processor.py:153} INFO - Started process (PID=63327) to work on /opt/airflow/dags/s3_create.py
+[2023-06-13T13:22:14.314+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/s3_create.py for tasks to queue
+[2023-06-13T13:22:14.315+0000] {logging_mixin.py:137} INFO - [2023-06-13T13:22:14.315+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/s3_create.py
+[2023-06-13T13:22:14.386+0000] {logging_mixin.py:137} INFO - [2023-06-13T13:22:14.383+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/s3_create.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/s3_create.py", line 9, in <module>
+    aws_access_key_id=Variable.get('access_key'),
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 141, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable access_key does not exist'
+[2023-06-13T13:22:14.387+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/s3_create.py
+[2023-06-13T13:22:14.394+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/s3_create.py took 0.085 seconds
+[2023-06-13T15:00:30.638+0000] {processor.py:153} INFO - Started process (PID=63411) to work on /opt/airflow/dags/s3_create.py
+[2023-06-13T15:00:30.646+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/s3_create.py for tasks to queue
+[2023-06-13T15:00:30.647+0000] {logging_mixin.py:137} INFO - [2023-06-13T15:00:30.647+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/s3_create.py
+[2023-06-13T15:00:30.838+0000] {logging_mixin.py:137} INFO - [2023-06-13T15:00:30.835+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/s3_create.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/s3_create.py", line 9, in <module>
+    aws_access_key_id=Variable.get('access_key'),
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 141, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable access_key does not exist'
+[2023-06-13T15:00:30.839+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/s3_create.py
+[2023-06-13T15:00:30.852+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/s3_create.py took 0.222 seconds
+[2023-06-13T16:38:45.075+0000] {processor.py:153} INFO - Started process (PID=63492) to work on /opt/airflow/dags/s3_create.py
+[2023-06-13T16:38:45.077+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/s3_create.py for tasks to queue
+[2023-06-13T16:38:45.079+0000] {logging_mixin.py:137} INFO - [2023-06-13T16:38:45.079+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/s3_create.py
+[2023-06-13T16:38:45.193+0000] {logging_mixin.py:137} INFO - [2023-06-13T16:38:45.177+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/s3_create.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/s3_create.py", line 9, in <module>
+    aws_access_key_id=Variable.get('access_key'),
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 141, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable access_key does not exist'
+[2023-06-13T16:38:45.199+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/s3_create.py
+[2023-06-13T16:38:45.216+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/s3_create.py took 0.145 seconds
+[2023-06-13T17:44:49.869+0000] {processor.py:153} INFO - Started process (PID=63566) to work on /opt/airflow/dags/s3_create.py
+[2023-06-13T17:44:49.874+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/s3_create.py for tasks to queue
+[2023-06-13T17:44:49.875+0000] {logging_mixin.py:137} INFO - [2023-06-13T17:44:49.875+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/s3_create.py
+[2023-06-13T17:44:50.121+0000] {logging_mixin.py:137} INFO - [2023-06-13T17:44:50.118+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/s3_create.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/s3_create.py", line 9, in <module>
+    aws_access_key_id=Variable.get('access_key'),
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 141, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable access_key does not exist'
+[2023-06-13T17:44:50.124+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/s3_create.py
+[2023-06-13T17:44:50.137+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/s3_create.py took 0.273 seconds
+[2023-06-13T19:08:43.714+0000] {processor.py:153} INFO - Started process (PID=63650) to work on /opt/airflow/dags/s3_create.py
+[2023-06-13T19:08:43.716+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/s3_create.py for tasks to queue
+[2023-06-13T19:08:43.717+0000] {logging_mixin.py:137} INFO - [2023-06-13T19:08:43.717+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/s3_create.py
+[2023-06-13T19:08:43.786+0000] {logging_mixin.py:137} INFO - [2023-06-13T19:08:43.784+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/s3_create.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/s3_create.py", line 9, in <module>
+    aws_access_key_id=Variable.get('access_key'),
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 141, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable access_key does not exist'
+[2023-06-13T19:08:43.787+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/s3_create.py
+[2023-06-13T19:08:43.794+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/s3_create.py took 0.085 seconds
+[2023-06-13T20:31:57.758+0000] {processor.py:153} INFO - Started process (PID=63720) to work on /opt/airflow/dags/s3_create.py
+[2023-06-13T20:31:57.765+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/s3_create.py for tasks to queue
+[2023-06-13T20:31:57.768+0000] {logging_mixin.py:137} INFO - [2023-06-13T20:31:57.768+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/s3_create.py
+[2023-06-13T20:31:57.893+0000] {logging_mixin.py:137} INFO - [2023-06-13T20:31:57.885+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/s3_create.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/s3_create.py", line 9, in <module>
+    aws_access_key_id=Variable.get('access_key'),
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 141, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable access_key does not exist'
+[2023-06-13T20:31:57.897+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/s3_create.py
+[2023-06-13T20:31:57.916+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/s3_create.py took 0.162 seconds
+[2023-06-13T21:53:06.434+0000] {processor.py:153} INFO - Started process (PID=63802) to work on /opt/airflow/dags/s3_create.py
+[2023-06-13T21:53:06.439+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/s3_create.py for tasks to queue
+[2023-06-13T21:53:06.443+0000] {logging_mixin.py:137} INFO - [2023-06-13T21:53:06.442+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/s3_create.py
+[2023-06-13T21:53:06.572+0000] {logging_mixin.py:137} INFO - [2023-06-13T21:53:06.570+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/s3_create.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/s3_create.py", line 9, in <module>
+    aws_access_key_id=Variable.get('access_key'),
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 141, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable access_key does not exist'
+[2023-06-13T21:53:06.574+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/s3_create.py
+[2023-06-13T21:53:06.588+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/s3_create.py took 0.157 seconds
+[2023-06-13T23:13:48.574+0000] {processor.py:153} INFO - Started process (PID=63873) to work on /opt/airflow/dags/s3_create.py
+[2023-06-13T23:13:48.577+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/s3_create.py for tasks to queue
+[2023-06-13T23:13:48.579+0000] {logging_mixin.py:137} INFO - [2023-06-13T23:13:48.579+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/s3_create.py
+[2023-06-13T23:13:48.750+0000] {logging_mixin.py:137} INFO - [2023-06-13T23:13:48.747+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/s3_create.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/s3_create.py", line 9, in <module>
+    aws_access_key_id=Variable.get('access_key'),
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 141, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable access_key does not exist'
+[2023-06-13T23:13:48.752+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/s3_create.py
+[2023-06-13T23:13:48.766+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/s3_create.py took 0.198 seconds

@@ -1,0 +1,612 @@
+[2023-11-24T01:22:20.795+0000] {processor.py:153} INFO - Started process (PID=422953) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T01:22:20.816+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T01:22:20.819+0000] {logging_mixin.py:137} INFO - [2023-11-24T01:22:20.819+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T01:22:20.955+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T01:22:20.980+0000] {logging_mixin.py:137} INFO - [2023-11-24T01:22:20.980+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T01:22:21.033+0000] {logging_mixin.py:137} INFO - [2023-11-24T01:22:21.033+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T01:22:21.077+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.296 seconds
+[2023-11-24T02:07:24.238+0000] {processor.py:153} INFO - Started process (PID=423010) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T02:07:24.299+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T02:07:24.321+0000] {logging_mixin.py:137} INFO - [2023-11-24T02:07:24.321+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T02:07:24.829+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T02:07:25.172+0000] {logging_mixin.py:137} INFO - [2023-11-24T02:07:25.172+0000] {taskinstance.py:1770} ERROR - {'DAG Id': 'addition', 'Task Id': 'addition', 'Run Id': 'scheduled__2023-11-23T00:00:00+00:00', 'Hostname': '25f6b46723d1', 'External Executor Id': '1bfd665a-2e83-4d0b-8863-145e36a37aa7'}
+[2023-11-24T02:07:27.066+0000] {logging_mixin.py:137} INFO - [2023-11-24T02:07:27.049+0000] {taskinstance.py:1323} INFO - Marking task as UP_FOR_RETRY. dag_id=addition, task_id=addition, execution_date=20231123T000000, start_date=20231124T012243, end_date=20231124T020725
+[2023-11-24T02:07:28.085+0000] {processor.py:713} INFO - Executed failure callback for <TaskInstance: addition.addition scheduled__2023-11-23T00:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2023-11-24T02:07:30.402+0000] {logging_mixin.py:137} INFO - [2023-11-24T02:07:30.401+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T02:07:30.817+0000] {logging_mixin.py:137} INFO - [2023-11-24T02:07:30.816+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T02:07:31.241+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 7.029 seconds
+[2023-11-24T03:33:12.751+0000] {processor.py:153} INFO - Started process (PID=423078) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T03:33:12.773+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T03:33:12.776+0000] {logging_mixin.py:137} INFO - [2023-11-24T03:33:12.776+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T03:33:12.902+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T03:33:13.026+0000] {logging_mixin.py:137} INFO - [2023-11-24T03:33:13.026+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T03:33:13.146+0000] {logging_mixin.py:137} INFO - [2023-11-24T03:33:13.145+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T03:33:13.205+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.481 seconds
+[2023-11-24T04:39:35.071+0000] {processor.py:153} INFO - Started process (PID=423121) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T04:39:35.077+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T04:39:35.079+0000] {logging_mixin.py:137} INFO - [2023-11-24T04:39:35.079+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T04:39:35.108+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T04:39:35.143+0000] {logging_mixin.py:137} INFO - [2023-11-24T04:39:35.143+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T04:39:35.175+0000] {logging_mixin.py:137} INFO - [2023-11-24T04:39:35.175+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T04:39:35.200+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.132 seconds
+[2023-11-24T06:02:46.917+0000] {processor.py:153} INFO - Started process (PID=423178) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T06:02:46.934+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T06:02:46.941+0000] {logging_mixin.py:137} INFO - [2023-11-24T06:02:46.941+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T06:02:46.979+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T06:02:47.011+0000] {logging_mixin.py:137} INFO - [2023-11-24T06:02:47.011+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T06:02:47.054+0000] {logging_mixin.py:137} INFO - [2023-11-24T06:02:47.054+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T06:02:47.097+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.184 seconds
+[2023-11-24T07:21:41.096+0000] {processor.py:153} INFO - Started process (PID=423246) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T07:21:41.099+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T07:21:41.102+0000] {logging_mixin.py:137} INFO - [2023-11-24T07:21:41.101+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T07:21:41.126+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T07:21:41.163+0000] {logging_mixin.py:137} INFO - [2023-11-24T07:21:41.163+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T07:21:41.194+0000] {logging_mixin.py:137} INFO - [2023-11-24T07:21:41.194+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T07:21:41.215+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.123 seconds
+[2023-11-24T08:44:47.446+0000] {processor.py:153} INFO - Started process (PID=423315) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T08:44:47.449+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T08:44:47.451+0000] {logging_mixin.py:137} INFO - [2023-11-24T08:44:47.451+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T08:44:47.468+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T08:44:47.519+0000] {logging_mixin.py:137} INFO - [2023-11-24T08:44:47.518+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T08:44:47.571+0000] {logging_mixin.py:137} INFO - [2023-11-24T08:44:47.571+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T08:44:47.589+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.148 seconds
+[2023-11-24T09:51:21.427+0000] {processor.py:153} INFO - Started process (PID=423383) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T09:51:21.439+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T09:51:21.446+0000] {logging_mixin.py:137} INFO - [2023-11-24T09:51:21.446+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T09:51:21.514+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T09:51:21.651+0000] {logging_mixin.py:137} INFO - [2023-11-24T09:51:21.651+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T09:51:21.711+0000] {logging_mixin.py:137} INFO - [2023-11-24T09:51:21.711+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T09:51:21.772+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.360 seconds
+[2023-11-24T10:56:25.345+0000] {processor.py:153} INFO - Started process (PID=423452) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T10:56:25.349+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T10:56:25.354+0000] {logging_mixin.py:137} INFO - [2023-11-24T10:56:25.353+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T10:56:28.368+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T10:56:28.655+0000] {logging_mixin.py:137} INFO - [2023-11-24T10:56:28.655+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T10:56:28.790+0000] {logging_mixin.py:137} INFO - [2023-11-24T10:56:28.789+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T10:56:28.874+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 3.532 seconds
+[2023-11-24T12:18:14.444+0000] {processor.py:153} INFO - Started process (PID=423522) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T12:18:14.453+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T12:18:14.456+0000] {logging_mixin.py:137} INFO - [2023-11-24T12:18:14.456+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T12:18:14.551+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T12:18:14.626+0000] {logging_mixin.py:137} INFO - [2023-11-24T12:18:14.626+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T12:18:14.683+0000] {logging_mixin.py:137} INFO - [2023-11-24T12:18:14.683+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T12:18:14.767+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.342 seconds
+[2023-11-24T13:41:35.797+0000] {processor.py:153} INFO - Started process (PID=423591) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T13:41:35.805+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T13:41:35.807+0000] {logging_mixin.py:137} INFO - [2023-11-24T13:41:35.807+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T13:41:35.869+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T13:41:35.901+0000] {logging_mixin.py:137} INFO - [2023-11-24T13:41:35.901+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T13:41:35.922+0000] {logging_mixin.py:137} INFO - [2023-11-24T13:41:35.922+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T13:41:35.937+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.147 seconds
+[2023-11-24T15:02:44.352+0000] {processor.py:153} INFO - Started process (PID=423659) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T15:02:44.354+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T15:02:44.356+0000] {logging_mixin.py:137} INFO - [2023-11-24T15:02:44.356+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T15:02:44.381+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T15:02:44.408+0000] {logging_mixin.py:137} INFO - [2023-11-24T15:02:44.407+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T15:02:44.436+0000] {logging_mixin.py:137} INFO - [2023-11-24T15:02:44.436+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T15:02:44.463+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.116 seconds
+[2023-11-24T16:09:14.870+0000] {processor.py:153} INFO - Started process (PID=423741) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T16:09:14.898+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T16:09:14.915+0000] {logging_mixin.py:137} INFO - [2023-11-24T16:09:14.914+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T16:09:14.992+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T16:09:15.061+0000] {logging_mixin.py:137} INFO - [2023-11-24T16:09:15.061+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T16:09:15.130+0000] {logging_mixin.py:137} INFO - [2023-11-24T16:09:15.130+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T16:09:15.194+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.343 seconds
+[2023-11-24T17:31:26.695+0000] {processor.py:153} INFO - Started process (PID=423798) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T17:31:26.698+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T17:31:26.699+0000] {logging_mixin.py:137} INFO - [2023-11-24T17:31:26.699+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T17:31:26.725+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T17:31:26.758+0000] {logging_mixin.py:137} INFO - [2023-11-24T17:31:26.758+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T17:31:26.785+0000] {logging_mixin.py:137} INFO - [2023-11-24T17:31:26.785+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T17:31:26.801+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.109 seconds
+[2023-11-24T18:53:16.383+0000] {processor.py:153} INFO - Started process (PID=423867) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T18:53:16.385+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T18:53:16.386+0000] {logging_mixin.py:137} INFO - [2023-11-24T18:53:16.386+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T18:53:16.406+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T18:53:16.430+0000] {logging_mixin.py:137} INFO - [2023-11-24T18:53:16.429+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T18:53:16.450+0000] {logging_mixin.py:137} INFO - [2023-11-24T18:53:16.450+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T18:53:16.463+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.083 seconds
+[2023-11-24T19:58:13.387+0000] {processor.py:153} INFO - Started process (PID=423945) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T19:58:13.399+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T19:58:13.408+0000] {logging_mixin.py:137} INFO - [2023-11-24T19:58:13.407+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T19:58:13.464+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T19:58:13.554+0000] {logging_mixin.py:137} INFO - [2023-11-24T19:58:13.554+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T19:58:13.618+0000] {logging_mixin.py:137} INFO - [2023-11-24T19:58:13.618+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T19:58:13.678+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.295 seconds
+[2023-11-24T19:58:46.720+0000] {processor.py:153} INFO - Started process (PID=424014) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T19:58:46.724+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T19:58:46.732+0000] {logging_mixin.py:137} INFO - [2023-11-24T19:58:46.731+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T19:58:46.790+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T19:58:46.822+0000] {logging_mixin.py:137} INFO - [2023-11-24T19:58:46.822+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T19:58:46.874+0000] {logging_mixin.py:137} INFO - [2023-11-24T19:58:46.874+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T19:58:46.902+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.189 seconds
+[2023-11-24T19:59:16.968+0000] {processor.py:153} INFO - Started process (PID=424088) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T19:59:16.971+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T19:59:16.973+0000] {logging_mixin.py:137} INFO - [2023-11-24T19:59:16.973+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T19:59:16.994+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T19:59:17.016+0000] {logging_mixin.py:137} INFO - [2023-11-24T19:59:17.016+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T19:59:17.034+0000] {logging_mixin.py:137} INFO - [2023-11-24T19:59:17.034+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T19:59:17.047+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.082 seconds
+[2023-11-24T19:59:48.626+0000] {processor.py:153} INFO - Started process (PID=424156) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T19:59:48.628+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T19:59:48.630+0000] {logging_mixin.py:137} INFO - [2023-11-24T19:59:48.630+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T19:59:48.647+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T19:59:48.669+0000] {logging_mixin.py:137} INFO - [2023-11-24T19:59:48.669+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T19:59:48.692+0000] {logging_mixin.py:137} INFO - [2023-11-24T19:59:48.692+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T19:59:48.705+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.083 seconds
+[2023-11-24T20:00:21.297+0000] {processor.py:153} INFO - Started process (PID=424238) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T20:00:21.307+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T20:00:21.316+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:00:21.316+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T20:00:21.549+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T20:00:21.718+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:00:21.718+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T20:00:21.827+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:00:21.827+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T20:00:21.867+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.652 seconds
+[2023-11-24T20:06:02.559+0000] {processor.py:153} INFO - Started process (PID=424292) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T20:06:02.565+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T20:06:02.571+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:06:02.571+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T20:06:02.662+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T20:06:02.765+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:06:02.765+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T20:06:02.820+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:06:02.816+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T20:06:02.861+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.306 seconds
+[2023-11-24T20:06:33.811+0000] {processor.py:153} INFO - Started process (PID=424365) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T20:06:33.813+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T20:06:33.814+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:06:33.814+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T20:06:33.834+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T20:06:33.859+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:06:33.859+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T20:06:33.880+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:06:33.880+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T20:06:33.893+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.087 seconds
+[2023-11-24T20:07:04.035+0000] {processor.py:153} INFO - Started process (PID=424442) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T20:07:04.044+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T20:07:04.049+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:07:04.049+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T20:07:04.110+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T20:07:04.164+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:07:04.164+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T20:07:04.208+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:07:04.207+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T20:07:04.231+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.207 seconds
+[2023-11-24T20:07:34.768+0000] {processor.py:153} INFO - Started process (PID=424516) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T20:07:34.770+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T20:07:34.771+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:07:34.771+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T20:07:34.795+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T20:07:34.823+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:07:34.823+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T20:07:34.840+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:07:34.840+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T20:07:34.852+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.087 seconds
+[2023-11-24T20:08:06.516+0000] {processor.py:153} INFO - Started process (PID=424594) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T20:08:06.519+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T20:08:06.520+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:08:06.520+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T20:08:06.546+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T20:08:06.575+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:08:06.575+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T20:08:06.614+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:08:06.613+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T20:08:06.662+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.149 seconds
+[2023-11-24T20:38:59.135+0000] {processor.py:153} INFO - Started process (PID=424653) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T20:38:59.161+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T20:38:59.170+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:38:59.165+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T20:38:59.255+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T20:38:59.288+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:38:59.288+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T20:38:59.334+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:38:59.334+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T20:38:59.360+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.247 seconds
+[2023-11-24T20:39:30.235+0000] {processor.py:153} INFO - Started process (PID=424728) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T20:39:30.237+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T20:39:30.239+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:39:30.239+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T20:39:30.268+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T20:39:30.300+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:39:30.300+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T20:39:30.334+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:39:30.334+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T20:39:30.357+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.143 seconds
+[2023-11-24T20:40:00.517+0000] {processor.py:153} INFO - Started process (PID=424803) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T20:40:00.518+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T20:40:00.519+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:40:00.519+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T20:40:00.538+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T20:40:00.559+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:40:00.559+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T20:40:00.575+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:40:00.575+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T20:40:00.588+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.074 seconds
+[2023-11-24T20:40:31.934+0000] {processor.py:153} INFO - Started process (PID=424880) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T20:40:31.942+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T20:40:31.944+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:40:31.944+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T20:40:32.058+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T20:40:32.090+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:40:32.089+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T20:40:32.203+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:40:32.203+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T20:40:32.251+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.328 seconds
+[2023-11-24T20:41:03.084+0000] {processor.py:153} INFO - Started process (PID=424951) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T20:41:03.086+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T20:41:03.087+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:41:03.087+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T20:41:03.104+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T20:41:03.125+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:41:03.125+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T20:41:03.144+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:41:03.144+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T20:41:03.156+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.075 seconds
+[2023-11-24T20:41:33.819+0000] {processor.py:153} INFO - Started process (PID=425028) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T20:41:33.822+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T20:41:33.824+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:41:33.824+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T20:41:33.864+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T20:41:33.893+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:41:33.893+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T20:41:33.917+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:41:33.917+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T20:41:33.945+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.132 seconds
+[2023-11-24T20:42:04.944+0000] {processor.py:153} INFO - Started process (PID=425100) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T20:42:04.947+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T20:42:04.949+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:42:04.948+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T20:42:04.968+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T20:42:04.999+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:42:04.998+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T20:42:05.019+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:42:05.019+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T20:42:05.032+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.091 seconds
+[2023-11-24T20:42:35.243+0000] {processor.py:153} INFO - Started process (PID=425181) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T20:42:35.244+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T20:42:35.246+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:42:35.246+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T20:42:35.263+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T20:42:35.283+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:42:35.283+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T20:42:35.301+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:42:35.301+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T20:42:35.313+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.074 seconds
+[2023-11-24T20:43:05.426+0000] {processor.py:153} INFO - Started process (PID=425250) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T20:43:05.427+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T20:43:05.429+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:43:05.429+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T20:43:05.446+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T20:43:05.469+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:43:05.469+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T20:43:05.489+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:43:05.489+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T20:43:05.501+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.078 seconds
+[2023-11-24T20:43:37.078+0000] {processor.py:153} INFO - Started process (PID=425333) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T20:43:37.099+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T20:43:37.103+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:43:37.102+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T20:43:37.168+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T20:43:37.204+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:43:37.204+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T20:43:37.225+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:43:37.225+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T20:43:37.239+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.175 seconds
+[2023-11-24T20:52:22.622+0000] {processor.py:153} INFO - Started process (PID=425390) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T20:52:22.633+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T20:52:22.637+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:52:22.637+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T20:52:22.768+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T20:52:22.823+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:52:22.823+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T20:52:22.951+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:52:22.951+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T20:52:23.054+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.438 seconds
+[2023-11-24T20:52:53.292+0000] {processor.py:153} INFO - Started process (PID=425459) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T20:52:53.293+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T20:52:53.294+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:52:53.294+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T20:52:53.311+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T20:52:53.334+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:52:53.334+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T20:52:53.356+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:52:53.356+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T20:52:53.371+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.082 seconds
+[2023-11-24T20:53:24.054+0000] {processor.py:153} INFO - Started process (PID=425540) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T20:53:24.056+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T20:53:24.059+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:53:24.059+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T20:53:24.079+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T20:53:24.104+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:53:24.104+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T20:53:24.125+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:53:24.124+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T20:53:24.138+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.087 seconds
+[2023-11-24T20:53:55.350+0000] {processor.py:153} INFO - Started process (PID=425609) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T20:53:55.355+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T20:53:55.360+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:53:55.360+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T20:53:55.398+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T20:53:55.554+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:53:55.554+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T20:53:55.587+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:53:55.587+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T20:53:55.614+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.270 seconds
+[2023-11-24T20:54:25.842+0000] {processor.py:153} INFO - Started process (PID=425690) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T20:54:25.844+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T20:54:25.846+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:54:25.845+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T20:54:25.871+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T20:54:25.896+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:54:25.896+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T20:54:25.921+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:54:25.921+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T20:54:25.964+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.125 seconds
+[2023-11-24T20:54:56.942+0000] {processor.py:153} INFO - Started process (PID=425759) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T20:54:56.948+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T20:54:56.952+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:54:56.952+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T20:54:56.984+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T20:54:57.019+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:54:57.019+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T20:54:57.047+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:54:57.047+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T20:54:57.069+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.138 seconds
+[2023-11-24T20:55:28.021+0000] {processor.py:153} INFO - Started process (PID=425841) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T20:55:28.024+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T20:55:28.025+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:55:28.025+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T20:55:28.049+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T20:55:28.075+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:55:28.074+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T20:55:28.099+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:55:28.099+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T20:55:28.114+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.098 seconds
+[2023-11-24T20:55:58.296+0000] {processor.py:153} INFO - Started process (PID=425909) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T20:55:58.297+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T20:55:58.298+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:55:58.298+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T20:55:58.315+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T20:55:58.350+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:55:58.350+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T20:55:58.375+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:55:58.375+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T20:55:58.390+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.097 seconds
+[2023-11-24T20:56:29.086+0000] {processor.py:153} INFO - Started process (PID=425979) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T20:56:29.088+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T20:56:29.090+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:56:29.090+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T20:56:29.109+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T20:56:29.130+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:56:29.130+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T20:56:29.150+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:56:29.150+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T20:56:29.161+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.078 seconds
+[2023-11-24T20:57:00.595+0000] {processor.py:153} INFO - Started process (PID=426059) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T20:57:00.597+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T20:57:00.599+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:57:00.599+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T20:57:00.639+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T20:57:00.677+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:57:00.677+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T20:57:00.708+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:57:00.708+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T20:57:00.784+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.194 seconds
+[2023-11-24T20:57:31.474+0000] {processor.py:153} INFO - Started process (PID=426130) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T20:57:31.476+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T20:57:31.477+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:57:31.477+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T20:57:31.495+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T20:57:31.518+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:57:31.518+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T20:57:31.541+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:57:31.541+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T20:57:31.561+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.090 seconds
+[2023-11-24T20:58:02.567+0000] {processor.py:153} INFO - Started process (PID=426199) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T20:58:02.569+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T20:58:02.570+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:58:02.570+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T20:58:02.588+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T20:58:02.609+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:58:02.608+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T20:58:02.626+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:58:02.626+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T20:58:02.638+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.074 seconds
+[2023-11-24T20:58:32.937+0000] {processor.py:153} INFO - Started process (PID=426279) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T20:58:32.939+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T20:58:32.940+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:58:32.940+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T20:58:32.958+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T20:58:32.982+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:58:32.981+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T20:58:33.003+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:58:33.003+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T20:58:33.019+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.084 seconds
+[2023-11-24T20:59:04.137+0000] {processor.py:153} INFO - Started process (PID=426349) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T20:59:04.139+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T20:59:04.140+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:59:04.140+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T20:59:04.163+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T20:59:04.185+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:59:04.185+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T20:59:04.206+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:59:04.206+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T20:59:04.220+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.087 seconds
+[2023-11-24T20:59:35.517+0000] {processor.py:153} INFO - Started process (PID=426427) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T20:59:35.520+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T20:59:35.522+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:59:35.522+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T20:59:35.555+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T20:59:35.590+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:59:35.589+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T20:59:35.656+0000] {logging_mixin.py:137} INFO - [2023-11-24T20:59:35.656+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T20:59:35.683+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.171 seconds
+[2023-11-24T21:00:06.540+0000] {processor.py:153} INFO - Started process (PID=426500) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T21:00:06.542+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T21:00:06.544+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:00:06.544+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T21:00:06.560+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T21:00:06.582+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:00:06.582+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T21:00:06.601+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:00:06.601+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T21:00:06.612+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.075 seconds
+[2023-11-24T21:00:37.404+0000] {processor.py:153} INFO - Started process (PID=426581) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T21:00:37.407+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T21:00:37.408+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:00:37.408+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T21:00:37.433+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T21:00:37.474+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:00:37.474+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T21:00:37.497+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:00:37.497+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T21:00:37.516+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.115 seconds
+[2023-11-24T21:01:08.045+0000] {processor.py:153} INFO - Started process (PID=426650) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T21:01:08.046+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T21:01:08.064+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:01:08.064+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T21:01:08.090+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T21:01:08.122+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:01:08.121+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T21:01:08.168+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:01:08.167+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T21:01:08.239+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.198 seconds
+[2023-11-24T21:01:39.159+0000] {processor.py:153} INFO - Started process (PID=426729) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T21:01:39.162+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T21:01:39.166+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:01:39.165+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T21:01:39.192+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T21:01:39.268+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:01:39.268+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T21:01:39.303+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:01:39.303+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T21:01:39.328+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.171 seconds
+[2023-11-24T21:02:09.927+0000] {processor.py:153} INFO - Started process (PID=426798) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T21:02:09.929+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T21:02:09.930+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:02:09.930+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T21:02:09.950+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T21:02:09.973+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:02:09.973+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T21:02:09.992+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:02:09.992+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T21:02:10.005+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.081 seconds
+[2023-11-24T21:02:40.658+0000] {processor.py:153} INFO - Started process (PID=426879) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T21:02:40.660+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T21:02:40.661+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:02:40.661+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T21:02:40.678+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T21:02:40.701+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:02:40.701+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T21:02:40.740+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:02:40.740+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T21:02:40.782+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.127 seconds
+[2023-11-24T21:03:11.685+0000] {processor.py:153} INFO - Started process (PID=426949) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T21:03:11.686+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T21:03:11.688+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:03:11.687+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T21:03:11.713+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T21:03:11.761+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:03:11.761+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T21:03:11.789+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:03:11.789+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T21:03:11.802+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.121 seconds
+[2023-11-24T21:03:42.141+0000] {processor.py:153} INFO - Started process (PID=427017) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T21:03:42.160+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T21:03:42.161+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:03:42.161+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T21:03:42.179+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T21:03:42.203+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:03:42.203+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T21:03:42.221+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:03:42.221+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T21:03:42.233+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.095 seconds
+[2023-11-24T21:04:12.866+0000] {processor.py:153} INFO - Started process (PID=427087) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T21:04:12.868+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T21:04:12.869+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:04:12.869+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T21:04:12.886+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T21:04:12.917+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:04:12.917+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T21:04:12.939+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:04:12.939+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T21:04:12.954+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.091 seconds
+[2023-11-24T21:04:43.780+0000] {processor.py:153} INFO - Started process (PID=427156) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T21:04:43.822+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T21:04:43.843+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:04:43.843+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T21:04:43.879+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T21:04:43.901+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:04:43.900+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T21:04:43.921+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:04:43.921+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T21:04:43.938+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.161 seconds
+[2023-11-24T21:05:14.930+0000] {processor.py:153} INFO - Started process (PID=427234) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T21:05:14.933+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T21:05:14.935+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:05:14.935+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T21:05:14.976+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T21:05:15.033+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:05:15.033+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T21:05:15.077+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:05:15.077+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T21:05:15.109+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.182 seconds
+[2023-11-24T21:05:46.152+0000] {processor.py:153} INFO - Started process (PID=427305) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T21:05:46.154+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T21:05:46.155+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:05:46.155+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T21:05:46.183+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T21:05:46.210+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:05:46.210+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T21:05:46.247+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:05:46.247+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T21:05:46.277+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.131 seconds
+[2023-11-24T21:06:16.880+0000] {processor.py:153} INFO - Started process (PID=427373) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T21:06:16.882+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T21:06:16.883+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:06:16.883+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T21:06:16.917+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T21:06:16.942+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:06:16.942+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T21:06:16.964+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:06:16.964+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T21:06:16.981+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.105 seconds
+[2023-11-24T21:06:47.064+0000] {processor.py:153} INFO - Started process (PID=427453) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T21:06:47.066+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T21:06:47.067+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:06:47.067+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T21:06:47.085+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T21:06:47.106+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:06:47.106+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T21:06:47.125+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:06:47.125+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T21:06:47.137+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.076 seconds
+[2023-11-24T21:07:17.715+0000] {processor.py:153} INFO - Started process (PID=427522) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T21:07:17.717+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T21:07:17.718+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:07:17.718+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T21:07:17.740+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T21:07:17.764+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:07:17.764+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T21:07:17.783+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:07:17.783+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T21:07:17.796+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.085 seconds
+[2023-11-24T21:07:48.198+0000] {processor.py:153} INFO - Started process (PID=427603) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T21:07:48.202+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T21:07:48.204+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:07:48.204+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T21:07:48.223+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T21:07:48.247+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:07:48.247+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T21:07:48.267+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:07:48.267+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T21:07:48.279+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.085 seconds
+[2023-11-24T21:08:18.784+0000] {processor.py:153} INFO - Started process (PID=427671) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T21:08:18.786+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T21:08:18.788+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:08:18.788+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T21:08:18.805+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T21:08:18.827+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:08:18.827+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T21:08:18.844+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:08:18.844+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T21:08:18.856+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.075 seconds
+[2023-11-24T21:08:49.224+0000] {processor.py:153} INFO - Started process (PID=427752) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T21:08:49.226+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T21:08:49.228+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:08:49.228+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T21:08:49.253+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T21:08:49.283+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:08:49.283+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T21:08:49.302+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:08:49.302+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T21:08:49.316+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.097 seconds
+[2023-11-24T21:09:20.332+0000] {processor.py:153} INFO - Started process (PID=427830) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T21:09:20.334+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T21:09:20.335+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:09:20.335+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T21:09:20.356+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T21:09:20.380+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:09:20.380+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T21:09:20.400+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:09:20.400+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T21:09:20.414+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.086 seconds
+[2023-11-24T21:09:50.895+0000] {processor.py:153} INFO - Started process (PID=427903) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T21:09:50.897+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T21:09:50.898+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:09:50.898+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T21:09:50.922+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T21:09:50.946+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:09:50.945+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T21:09:50.964+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:09:50.964+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T21:09:50.976+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.087 seconds
+[2023-11-24T21:10:21.767+0000] {processor.py:153} INFO - Started process (PID=427981) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T21:10:21.769+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T21:10:21.771+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:10:21.770+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T21:10:21.790+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T21:10:21.812+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:10:21.812+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T21:10:21.830+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:10:21.830+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T21:10:21.845+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.081 seconds
+[2023-11-24T21:10:52.442+0000] {processor.py:153} INFO - Started process (PID=428053) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T21:10:52.444+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T21:10:52.445+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:10:52.445+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T21:10:52.470+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T21:10:52.498+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:10:52.497+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T21:10:52.517+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:10:52.517+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T21:10:52.528+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.091 seconds
+[2023-11-24T21:11:22.980+0000] {processor.py:153} INFO - Started process (PID=428122) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T21:11:22.981+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T21:11:22.982+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:11:22.982+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T21:11:23.001+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T21:11:23.023+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:11:23.023+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T21:11:23.041+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:11:23.041+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T21:11:23.054+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.079 seconds
+[2023-11-24T21:11:53.187+0000] {processor.py:153} INFO - Started process (PID=428203) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T21:11:53.189+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T21:11:53.190+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:11:53.190+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T21:11:53.206+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T21:11:53.227+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:11:53.227+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T21:11:53.246+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:11:53.246+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T21:11:53.259+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.075 seconds
+[2023-11-24T21:12:24.083+0000] {processor.py:153} INFO - Started process (PID=428272) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T21:12:24.085+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T21:12:24.087+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:12:24.086+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T21:12:24.107+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T21:12:24.131+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:12:24.131+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T21:12:24.153+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:12:24.153+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T21:12:24.167+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.087 seconds
+[2023-11-24T21:12:55.457+0000] {processor.py:153} INFO - Started process (PID=428353) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T21:12:55.466+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T21:12:55.469+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:12:55.469+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T21:12:55.498+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T21:12:55.524+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:12:55.524+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T21:12:55.545+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:12:55.545+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T21:12:55.558+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.106 seconds
+[2023-11-24T21:13:26.180+0000] {processor.py:153} INFO - Started process (PID=428422) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T21:13:26.182+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T21:13:26.183+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:13:26.183+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T21:13:26.200+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T21:13:26.222+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:13:26.222+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T21:13:26.240+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:13:26.240+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T21:13:26.255+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.078 seconds
+[2023-11-24T21:13:56.994+0000] {processor.py:153} INFO - Started process (PID=428503) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T21:13:56.996+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T21:13:56.997+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:13:56.997+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T21:13:57.014+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T21:13:57.034+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:13:57.034+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T21:13:57.052+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:13:57.052+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T21:13:57.063+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.072 seconds
+[2023-11-24T21:14:27.470+0000] {processor.py:153} INFO - Started process (PID=428572) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T21:14:27.472+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T21:14:27.473+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:14:27.473+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T21:14:27.490+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T21:14:27.510+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:14:27.510+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T21:14:27.527+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:14:27.527+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T21:14:27.539+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.072 seconds
+[2023-11-24T21:25:41.222+0000] {processor.py:153} INFO - Started process (PID=428641) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T21:25:41.225+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T21:25:41.227+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:25:41.226+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T21:25:41.258+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T21:25:41.283+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:25:41.282+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T21:25:41.305+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:25:41.305+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T21:25:41.321+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.103 seconds
+[2023-11-24T21:26:12.856+0000] {processor.py:153} INFO - Started process (PID=428711) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T21:26:12.858+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T21:26:12.860+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:26:12.860+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T21:26:12.879+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T21:26:12.901+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:26:12.901+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T21:26:12.919+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:26:12.919+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T21:26:12.931+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.078 seconds
+[2023-11-24T21:26:43.601+0000] {processor.py:153} INFO - Started process (PID=428791) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T21:26:43.603+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T21:26:43.604+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:26:43.604+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T21:26:43.620+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T21:26:43.646+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:26:43.646+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T21:26:43.664+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:26:43.664+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T21:26:43.678+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.081 seconds
+[2023-11-24T21:27:14.384+0000] {processor.py:153} INFO - Started process (PID=428860) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T21:27:14.387+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T21:27:14.388+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:27:14.388+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T21:27:14.404+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T21:27:14.429+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:27:14.429+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T21:27:14.455+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:27:14.455+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T21:27:14.477+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.096 seconds
+[2023-11-24T21:27:45.363+0000] {processor.py:153} INFO - Started process (PID=428942) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T21:27:45.365+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T21:27:45.367+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:27:45.367+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T21:27:45.387+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T21:27:45.423+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:27:45.423+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T21:27:45.442+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:27:45.441+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T21:27:45.455+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.095 seconds
+[2023-11-24T21:28:15.893+0000] {processor.py:153} INFO - Started process (PID=429010) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T21:28:15.896+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T21:28:15.898+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:28:15.898+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T21:28:15.915+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T21:28:15.943+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:28:15.943+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T21:28:16.035+0000] {logging_mixin.py:137} INFO - [2023-11-24T21:28:16.035+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T21:28:16.067+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.177 seconds
+[2023-11-24T22:19:08.683+0000] {processor.py:153} INFO - Started process (PID=429077) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T22:19:08.716+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T22:19:08.720+0000] {logging_mixin.py:137} INFO - [2023-11-24T22:19:08.720+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T22:19:08.820+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T22:19:08.961+0000] {logging_mixin.py:137} INFO - [2023-11-24T22:19:08.961+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T22:19:09.103+0000] {logging_mixin.py:137} INFO - [2023-11-24T22:19:09.102+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T22:19:09.245+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.588 seconds
+[2023-11-24T23:24:43.599+0000] {processor.py:153} INFO - Started process (PID=429134) to work on /opt/airflow/dags/mayor.py
+[2023-11-24T23:24:43.602+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mayor.py for tasks to queue
+[2023-11-24T23:24:43.604+0000] {logging_mixin.py:137} INFO - [2023-11-24T23:24:43.604+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mayor.py
+[2023-11-24T23:24:43.625+0000] {processor.py:753} INFO - DAG(s) dict_keys(['addition']) retrieved from /opt/airflow/dags/mayor.py
+[2023-11-24T23:24:43.651+0000] {logging_mixin.py:137} INFO - [2023-11-24T23:24:43.651+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-24T23:24:43.674+0000] {logging_mixin.py:137} INFO - [2023-11-24T23:24:43.674+0000] {dag.py:3441} INFO - Setting next_dagrun for addition to 2023-11-24T00:00:00+00:00, run_after=2023-11-25T00:00:00+00:00
+[2023-11-24T23:24:43.690+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mayor.py took 0.095 seconds

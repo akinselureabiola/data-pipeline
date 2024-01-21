@@ -1,0 +1,16 @@
+[2023-08-01T00:01:49.545+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: age_check.multiplication scheduled__2023-07-31T00:00:00+00:00 [queued]>
+[2023-08-01T00:01:49.677+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: age_check.multiplication scheduled__2023-07-31T00:00:00+00:00 [queued]>
+[2023-08-01T00:01:49.701+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2023-08-01T00:01:49.704+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 4
+[2023-08-01T00:01:49.706+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2023-08-01T00:01:49.825+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): multiplication> on 2023-07-31 00:00:00+00:00
+[2023-08-01T00:01:49.883+0000] {standard_task_runner.py:55} INFO - Started process 63054 to run task
+[2023-08-01T00:01:49.912+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'age_check', 'multiplication', 'scheduled__2023-07-31T00:00:00+00:00', '--job-id', '3897', '--raw', '--subdir', 'DAGS_FOLDER/age.py', '--cfg-path', '/tmp/tmpyf1dxgg5']
+[2023-08-01T00:01:49.934+0000] {standard_task_runner.py:83} INFO - Job 3897: Subtask multiplication
+[2023-08-01T00:01:50.469+0000] {task_command.py:388} INFO - Running <TaskInstance: age_check.multiplication scheduled__2023-07-31T00:00:00+00:00 [running]> on host 25f6b46723d1
+[2023-08-01T01:09:58.821+0000] {local_task_job.py:192} ERROR - Heartbeat time limit exceeded!
+[2023-08-01T01:10:00.394+0000] {process_utils.py:133} INFO - Sending Signals.SIGTERM to group 63054. PIDs of all processes in the group: [63054]
+[2023-08-01T01:10:00.422+0000] {process_utils.py:84} INFO - Sending the signal Signals.SIGTERM to group 63054
+[2023-08-01T01:10:14.993+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=63054, status='terminated', exitcode=<Negsignal.SIGTERM: -15>, started='00:01:49') (63054) terminated with exit code Negsignal.SIGTERM

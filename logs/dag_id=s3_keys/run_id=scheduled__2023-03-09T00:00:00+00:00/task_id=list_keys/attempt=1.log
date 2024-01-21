@@ -1,0 +1,47 @@
+[2023-04-25T17:32:22.723+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: s3_keys.list_keys scheduled__2023-03-09T00:00:00+00:00 [queued]>
+[2023-04-25T17:32:23.617+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: s3_keys.list_keys scheduled__2023-03-09T00:00:00+00:00 [queued]>
+[2023-04-25T17:32:23.740+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-25T17:32:23.752+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2023-04-25T17:32:23.780+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-25T17:32:26.143+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): list_keys> on 2023-03-09 00:00:00+00:00
+[2023-04-25T17:32:26.494+0000] {standard_task_runner.py:55} INFO - Started process 32851 to run task
+[2023-04-25T17:32:26.834+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 's3_keys', 'list_keys', 'scheduled__2023-03-09T00:00:00+00:00', '--job-id', '4618', '--raw', '--subdir', 'DAGS_FOLDER/acess.py', '--cfg-path', '/tmp/tmpmhi5edxn']
+[2023-04-25T17:32:26.863+0000] {standard_task_runner.py:83} INFO - Job 4618: Subtask list_keys
+[2023-04-25T17:32:29.147+0000] {task_command.py:388} INFO - Running <TaskInstance: s3_keys.list_keys scheduled__2023-03-09T00:00:00+00:00 [running]> on host fe34f61acbb3
+[2023-04-25T17:32:32.443+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=s3_keys
+AIRFLOW_CTX_TASK_ID=list_keys
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-09T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-03-09T00:00:00+00:00
+[2023-04-25T17:32:36.698+0000] {acess.py:12} INFO - Listing Keys from project-data-pipelines
+[2023-04-25T17:32:37.323+0000] {base.py:73} INFO - Using connection ID 'aws_credentials' for task execution.
+[2023-04-25T17:32:37.437+0000] {connection_wrapper.py:334} INFO - AWS Connection (conn_id='aws_credentials', conn_type='aws') credentials retrieved from login and password.
+[2023-04-25T17:36:21.914+0000] {taskinstance.py:1768} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/acess.py", line 13, in list_keys
+    keys = hook.list_keys(bucket)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 70, in wrapper
+    return func(*bound_args.args, **bound_args.kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 414, in list_keys
+    for page in response:
+  File "/home/airflow/.local/lib/python3.7/site-packages/botocore/paginate.py", line 269, in __iter__
+    response = self._make_request(current_kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/botocore/paginate.py", line 357, in _make_request
+    return self._method(**current_kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/botocore/client.py", line 530, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/botocore/client.py", line 960, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.errorfactory.NoSuchBucket: An error occurred (NoSuchBucket) when calling the ListObjectsV2 operation: The specified bucket does not exist
+[2023-04-25T17:36:22.053+0000] {taskinstance.py:1323} INFO - Marking task as FAILED. dag_id=s3_keys, task_id=list_keys, execution_date=20230309T000000, start_date=20230425T173222, end_date=20230425T173622
+[2023-04-25T17:36:22.137+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 4618 for task list_keys (An error occurred (NoSuchBucket) when calling the ListObjectsV2 operation: The specified bucket does not exist; 32851)
+[2023-04-25T17:36:22.961+0000] {local_task_job.py:208} INFO - Task exited with return code 1
+[2023-04-25T17:36:23.112+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

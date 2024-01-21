@@ -1,0 +1,16 @@
+[2023-11-20T02:45:07.202+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: my_new_dag.hello_world_task scheduled__2023-11-19T00:00:00+00:00 [queued]>
+[2023-11-20T02:45:10.570+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: my_new_dag.hello_world_task scheduled__2023-11-19T00:00:00+00:00 [queued]>
+[2023-11-20T02:45:10.697+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-20T02:45:10.699+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2023-11-20T02:45:10.704+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-20T02:45:11.139+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): hello_world_task> on 2023-11-19 00:00:00+00:00
+[2023-11-20T02:45:12.147+0000] {standard_task_runner.py:55} INFO - Started process 168847 to run task
+[2023-11-20T02:45:15.333+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'my_new_dag', 'hello_world_task', 'scheduled__2023-11-19T00:00:00+00:00', '--job-id', '5734', '--raw', '--subdir', 'DAGS_FOLDER/new.py', '--cfg-path', '/tmp/tmpd08qa5bw']
+[2023-11-20T02:45:15.440+0000] {standard_task_runner.py:83} INFO - Job 5734: Subtask hello_world_task
+[2023-11-20T05:10:06.127+0000] {local_task_job.py:192} ERROR - Heartbeat time limit exceeded!
+[2023-11-20T05:10:05.706+0000] {task_command.py:388} INFO - Running <TaskInstance: my_new_dag.hello_world_task scheduled__2023-11-19T00:00:00+00:00 [running]> on host 25f6b46723d1
+[2023-11-20T05:10:06.732+0000] {process_utils.py:133} INFO - Sending Signals.SIGTERM to group 168847. PIDs of all processes in the group: [168847]
+[2023-11-20T05:10:06.770+0000] {process_utils.py:84} INFO - Sending the signal Signals.SIGTERM to group 168847
+[2023-11-20T05:10:11.991+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=168847, status='terminated', exitcode=<Negsignal.SIGTERM: -15>, started='04:06:18') (168847) terminated with exit code Negsignal.SIGTERM

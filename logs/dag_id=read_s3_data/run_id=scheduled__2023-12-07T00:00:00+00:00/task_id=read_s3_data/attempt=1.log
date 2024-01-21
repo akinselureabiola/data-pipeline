@@ -1,0 +1,91 @@
+[2023-12-17T22:00:04.604+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: read_s3_data.read_s3_data scheduled__2023-12-07T00:00:00+00:00 [queued]>
+[2023-12-17T22:00:05.266+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: read_s3_data.read_s3_data scheduled__2023-12-07T00:00:00+00:00 [queued]>
+[2023-12-17T22:00:05.276+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 4
+[2023-12-17T22:00:06.185+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): read_s3_data> on 2023-12-07 00:00:00+00:00
+[2023-12-17T22:00:06.413+0000] {standard_task_runner.py:57} INFO - Started process 268 to run task
+[2023-12-17T22:00:06.734+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'read_s3_data', 'read_s3_data', 'scheduled__2023-12-07T00:00:00+00:00', '--job-id', '8122', '--raw', '--subdir', 'DAGS_FOLDER/read.py', '--cfg-path', '/tmp/tmpul8p85ke']
+[2023-12-17T22:00:06.857+0000] {standard_task_runner.py:85} INFO - Job 8122: Subtask read_s3_data
+[2023-12-17T22:00:16.727+0000] {task_command.py:415} INFO - Running <TaskInstance: read_s3_data.read_s3_data scheduled__2023-12-07T00:00:00+00:00 [running]> on host 62cf353ccc75
+[2023-12-17T22:00:19.457+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='read_s3_data' AIRFLOW_CTX_TASK_ID='read_s3_data' AIRFLOW_CTX_EXECUTION_DATE='2023-12-07T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-07T00:00:00+00:00'
+[2023-12-17T22:00:28.783+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/read.py", line 32, in read_s3_file
+    df = wr.s3.read_csv(path='s3://staging-olist/customer/olist_customers_dataset.csv', boto3_session=session)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/awswrangler/_utils.py", line 176, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/awswrangler/s3/_read_text.py", line 293, in read_csv
+    return _read_text_format(
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/awswrangler/s3/_read_text.py", line 93, in _read_text_format
+    paths: List[str] = _path2list(
+                       ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/awswrangler/s3/_list.py", line 35, in _path2list
+    paths: List[str] = [
+                       ^
+  File "/home/airflow/.local/lib/python3.11/site-packages/awswrangler/s3/_list.py", line 35, in <listcomp>
+    paths: List[str] = [
+                       ^
+  File "/home/airflow/.local/lib/python3.11/site-packages/awswrangler/s3/_list.py", line 146, in _list_objects_paginate
+    for page in response_iterator:  # pylint: disable=too-many-nested-blocks
+  File "/home/airflow/.local/lib/python3.11/site-packages/botocore/paginate.py", line 269, in __iter__
+    response = self._make_request(current_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/botocore/paginate.py", line 357, in _make_request
+    return self._method(**current_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/botocore/client.py", line 535, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/botocore/client.py", line 980, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (InvalidAccessKeyId) when calling the ListObjectsV2 operation: The AWS Access Key Id you provided does not exist in our records.
+[2023-12-17T22:00:29.447+0000] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=read_s3_data, task_id=read_s3_data, execution_date=20231207T000000, start_date=20231217T220004, end_date=20231217T220029
+[2023-12-17T22:00:30.904+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 8122 for task read_s3_data (An error occurred (InvalidAccessKeyId) when calling the ListObjectsV2 operation: The AWS Access Key Id you provided does not exist in our records.; 268)
+[2023-12-17T22:00:34.101+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-12-17T22:00:34.329+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-01-20T16:55:38.189+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: read_s3_data.read_s3_data scheduled__2023-12-07T00:00:00+00:00 [queued]>
+[2024-01-20T16:55:38.199+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: read_s3_data.read_s3_data scheduled__2023-12-07T00:00:00+00:00 [queued]>
+[2024-01-20T16:55:38.201+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 4
+[2024-01-20T16:55:38.218+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): read_s3_data> on 2023-12-07 00:00:00+00:00
+[2024-01-20T16:55:38.234+0000] {standard_task_runner.py:57} INFO - Started process 3625 to run task
+[2024-01-20T16:55:38.238+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'read_s3_data', 'read_s3_data', 'scheduled__2023-12-07T00:00:00+00:00', '--job-id', '2424', '--raw', '--subdir', 'DAGS_FOLDER/read.py', '--cfg-path', '/tmp/tmpdbxth9ch']
+[2024-01-20T16:55:38.242+0000] {standard_task_runner.py:85} INFO - Job 2424: Subtask read_s3_data
+[2024-01-20T16:55:38.307+0000] {task_command.py:415} INFO - Running <TaskInstance: read_s3_data.read_s3_data scheduled__2023-12-07T00:00:00+00:00 [running]> on host dbb3489df186
+[2024-01-20T16:55:38.393+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='read_s3_data' AIRFLOW_CTX_TASK_ID='read_s3_data' AIRFLOW_CTX_EXECUTION_DATE='2023-12-07T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-07T00:00:00+00:00'
+[2024-01-20T16:57:00.881+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/read.py", line 40, in read_s3_file
+    conn = create_engine("postgresql+psycopg2://staging_db:postgres.cnelwn14hnqh.eu-central-1.rds.amazonaws.com:port/main")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in create_engine
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/util/deprecations.py", line 375, in warned
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/create.py", line 514, in create_engine
+    u = _url.make_url(url)
+        ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/url.py", line 738, in make_url
+    return _parse_url(name_or_url)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/url.py", line 794, in _parse_url
+    components["port"] = int(components["port"])
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'postgres.cnelwn14hnqh.eu-central-1.rds.amazonaws.com:port'
+[2024-01-20T16:57:00.932+0000] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=read_s3_data, task_id=read_s3_data, execution_date=20231207T000000, start_date=20240120T165538, end_date=20240120T165700
+[2024-01-20T16:57:01.042+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 2424 for task read_s3_data (invalid literal for int() with base 10: 'postgres.cnelwn14hnqh.eu-central-1.rds.amazonaws.com:port'; 3625)
+[2024-01-20T16:57:01.107+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-01-20T16:57:01.132+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,48 @@
+[2023-04-19T12:44:17.842+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: age_check.minus scheduled__2022-12-05T00:00:00+00:00 [queued]>
+[2023-04-19T12:44:17.975+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: age_check.minus scheduled__2022-12-05T00:00:00+00:00 [queued]>
+[2023-04-19T12:44:17.981+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-19T12:44:17.986+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 4
+[2023-04-19T12:44:17.987+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-19T12:44:18.094+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): minus> on 2022-12-05 00:00:00+00:00
+[2023-04-19T12:44:18.141+0000] {standard_task_runner.py:55} INFO - Started process 23397 to run task
+[2023-04-19T12:44:18.218+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'age_check', 'minus', 'scheduled__2022-12-05T00:00:00+00:00', '--job-id', '1370', '--raw', '--subdir', 'DAGS_FOLDER/age.py', '--cfg-path', '/tmp/tmpbd7uktf9']
+[2023-04-19T12:44:18.233+0000] {standard_task_runner.py:83} INFO - Job 1370: Subtask minus
+[2023-04-19T12:44:18.613+0000] {task_command.py:388} INFO - Running <TaskInstance: age_check.minus scheduled__2022-12-05T00:00:00+00:00 [running]> on host fe34f61acbb3
+[2023-04-19T12:44:19.017+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=age_check
+AIRFLOW_CTX_TASK_ID=minus
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-05T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-05T00:00:00+00:00
+[2023-04-19T12:44:19.030+0000] {logging_mixin.py:137} INFO - 3
+[2023-04-19T12:44:19.034+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-04-19T12:44:19.072+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=age_check, task_id=minus, execution_date=20221205T000000, start_date=20230419T124417, end_date=20230419T124419
+[2023-04-19T12:44:19.535+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2023-04-19T12:44:19.761+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-05-20T20:55:42.980+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: age_check.minus scheduled__2022-12-05T00:00:00+00:00 [queued]>
+[2023-05-20T20:55:42.989+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: age_check.minus scheduled__2022-12-05T00:00:00+00:00 [queued]>
+[2023-05-20T20:55:42.990+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-20T20:55:42.991+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 4
+[2023-05-20T20:55:42.992+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-20T20:55:43.005+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): minus> on 2022-12-05 00:00:00+00:00
+[2023-05-20T20:55:43.010+0000] {standard_task_runner.py:55} INFO - Started process 83 to run task
+[2023-05-20T20:55:43.014+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'age_check', 'minus', 'scheduled__2022-12-05T00:00:00+00:00', '--job-id', '920', '--raw', '--subdir', 'DAGS_FOLDER/age.py', '--cfg-path', '/tmp/tmphek62hh0']
+[2023-05-20T20:55:43.016+0000] {standard_task_runner.py:83} INFO - Job 920: Subtask minus
+[2023-05-20T20:55:43.213+0000] {task_command.py:388} INFO - Running <TaskInstance: age_check.minus scheduled__2022-12-05T00:00:00+00:00 [running]> on host 242f95e3e8a8
+[2023-05-20T20:55:43.276+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=age_check
+AIRFLOW_CTX_TASK_ID=minus
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-05T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-05T00:00:00+00:00
+[2023-05-20T20:55:43.277+0000] {logging_mixin.py:137} INFO - 3
+[2023-05-20T20:55:43.279+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-05-20T20:55:43.289+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=age_check, task_id=minus, execution_date=20221205T000000, start_date=20230520T205542, end_date=20230520T205543
+[2023-05-20T20:55:43.321+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2023-05-20T20:55:43.345+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check

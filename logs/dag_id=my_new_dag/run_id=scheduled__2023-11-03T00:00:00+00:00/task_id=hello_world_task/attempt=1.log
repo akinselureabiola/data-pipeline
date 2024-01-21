@@ -1,0 +1,28 @@
+[2023-11-04T00:14:54.596+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: my_new_dag.hello_world_task scheduled__2023-11-03T00:00:00+00:00 [queued]>
+[2023-11-04T00:14:54.663+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: my_new_dag.hello_world_task scheduled__2023-11-03T00:00:00+00:00 [queued]>
+[2023-11-04T00:14:54.664+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-04T00:14:54.666+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2023-11-04T00:14:54.672+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-04T00:14:54.833+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): hello_world_task> on 2023-11-03 00:00:00+00:00
+[2023-11-04T00:14:54.983+0000] {standard_task_runner.py:55} INFO - Started process 260010 to run task
+[2023-11-04T00:14:55.060+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'my_new_dag', 'hello_world_task', 'scheduled__2023-11-03T00:00:00+00:00', '--job-id', '5422', '--raw', '--subdir', 'DAGS_FOLDER/new.py', '--cfg-path', '/tmp/tmpz4hp_wx_']
+[2023-11-04T00:14:55.075+0000] {standard_task_runner.py:83} INFO - Job 5422: Subtask hello_world_task
+[2023-11-04T00:14:57.358+0000] {task_command.py:388} INFO - Running <TaskInstance: my_new_dag.hello_world_task scheduled__2023-11-03T00:00:00+00:00 [running]> on host 25f6b46723d1
+[2023-11-04T01:36:47.045+0000] {local_task_job.py:192} ERROR - Heartbeat time limit exceeded!
+[2023-11-04T01:36:49.262+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=my_new_dag
+AIRFLOW_CTX_TASK_ID=hello_world_task
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-03T00:00:00+00:00
+[2023-11-04T01:36:51.154+0000] {new.py:8} INFO - Hello World Desmond
+[2023-11-04T01:36:51.180+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-11-04T01:36:51.435+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=my_new_dag, task_id=hello_world_task, execution_date=20231103T000000, start_date=20231104T001454, end_date=20231104T013651
+[2023-11-04T01:36:50.759+0000] {process_utils.py:133} INFO - Sending Signals.SIGTERM to group 260010. PIDs of all processes in the group: [260010]
+[2023-11-04T01:36:52.116+0000] {process_utils.py:84} INFO - Sending the signal Signals.SIGTERM to group 260010
+[2023-11-04T01:36:52.329+0000] {taskinstance.py:1479} ERROR - Received SIGTERM. Terminating subprocesses.
+[2023-11-04T01:36:53.748+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 5422 for task hello_world_task (Task received SIGTERM signal; 260010)
+[2023-11-04T01:37:01.874+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=260010, status='terminated', exitcode=1, started='00:14:54') (260010) terminated with exit code 1

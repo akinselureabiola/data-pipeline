@@ -1,0 +1,32 @@
+[2023-04-19T13:55:13.717+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: read_s3_bucket.read_object scheduled__2022-10-01T00:00:00+00:00 [queued]>
+[2023-04-19T13:55:13.828+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: read_s3_bucket.read_object scheduled__2022-10-01T00:00:00+00:00 [queued]>
+[2023-04-19T13:55:13.837+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-19T13:55:13.843+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 4
+[2023-04-19T13:55:13.845+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-19T13:55:13.911+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): read_object> on 2022-10-01 00:00:00+00:00
+[2023-04-19T13:55:13.997+0000] {standard_task_runner.py:55} INFO - Started process 32284 to run task
+[2023-04-19T13:55:14.058+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'read_s3_bucket', 'read_object', 'scheduled__2022-10-01T00:00:00+00:00', '--job-id', '3622', '--raw', '--subdir', 'DAGS_FOLDER/read_s3.py', '--cfg-path', '/tmp/tmp_yndpj6h']
+[2023-04-19T13:55:14.061+0000] {standard_task_runner.py:83} INFO - Job 3622: Subtask read_object
+[2023-04-19T13:55:14.622+0000] {task_command.py:388} INFO - Running <TaskInstance: read_s3_bucket.read_object scheduled__2022-10-01T00:00:00+00:00 [running]> on host fe34f61acbb3
+[2023-04-19T13:55:15.830+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=read_s3_bucket
+AIRFLOW_CTX_TASK_ID=read_object
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-10-01T00:00:00+00:00
+[2023-04-19T13:55:15.896+0000] {taskinstance.py:1768} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/read_s3.py", line 26, in read_object
+    df = wr.s3.read_csv(path='s3://staging-kaggle-dataset/olist/olist_customers_dataset.csv',boto3_session=session)
+NameError: name 'session' is not defined
+[2023-04-19T13:55:15.965+0000] {taskinstance.py:1323} INFO - Marking task as UP_FOR_RETRY. dag_id=read_s3_bucket, task_id=read_object, execution_date=20221001T000000, start_date=20230419T135513, end_date=20230419T135515
+[2023-04-19T13:55:15.999+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 3622 for task read_object (name 'session' is not defined; 32284)
+[2023-04-19T13:55:16.239+0000] {local_task_job.py:208} INFO - Task exited with return code 1
+[2023-04-19T13:55:17.017+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

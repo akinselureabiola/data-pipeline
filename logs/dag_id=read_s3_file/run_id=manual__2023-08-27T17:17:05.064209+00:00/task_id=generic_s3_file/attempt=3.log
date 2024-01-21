@@ -1,0 +1,30 @@
+[2023-08-27T17:17:31.090+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: read_s3_file.generic_s3_file manual__2023-08-27T17:17:05.064209+00:00 [queued]>
+[2023-08-27T17:17:31.098+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: read_s3_file.generic_s3_file manual__2023-08-27T17:17:05.064209+00:00 [queued]>
+[2023-08-27T17:17:31.100+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2023-08-27T17:17:31.100+0000] {taskinstance.py:1280} INFO - Starting attempt 3 of 4
+[2023-08-27T17:17:31.101+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2023-08-27T17:17:31.115+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): generic_s3_file> on 2023-08-27 17:17:05.064209+00:00
+[2023-08-27T17:17:31.125+0000] {standard_task_runner.py:55} INFO - Started process 61136 to run task
+[2023-08-27T17:17:31.130+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'read_s3_file', 'generic_s3_file', 'manual__2023-08-27T17:17:05.064209+00:00', '--job-id', '4248', '--raw', '--subdir', 'DAGS_FOLDER/desmond.py', '--cfg-path', '/tmp/tmpg7wxk66y']
+[2023-08-27T17:17:31.131+0000] {standard_task_runner.py:83} INFO - Job 4248: Subtask generic_s3_file
+[2023-08-27T17:17:31.231+0000] {task_command.py:388} INFO - Running <TaskInstance: read_s3_file.generic_s3_file manual__2023-08-27T17:17:05.064209+00:00 [running]> on host 25f6b46723d1
+[2023-08-27T17:17:31.396+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=read_s3_file
+AIRFLOW_CTX_TASK_ID=generic_s3_file
+AIRFLOW_CTX_EXECUTION_DATE=2023-08-27T17:17:05.064209+00:00
+AIRFLOW_CTX_TRY_NUMBER=3
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-08-27T17:17:05.064209+00:00
+[2023-08-27T17:17:31.399+0000] {taskinstance.py:1768} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+TypeError: generic_s3_client() missing 2 required positional arguments: 'ACCESS_KEY' and 'SECRET_KEY'
+[2023-08-27T17:17:31.410+0000] {taskinstance.py:1323} INFO - Marking task as UP_FOR_RETRY. dag_id=read_s3_file, task_id=generic_s3_file, execution_date=20230827T171705, start_date=20230827T171731, end_date=20230827T171731
+[2023-08-27T17:17:31.425+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 4248 for task generic_s3_file (generic_s3_client() missing 2 required positional arguments: 'ACCESS_KEY' and 'SECRET_KEY'; 61136)
+[2023-08-27T17:17:31.471+0000] {local_task_job.py:208} INFO - Task exited with return code 1
+[2023-08-27T17:17:31.511+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

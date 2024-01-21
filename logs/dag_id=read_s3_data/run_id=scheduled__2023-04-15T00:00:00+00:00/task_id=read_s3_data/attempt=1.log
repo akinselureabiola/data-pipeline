@@ -1,0 +1,60 @@
+[2023-12-17T20:03:28.599+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: read_s3_data.read_s3_data scheduled__2023-04-15T00:00:00+00:00 [queued]>
+[2023-12-17T20:03:28.673+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: read_s3_data.read_s3_data scheduled__2023-04-15T00:00:00+00:00 [queued]>
+[2023-12-17T20:03:28.675+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 4
+[2023-12-17T20:03:28.708+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): read_s3_data> on 2023-04-15 00:00:00+00:00
+[2023-12-17T20:03:28.750+0000] {standard_task_runner.py:57} INFO - Started process 241 to run task
+[2023-12-17T20:03:28.817+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'read_s3_data', 'read_s3_data', 'scheduled__2023-04-15T00:00:00+00:00', '--job-id', '7206', '--raw', '--subdir', 'DAGS_FOLDER/read.py', '--cfg-path', '/tmp/tmpqwosaxvv']
+[2023-12-17T20:03:28.835+0000] {standard_task_runner.py:85} INFO - Job 7206: Subtask read_s3_data
+[2023-12-17T20:03:29.033+0000] {task_command.py:415} INFO - Running <TaskInstance: read_s3_data.read_s3_data scheduled__2023-04-15T00:00:00+00:00 [running]> on host 533efb53d454
+[2023-12-17T20:03:29.268+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='read_s3_data' AIRFLOW_CTX_TASK_ID='read_s3_data' AIRFLOW_CTX_EXECUTION_DATE='2023-04-15T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-04-15T00:00:00+00:00'
+[2023-12-17T20:03:29.272+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: generic_s3_clients() missing 2 required positional arguments: 'ACCESS_KEY' and 'SECRET_KEY'
+[2023-12-17T20:03:29.309+0000] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=read_s3_data, task_id=read_s3_data, execution_date=20230415T000000, start_date=20231217T200328, end_date=20231217T200329
+[2023-12-17T20:03:29.340+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 7206 for task read_s3_data (generic_s3_clients() missing 2 required positional arguments: 'ACCESS_KEY' and 'SECRET_KEY'; 241)
+[2023-12-17T20:03:29.403+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-12-17T20:03:29.460+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-01-20T14:53:04.243+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: read_s3_data.read_s3_data scheduled__2023-04-15T00:00:00+00:00 [queued]>
+[2024-01-20T14:53:04.273+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: read_s3_data.read_s3_data scheduled__2023-04-15T00:00:00+00:00 [queued]>
+[2024-01-20T14:53:04.277+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 4
+[2024-01-20T14:53:04.357+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): read_s3_data> on 2023-04-15 00:00:00+00:00
+[2024-01-20T14:53:04.394+0000] {standard_task_runner.py:57} INFO - Started process 62590 to run task
+[2024-01-20T14:53:04.433+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'read_s3_data', 'read_s3_data', 'scheduled__2023-04-15T00:00:00+00:00', '--job-id', '1396', '--raw', '--subdir', 'DAGS_FOLDER/read.py', '--cfg-path', '/tmp/tmp1vxdj0vp']
+[2024-01-20T14:53:04.451+0000] {standard_task_runner.py:85} INFO - Job 1396: Subtask read_s3_data
+[2024-01-20T14:53:04.627+0000] {task_command.py:415} INFO - Running <TaskInstance: read_s3_data.read_s3_data scheduled__2023-04-15T00:00:00+00:00 [running]> on host dbb3489df186
+[2024-01-20T14:53:05.006+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='read_s3_data' AIRFLOW_CTX_TASK_ID='read_s3_data' AIRFLOW_CTX_EXECUTION_DATE='2023-04-15T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-04-15T00:00:00+00:00'
+[2024-01-20T14:54:33.698+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/read.py", line 40, in read_s3_file
+    cnxn = create_engine("postgresql+psycopg2://staging_db:DnrbWdUcaZxyIc7v:5432/main")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in create_engine
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/util/deprecations.py", line 375, in warned
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/create.py", line 514, in create_engine
+    u = _url.make_url(url)
+        ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/url.py", line 738, in make_url
+    return _parse_url(name_or_url)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/url.py", line 794, in _parse_url
+    components["port"] = int(components["port"])
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'DnrbWdUcaZxyIc7v:5432'
+[2024-01-20T14:54:33.730+0000] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=read_s3_data, task_id=read_s3_data, execution_date=20230415T000000, start_date=20240120T145304, end_date=20240120T145433
+[2024-01-20T14:54:33.749+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 1396 for task read_s3_data (invalid literal for int() with base 10: 'DnrbWdUcaZxyIc7v:5432'; 62590)
+[2024-01-20T14:54:33.789+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-01-20T14:54:33.826+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

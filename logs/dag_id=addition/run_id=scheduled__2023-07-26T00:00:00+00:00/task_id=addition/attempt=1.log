@@ -1,0 +1,16 @@
+[2023-07-27T01:14:36.989+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: addition.addition scheduled__2023-07-26T00:00:00+00:00 [queued]>
+[2023-07-27T01:14:37.068+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: addition.addition scheduled__2023-07-26T00:00:00+00:00 [queued]>
+[2023-07-27T01:14:37.079+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-27T01:14:37.089+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 4
+[2023-07-27T01:14:37.090+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-27T01:14:37.206+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): addition> on 2023-07-26 00:00:00+00:00
+[2023-07-27T01:14:37.273+0000] {standard_task_runner.py:55} INFO - Started process 15066 to run task
+[2023-07-27T01:14:37.351+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'addition', 'addition', 'scheduled__2023-07-26T00:00:00+00:00', '--job-id', '3835', '--raw', '--subdir', 'DAGS_FOLDER/mayor.py', '--cfg-path', '/tmp/tmp_s3v2aq4']
+[2023-07-27T01:14:37.354+0000] {standard_task_runner.py:83} INFO - Job 3835: Subtask addition
+[2023-07-27T01:14:57.015+0000] {task_command.py:388} INFO - Running <TaskInstance: addition.addition scheduled__2023-07-26T00:00:00+00:00 [running]> on host 25f6b46723d1
+[2023-07-27T02:19:39.242+0000] {local_task_job.py:192} ERROR - Heartbeat time limit exceeded!
+[2023-07-27T02:19:39.577+0000] {process_utils.py:133} INFO - Sending Signals.SIGTERM to group 15066. PIDs of all processes in the group: [15066]
+[2023-07-27T02:19:39.587+0000] {process_utils.py:84} INFO - Sending the signal Signals.SIGTERM to group 15066
+[2023-07-27T02:19:41.256+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=15066, status='terminated', exitcode=<Negsignal.SIGTERM: -15>, started='01:14:37') (15066) terminated with exit code Negsignal.SIGTERM

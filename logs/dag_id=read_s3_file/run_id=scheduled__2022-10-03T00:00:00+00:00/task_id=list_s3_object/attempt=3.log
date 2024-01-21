@@ -1,0 +1,22 @@
+[2023-12-24T17:37:25.007+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: read_s3_file.list_s3_object scheduled__2022-10-03T00:00:00+00:00 [queued]>
+[2023-12-24T17:37:25.016+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: read_s3_file.list_s3_object scheduled__2022-10-03T00:00:00+00:00 [queued]>
+[2023-12-24T17:37:25.017+0000] {taskinstance.py:1359} INFO - Starting attempt 3 of 4
+[2023-12-24T17:37:25.028+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): list_s3_object> on 2022-10-03 00:00:00+00:00
+[2023-12-24T17:37:25.038+0000] {standard_task_runner.py:57} INFO - Started process 1896 to run task
+[2023-12-24T17:37:25.042+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'read_s3_file', 'list_s3_object', 'scheduled__2022-10-03T00:00:00+00:00', '--job-id', '588', '--raw', '--subdir', 'DAGS_FOLDER/desmond.py', '--cfg-path', '/tmp/tmpe82a5evt']
+[2023-12-24T17:37:25.044+0000] {standard_task_runner.py:85} INFO - Job 588: Subtask list_s3_object
+[2023-12-24T17:37:25.097+0000] {task_command.py:415} INFO - Running <TaskInstance: read_s3_file.list_s3_object scheduled__2022-10-03T00:00:00+00:00 [running]> on host dbb3489df186
+[2023-12-24T17:37:25.163+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='read_s3_file' AIRFLOW_CTX_TASK_ID='list_s3_object' AIRFLOW_CTX_EXECUTION_DATE='2022-10-03T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2022-10-03T00:00:00+00:00'
+[2023-12-24T17:37:25.167+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: list_s3_object() missing 4 required positional arguments: 'bucket_name', 'bucket_prefix', 'aws_access_key_id', and 'aws_secret_access_key'
+[2023-12-24T17:37:25.176+0000] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=read_s3_file, task_id=list_s3_object, execution_date=20221003T000000, start_date=20231224T173725, end_date=20231224T173725
+[2023-12-24T17:37:25.187+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 588 for task list_s3_object (list_s3_object() missing 4 required positional arguments: 'bucket_name', 'bucket_prefix', 'aws_access_key_id', and 'aws_secret_access_key'; 1896)
+[2023-12-24T17:37:25.216+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-12-24T17:37:25.235+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

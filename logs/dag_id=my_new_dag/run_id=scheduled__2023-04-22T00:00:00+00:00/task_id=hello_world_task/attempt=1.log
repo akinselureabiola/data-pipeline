@@ -1,0 +1,48 @@
+[2023-04-25T15:40:25.946+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: my_new_dag.hello_world_task scheduled__2023-04-22T00:00:00+00:00 [queued]>
+[2023-04-25T15:40:25.958+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: my_new_dag.hello_world_task scheduled__2023-04-22T00:00:00+00:00 [queued]>
+[2023-04-25T15:40:25.959+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-25T15:40:25.965+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2023-04-25T15:40:25.966+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-25T15:40:25.990+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): hello_world_task> on 2023-04-22 00:00:00+00:00
+[2023-04-25T15:40:25.999+0000] {standard_task_runner.py:55} INFO - Started process 26201 to run task
+[2023-04-25T15:40:26.004+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'my_new_dag', 'hello_world_task', 'scheduled__2023-04-22T00:00:00+00:00', '--job-id', '4593', '--raw', '--subdir', 'DAGS_FOLDER/new.py', '--cfg-path', '/tmp/tmphe2abrq6']
+[2023-04-25T15:40:26.007+0000] {standard_task_runner.py:83} INFO - Job 4593: Subtask hello_world_task
+[2023-04-25T15:40:26.118+0000] {task_command.py:388} INFO - Running <TaskInstance: my_new_dag.hello_world_task scheduled__2023-04-22T00:00:00+00:00 [running]> on host fe34f61acbb3
+[2023-04-25T15:40:26.200+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=my_new_dag
+AIRFLOW_CTX_TASK_ID=hello_world_task
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-22T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-04-22T00:00:00+00:00
+[2023-04-25T15:40:26.210+0000] {new.py:8} INFO - Hello World Desmond
+[2023-04-25T15:40:26.212+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-04-25T15:40:26.234+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=my_new_dag, task_id=hello_world_task, execution_date=20230422T000000, start_date=20230425T154025, end_date=20230425T154026
+[2023-04-25T15:40:26.272+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2023-04-25T15:40:26.292+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-05-04T17:32:56.298+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: my_new_dag.hello_world_task scheduled__2023-04-22T00:00:00+00:00 [queued]>
+[2023-05-04T17:32:56.324+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: my_new_dag.hello_world_task scheduled__2023-04-22T00:00:00+00:00 [queued]>
+[2023-05-04T17:32:56.330+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-04T17:32:56.332+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2023-05-04T17:32:56.333+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-04T17:32:56.380+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): hello_world_task> on 2023-04-22 00:00:00+00:00
+[2023-05-04T17:32:56.397+0000] {standard_task_runner.py:55} INFO - Started process 345 to run task
+[2023-05-04T17:32:56.423+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'my_new_dag', 'hello_world_task', 'scheduled__2023-04-22T00:00:00+00:00', '--job-id', '97', '--raw', '--subdir', 'DAGS_FOLDER/new.py', '--cfg-path', '/tmp/tmpzdt_upr1']
+[2023-05-04T17:32:56.425+0000] {standard_task_runner.py:83} INFO - Job 97: Subtask hello_world_task
+[2023-05-04T17:32:56.578+0000] {task_command.py:388} INFO - Running <TaskInstance: my_new_dag.hello_world_task scheduled__2023-04-22T00:00:00+00:00 [running]> on host 7cb0501374e0
+[2023-05-04T17:32:56.719+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=my_new_dag
+AIRFLOW_CTX_TASK_ID=hello_world_task
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-22T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-04-22T00:00:00+00:00
+[2023-05-04T17:32:56.722+0000] {new.py:8} INFO - Hello World Desmond
+[2023-05-04T17:32:56.723+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-05-04T17:32:56.742+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=my_new_dag, task_id=hello_world_task, execution_date=20230422T000000, start_date=20230504T173256, end_date=20230504T173256
+[2023-05-04T17:32:56.838+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2023-05-04T17:32:56.924+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

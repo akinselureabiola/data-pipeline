@@ -1,0 +1,24 @@
+[2023-07-15T00:37:55.047+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: my_mulitiplication.add scheduled__2023-07-14T00:00:00+00:00 [queued]>
+[2023-07-15T00:37:55.063+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: my_mulitiplication.add scheduled__2023-07-14T00:00:00+00:00 [queued]>
+[2023-07-15T00:37:55.070+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-15T00:37:55.072+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 4
+[2023-07-15T00:37:55.073+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-15T00:37:55.123+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): add> on 2023-07-14 00:00:00+00:00
+[2023-07-15T00:37:55.136+0000] {standard_task_runner.py:55} INFO - Started process 22442 to run task
+[2023-07-15T00:37:55.152+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'my_mulitiplication', 'add', 'scheduled__2023-07-14T00:00:00+00:00', '--job-id', '3689', '--raw', '--subdir', 'DAGS_FOLDER/new_dag.py', '--cfg-path', '/tmp/tmpgjp_mhgk']
+[2023-07-15T00:37:55.165+0000] {standard_task_runner.py:83} INFO - Job 3689: Subtask add
+[2023-07-15T00:37:55.344+0000] {task_command.py:388} INFO - Running <TaskInstance: my_mulitiplication.add scheduled__2023-07-14T00:00:00+00:00 [running]> on host 25f6b46723d1
+[2023-07-15T00:37:55.512+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=my_mulitiplication
+AIRFLOW_CTX_TASK_ID=add
+AIRFLOW_CTX_EXECUTION_DATE=2023-07-14T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-07-14T00:00:00+00:00
+[2023-07-15T00:37:55.516+0000] {logging_mixin.py:137} INFO - 75
+[2023-07-15T00:37:55.520+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-07-15T00:37:55.538+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=my_mulitiplication, task_id=add, execution_date=20230714T000000, start_date=20230715T003755, end_date=20230715T003755
+[2023-07-15T00:37:55.618+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2023-07-15T00:37:55.650+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

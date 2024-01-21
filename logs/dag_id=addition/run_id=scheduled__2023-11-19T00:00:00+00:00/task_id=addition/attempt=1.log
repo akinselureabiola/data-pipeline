@@ -1,0 +1,15 @@
+[2023-11-20T02:45:00.667+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: addition.addition scheduled__2023-11-19T00:00:00+00:00 [queued]>
+[2023-11-20T02:45:01.360+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: addition.addition scheduled__2023-11-19T00:00:00+00:00 [queued]>
+[2023-11-20T02:45:01.366+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-20T02:45:01.408+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 4
+[2023-11-20T02:45:01.455+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-20T02:45:02.109+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): addition> on 2023-11-19 00:00:00+00:00
+[2023-11-20T02:45:05.143+0000] {standard_task_runner.py:55} INFO - Started process 168839 to run task
+[2023-11-20T02:45:07.205+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'addition', 'addition', 'scheduled__2023-11-19T00:00:00+00:00', '--job-id', '5736', '--raw', '--subdir', 'DAGS_FOLDER/mayor.py', '--cfg-path', '/tmp/tmp6zhpxbcx']
+[2023-11-20T02:45:08.300+0000] {standard_task_runner.py:83} INFO - Job 5736: Subtask addition
+[2023-11-20T04:06:36.376+0000] {local_task_job.py:273} WARNING - State of this instance has been externally set to queued. Terminating instance.
+[2023-11-20T04:06:39.340+0000] {process_utils.py:133} INFO - Sending Signals.SIGTERM to group 168839. PIDs of all processes in the group: [168839]
+[2023-11-20T04:06:40.229+0000] {process_utils.py:84} INFO - Sending the signal Signals.SIGTERM to group 168839
+[2023-11-20T04:06:49.529+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=168839, status='terminated', exitcode=<Negsignal.SIGTERM: -15>, started='02:45:04') (168839) terminated with exit code Negsignal.SIGTERM

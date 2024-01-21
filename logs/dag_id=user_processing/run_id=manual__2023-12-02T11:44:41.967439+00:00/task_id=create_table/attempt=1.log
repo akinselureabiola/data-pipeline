@@ -1,0 +1,52 @@
+[2023-12-02T11:44:43.437+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: user_processing.create_table manual__2023-12-02T11:44:41.967439+00:00 [queued]>
+[2023-12-02T11:44:43.445+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: user_processing.create_table manual__2023-12-02T11:44:41.967439+00:00 [queued]>
+[2023-12-02T11:44:43.446+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2023-12-02T11:44:43.447+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2023-12-02T11:44:43.448+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2023-12-02T11:44:43.461+0000] {taskinstance.py:1300} INFO - Executing <Task(PostgresOperator): create_table> on 2023-12-02 11:44:41.967439+00:00
+[2023-12-02T11:44:43.471+0000] {standard_task_runner.py:55} INFO - Started process 100 to run task
+[2023-12-02T11:44:43.477+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'user_processing', 'create_table', 'manual__2023-12-02T11:44:41.967439+00:00', '--job-id', '5970', '--raw', '--subdir', 'DAGS_FOLDER/extract.py', '--cfg-path', '/tmp/tmp7m8_ujro']
+[2023-12-02T11:44:43.481+0000] {standard_task_runner.py:83} INFO - Job 5970: Subtask create_table
+[2023-12-02T11:44:43.555+0000] {task_command.py:388} INFO - Running <TaskInstance: user_processing.create_table manual__2023-12-02T11:44:41.967439+00:00 [running]> on host 25f6b46723d1
+[2023-12-02T11:44:43.630+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=user_processing
+AIRFLOW_CTX_TASK_ID=create_table
+AIRFLOW_CTX_EXECUTION_DATE=2023-12-02T11:44:41.967439+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-12-02T11:44:41.967439+00:00
+[2023-12-02T11:44:43.633+0000] {sql.py:254} INFO - Executing: 
+            CREATE TABLE IF NOT EXISTS users (
+                firstname TEXT NOT NULL,
+                lastname TEXT NOT NULL,
+                country TEXT NOT NULL,
+                username TEXT NOT NULL,
+                password TEXT NOT NULL,
+                email TEXT NOT NULL
+            );
+        
+[2023-12-02T11:44:43.647+0000] {base.py:73} INFO - Using connection ID 'postgres' for task execution.
+[2023-12-02T11:44:43.838+0000] {base.py:73} INFO - Using connection ID 'postgres' for task execution.
+[2023-12-02T11:44:43.840+0000] {taskinstance.py:1768} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 266, in execute
+    **extra_kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/hooks/sql.py", line 342, in run
+    with closing(self.get_conn()) as conn:
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/hooks/postgres.py", line 144, in get_conn
+    self.conn = psycopg2.connect(**conn_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+
+[2023-12-02T11:44:43.851+0000] {taskinstance.py:1323} INFO - Marking task as FAILED. dag_id=user_processing, task_id=create_table, execution_date=20231202T114441, start_date=20231202T114443, end_date=20231202T114443
+[2023-12-02T11:44:43.867+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 5970 for task create_table (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+; 100)
+[2023-12-02T11:44:43.903+0000] {local_task_job.py:208} INFO - Task exited with return code 1
+[2023-12-02T11:44:43.919+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

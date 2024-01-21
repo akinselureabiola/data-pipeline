@@ -1,0 +1,26 @@
+[2023-11-26T04:07:00.934+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: age_check.multiplication scheduled__2023-11-25T00:00:00+00:00 [queued]>
+[2023-11-26T04:07:03.442+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: age_check.multiplication scheduled__2023-11-25T00:00:00+00:00 [queued]>
+[2023-11-26T04:07:03.616+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26T04:07:03.618+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 4
+[2023-11-26T04:07:03.620+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26T04:07:07.210+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): multiplication> on 2023-11-25 00:00:00+00:00
+[2023-11-26T05:26:06.208+0000] {standard_task_runner.py:55} INFO - Started process 231191 to run task
+[2023-11-26T05:26:07.818+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'age_check', 'multiplication', 'scheduled__2023-11-25T00:00:00+00:00', '--job-id', '5848', '--raw', '--subdir', 'DAGS_FOLDER/age.py', '--cfg-path', '/tmp/tmpougbldik']
+[2023-11-26T05:26:07.987+0000] {standard_task_runner.py:83} INFO - Job 5848: Subtask multiplication
+[2023-11-26T05:26:14.507+0000] {task_command.py:388} INFO - Running <TaskInstance: age_check.multiplication scheduled__2023-11-25T00:00:00+00:00 [running]> on host 25f6b46723d1
+[2023-11-26T05:26:28.778+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=age_check
+AIRFLOW_CTX_TASK_ID=multiplication
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-25T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-25T00:00:00+00:00
+[2023-11-26T06:50:15.481+0000] {logging_mixin.py:137} INFO - 25
+[2023-11-26T06:50:15.497+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-11-26T06:50:20.374+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=age_check, task_id=multiplication, execution_date=20231125T000000, start_date=20231126T040701, end_date=20231126T065020
+[2023-11-26T06:50:34.333+0000] {local_task_job.py:273} WARNING - State of this instance has been externally set to up_for_retry. Terminating instance.
+[2023-11-26T06:50:34.623+0000] {process_utils.py:133} INFO - Sending Signals.SIGTERM to group 231191. PIDs of all processes in the group: [231191]
+[2023-11-26T06:50:34.625+0000] {process_utils.py:84} INFO - Sending the signal Signals.SIGTERM to group 231191
+[2023-11-26T06:50:34.641+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=231191, status='terminated', exitcode=0, started='05:26:05') (231191) terminated with exit code 0

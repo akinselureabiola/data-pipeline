@@ -1,0 +1,24 @@
+[2023-05-27T00:16:34.840+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: age_check.minus scheduled__2023-05-26T00:00:00+00:00 [queued]>
+[2023-05-27T00:16:34.848+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: age_check.minus scheduled__2023-05-26T00:00:00+00:00 [queued]>
+[2023-05-27T00:16:34.849+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-27T00:16:34.851+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 4
+[2023-05-27T00:16:34.851+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-27T00:16:34.862+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): minus> on 2023-05-26 00:00:00+00:00
+[2023-05-27T00:16:34.866+0000] {standard_task_runner.py:55} INFO - Started process 18755 to run task
+[2023-05-27T00:16:34.870+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'age_check', 'minus', 'scheduled__2023-05-26T00:00:00+00:00', '--job-id', '2129', '--raw', '--subdir', 'DAGS_FOLDER/age.py', '--cfg-path', '/tmp/tmpxzsh6dga']
+[2023-05-27T00:16:34.871+0000] {standard_task_runner.py:83} INFO - Job 2129: Subtask minus
+[2023-05-27T00:16:34.949+0000] {task_command.py:388} INFO - Running <TaskInstance: age_check.minus scheduled__2023-05-26T00:00:00+00:00 [running]> on host 242f95e3e8a8
+[2023-05-27T00:16:35.020+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=age_check
+AIRFLOW_CTX_TASK_ID=minus
+AIRFLOW_CTX_EXECUTION_DATE=2023-05-26T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-05-26T00:00:00+00:00
+[2023-05-27T00:16:35.021+0000] {logging_mixin.py:137} INFO - 3
+[2023-05-27T00:16:35.022+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-05-27T00:16:35.031+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=age_check, task_id=minus, execution_date=20230526T000000, start_date=20230527T001634, end_date=20230527T001635
+[2023-05-27T00:16:35.082+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2023-05-27T00:16:35.109+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check

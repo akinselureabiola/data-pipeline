@@ -1,0 +1,80 @@
+[2023-12-17T15:32:06.825+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: read_s3_data.read_s3_data scheduled__2022-10-19T00:00:00+00:00 [queued]>
+[2023-12-17T15:32:06.845+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: read_s3_data.read_s3_data scheduled__2022-10-19T00:00:00+00:00 [queued]>
+[2023-12-17T15:32:06.847+0000] {taskinstance.py:1359} INFO - Starting attempt 2 of 4
+[2023-12-17T15:32:06.892+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): read_s3_data> on 2022-10-19 00:00:00+00:00
+[2023-12-17T15:32:06.982+0000] {standard_task_runner.py:57} INFO - Started process 27157 to run task
+[2023-12-17T15:32:07.034+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'read_s3_data', 'read_s3_data', 'scheduled__2022-10-19T00:00:00+00:00', '--job-id', '6625', '--raw', '--subdir', 'DAGS_FOLDER/read.py', '--cfg-path', '/tmp/tmp_5i1y35e']
+[2023-12-17T15:32:07.080+0000] {standard_task_runner.py:85} INFO - Job 6625: Subtask read_s3_data
+[2023-12-17T15:32:07.274+0000] {task_command.py:415} INFO - Running <TaskInstance: read_s3_data.read_s3_data scheduled__2022-10-19T00:00:00+00:00 [running]> on host 533efb53d454
+[2023-12-17T15:32:07.477+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='read_s3_data' AIRFLOW_CTX_TASK_ID='read_s3_data' AIRFLOW_CTX_EXECUTION_DATE='2022-10-19T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2022-10-19T00:00:00+00:00'
+[2023-12-17T15:32:07.480+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: generic_s3_clients() missing 2 required positional arguments: 'ACCESS_KEY' and 'SECRET_KEY'
+[2023-12-17T15:32:07.495+0000] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=read_s3_data, task_id=read_s3_data, execution_date=20221019T000000, start_date=20231217T153206, end_date=20231217T153207
+[2023-12-17T15:32:07.509+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 6625 for task read_s3_data (generic_s3_clients() missing 2 required positional arguments: 'ACCESS_KEY' and 'SECRET_KEY'; 27157)
+[2023-12-17T15:32:07.615+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-12-17T15:32:07.727+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-12-24T17:12:46.669+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: read_s3_data.read_s3_data scheduled__2022-10-19T00:00:00+00:00 [queued]>
+[2023-12-24T17:12:46.684+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: read_s3_data.read_s3_data scheduled__2022-10-19T00:00:00+00:00 [queued]>
+[2023-12-24T17:12:46.687+0000] {taskinstance.py:1359} INFO - Starting attempt 2 of 4
+[2023-12-24T17:12:46.706+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): read_s3_data> on 2022-10-19 00:00:00+00:00
+[2023-12-24T17:12:46.726+0000] {standard_task_runner.py:57} INFO - Started process 265 to run task
+[2023-12-24T17:12:46.731+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'read_s3_data', 'read_s3_data', 'scheduled__2022-10-19T00:00:00+00:00', '--job-id', '274', '--raw', '--subdir', 'DAGS_FOLDER/read.py', '--cfg-path', '/tmp/tmpy4b4qlk6']
+[2023-12-24T17:12:46.736+0000] {standard_task_runner.py:85} INFO - Job 274: Subtask read_s3_data
+[2023-12-24T17:12:46.899+0000] {task_command.py:415} INFO - Running <TaskInstance: read_s3_data.read_s3_data scheduled__2022-10-19T00:00:00+00:00 [running]> on host dbb3489df186
+[2023-12-24T17:12:47.148+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='read_s3_data' AIRFLOW_CTX_TASK_ID='read_s3_data' AIRFLOW_CTX_EXECUTION_DATE='2022-10-19T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2022-10-19T00:00:00+00:00'
+[2023-12-24T17:13:03.893+0000] {local_task_job_runner.py:294} WARNING - State of this instance has been externally set to queued. Terminating instance.
+[2023-12-24T17:13:04.012+0000] {process_utils.py:131} INFO - Sending 15 to group 265. PIDs of all processes in the group: [265]
+[2023-12-24T17:13:04.159+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 265
+[2023-12-24T17:13:04.182+0000] {taskinstance.py:1630} ERROR - Received SIGTERM. Terminating subprocesses.
+[2023-12-24T17:13:04.314+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/read.py", line 32, in read_s3_file
+    df = wr.s3.read_csv(path='s3://staging-olist/customer/olist_customers_dataset.csv', boto3_session=session)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/awswrangler/_utils.py", line 176, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/awswrangler/s3/_read_text.py", line 293, in read_csv
+    return _read_text_format(
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/awswrangler/s3/_read_text.py", line 132, in _read_text_format
+    return _read_text(
+           ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/awswrangler/_distributed.py", line 105, in wrapper
+    return cls.dispatch_func(func)(*args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/awswrangler/s3/_read_text.py", line 58, in _read_text
+    tables = executor.map(
+             ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/awswrangler/_executor.py", line 51, in map
+    return list(self._exec.map(func, *iterables))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/concurrent/futures/_base.py", line 451, in result
+    self._condition.wait(timeout)
+  File "/usr/local/lib/python3.11/threading.py", line 320, in wait
+    waiter.acquire()
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 1632, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2023-12-24T17:13:04.556+0000] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=read_s3_data, task_id=read_s3_data, execution_date=20221019T000000, start_date=20231224T171246, end_date=20231224T171304
+[2023-12-24T17:13:04.829+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 274 for task read_s3_data (Task received SIGTERM signal; 265)
+[2023-12-24T17:13:05.146+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=265, status='terminated', exitcode=1, started='17:12:45') (265) terminated with exit code 1

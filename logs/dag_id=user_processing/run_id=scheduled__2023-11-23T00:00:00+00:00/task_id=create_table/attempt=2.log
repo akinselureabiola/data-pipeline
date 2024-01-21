@@ -1,0 +1,20 @@
+[2023-11-24T02:07:38.258+0000] {task_command.py:388} INFO - Running <TaskInstance: user_processing.create_table scheduled__2023-11-23T00:00:00+00:00 [failed]> on host 25f6b46723d1
+[2023-11-24T02:07:42.127+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=user_processing
+AIRFLOW_CTX_TASK_ID=create_table
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-23T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-23T00:00:00+00:00
+[2023-11-24T02:07:42.163+0000] {sql.py:254} INFO - Executing: 
+            CREATE TABLE IF NOT EXISTS users (
+                firstname TEXT NOT NULL,
+                lastname TEXT NOT NULL,
+                country TEXT NOT NULL,
+                username TEXT NOT NULL,
+                password TEXT NOT NULL,
+                email TEXT NOT NULL
+            );
+        
+[2023-11-24T02:07:42.269+0000] {base.py:73} INFO - Using connection ID 'postgres' for task execution.
+[2023-11-24T02:07:44.156+0000] {taskinstance.py:1479} ERROR - Received SIGTERM. Terminating subprocesses.

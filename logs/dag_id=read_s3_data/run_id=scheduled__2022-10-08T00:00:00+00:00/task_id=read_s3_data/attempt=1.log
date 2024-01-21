@@ -1,0 +1,51 @@
+[2023-12-17T15:30:09.984+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: read_s3_data.read_s3_data scheduled__2022-10-08T00:00:00+00:00 [queued]>
+[2023-12-17T15:30:10.168+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: read_s3_data.read_s3_data scheduled__2022-10-08T00:00:00+00:00 [queued]>
+[2023-12-17T15:30:10.182+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 4
+[2023-12-17T15:30:10.940+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): read_s3_data> on 2022-10-08 00:00:00+00:00
+[2023-12-17T15:30:11.534+0000] {standard_task_runner.py:57} INFO - Started process 26830 to run task
+[2023-12-17T15:30:11.668+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'read_s3_data', 'read_s3_data', 'scheduled__2022-10-08T00:00:00+00:00', '--job-id', '6547', '--raw', '--subdir', 'DAGS_FOLDER/read.py', '--cfg-path', '/tmp/tmpf1myoehx']
+[2023-12-17T15:30:11.705+0000] {standard_task_runner.py:85} INFO - Job 6547: Subtask read_s3_data
+[2023-12-17T15:30:12.796+0000] {task_command.py:415} INFO - Running <TaskInstance: read_s3_data.read_s3_data scheduled__2022-10-08T00:00:00+00:00 [running]> on host 533efb53d454
+[2023-12-17T15:30:14.282+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='read_s3_data' AIRFLOW_CTX_TASK_ID='read_s3_data' AIRFLOW_CTX_EXECUTION_DATE='2022-10-08T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2022-10-08T00:00:00+00:00'
+[2023-12-17T15:30:14.299+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: generic_s3_clients() missing 2 required positional arguments: 'ACCESS_KEY' and 'SECRET_KEY'
+[2023-12-17T15:30:14.405+0000] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=read_s3_data, task_id=read_s3_data, execution_date=20221008T000000, start_date=20231217T153010, end_date=20231217T153014
+[2023-12-17T15:30:14.588+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 6547 for task read_s3_data (generic_s3_clients() missing 2 required positional arguments: 'ACCESS_KEY' and 'SECRET_KEY'; 26830)
+[2023-12-17T15:30:14.927+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-12-17T15:30:15.018+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-12-24T17:05:28.159+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: read_s3_data.read_s3_data scheduled__2022-10-08T00:00:00+00:00 [queued]>
+[2023-12-24T17:05:28.181+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: read_s3_data.read_s3_data scheduled__2022-10-08T00:00:00+00:00 [queued]>
+[2023-12-24T17:05:28.188+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 4
+[2023-12-24T17:05:28.223+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): read_s3_data> on 2022-10-08 00:00:00+00:00
+[2023-12-24T17:05:28.271+0000] {standard_task_runner.py:57} INFO - Started process 1103 to run task
+[2023-12-24T17:05:28.284+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'read_s3_data', 'read_s3_data', 'scheduled__2022-10-08T00:00:00+00:00', '--job-id', '222', '--raw', '--subdir', 'DAGS_FOLDER/read.py', '--cfg-path', '/tmp/tmpsktahv0d']
+[2023-12-24T17:05:28.291+0000] {standard_task_runner.py:85} INFO - Job 222: Subtask read_s3_data
+[2023-12-24T17:05:28.474+0000] {task_command.py:415} INFO - Running <TaskInstance: read_s3_data.read_s3_data scheduled__2022-10-08T00:00:00+00:00 [running]> on host 37dc6044b459
+[2023-12-24T17:05:28.702+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='read_s3_data' AIRFLOW_CTX_TASK_ID='read_s3_data' AIRFLOW_CTX_EXECUTION_DATE='2022-10-08T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2022-10-08T00:00:00+00:00'
+[2023-12-24T17:06:33.487+0000] {python.py:194} INFO - Done. Returned value was:                             customer_id  ... customer_state
+0      06b8999e2fba1a1fbc88172c00ba8bc7  ...             SP
+1      18955e83d337fd6b2def6b18a428ac77  ...             SP
+2      4e7b3e00288586ebd08712fdd0374a03  ...             SP
+3      b2b6027bc5c5109e529d4dc6358b12c3  ...             SP
+4      4f2d8ab171c80ec8364f7c12e35b23ad  ...             SP
+...                                 ...  ...            ...
+99436  17ddf5dd5d51696bb3d7c6291687be6f  ...             SP
+99437  e7b71a9017aa05c9a7fd292d714858e8  ...             SP
+99438  5e28dfe12db7fb50a4b2f691faecea5e  ...             CE
+99439  56b18e2166679b8a959d72dd06da27f9  ...             RS
+99440  274fa6071e5e17fe303b9748641082c8  ...             SP
+
+[99441 rows x 5 columns]
+[2023-12-24T17:06:33.915+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.11/site-packages/pyarrow/pandas_compat.py:373: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
+  if _pandas_api.is_sparse(col):
+
+[2023-12-24T17:06:36.468+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=read_s3_data, task_id=read_s3_data, execution_date=20221008T000000, start_date=20231224T170528, end_date=20231224T170636
+[2023-12-24T17:06:36.555+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-24T17:06:36.646+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

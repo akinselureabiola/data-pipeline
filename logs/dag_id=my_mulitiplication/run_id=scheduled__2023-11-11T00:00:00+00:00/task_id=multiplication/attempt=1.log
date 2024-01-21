@@ -1,0 +1,24 @@
+[2023-11-12T00:09:13.452+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: my_mulitiplication.multiplication scheduled__2023-11-11T00:00:00+00:00 [queued]>
+[2023-11-12T00:09:13.468+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: my_mulitiplication.multiplication scheduled__2023-11-11T00:00:00+00:00 [queued]>
+[2023-11-12T00:09:13.470+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-12T00:09:13.471+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 4
+[2023-11-12T00:09:13.471+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-12T00:09:13.491+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): multiplication> on 2023-11-11 00:00:00+00:00
+[2023-11-12T00:09:13.498+0000] {standard_task_runner.py:55} INFO - Started process 69823 to run task
+[2023-11-12T00:09:13.510+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'my_mulitiplication', 'multiplication', 'scheduled__2023-11-11T00:00:00+00:00', '--job-id', '5599', '--raw', '--subdir', 'DAGS_FOLDER/new_dag.py', '--cfg-path', '/tmp/tmpieotz7x1']
+[2023-11-12T00:09:13.514+0000] {standard_task_runner.py:83} INFO - Job 5599: Subtask multiplication
+[2023-11-12T00:09:13.692+0000] {task_command.py:388} INFO - Running <TaskInstance: my_mulitiplication.multiplication scheduled__2023-11-11T00:00:00+00:00 [running]> on host 25f6b46723d1
+[2023-11-12T00:09:13.957+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=my_mulitiplication
+AIRFLOW_CTX_TASK_ID=multiplication
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-11T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-11T00:00:00+00:00
+[2023-11-12T00:09:13.963+0000] {logging_mixin.py:137} INFO - 16
+[2023-11-12T00:09:13.964+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-11-12T00:09:14.023+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=my_mulitiplication, task_id=multiplication, execution_date=20231111T000000, start_date=20231112T000913, end_date=20231112T000914
+[2023-11-12T00:09:14.195+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2023-11-12T00:09:14.354+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,406 @@
+[2023-06-06T01:01:20.465+0000] {processor.py:153} INFO - Started process (PID=31374) to work on /opt/airflow/dags/redshift.py
+[2023-06-06T01:01:20.466+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/redshift.py for tasks to queue
+[2023-06-06T01:01:20.467+0000] {logging_mixin.py:137} INFO - [2023-06-06T01:01:20.467+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/redshift.py
+[2023-06-06T01:01:20.570+0000] {logging_mixin.py:137} INFO - [2023-06-06T01:01:20.559+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/redshift.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/redshift.py", line 12, in <module>
+    import sql
+ModuleNotFoundError: No module named 'sql'
+[2023-06-06T01:01:20.571+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/redshift.py
+[2023-06-06T01:01:20.610+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/redshift.py took 0.148 seconds
+[2023-06-06T02:41:16.890+0000] {processor.py:153} INFO - Started process (PID=31455) to work on /opt/airflow/dags/redshift.py
+[2023-06-06T02:41:16.892+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/redshift.py for tasks to queue
+[2023-06-06T02:41:16.893+0000] {logging_mixin.py:137} INFO - [2023-06-06T02:41:16.893+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/redshift.py
+[2023-06-06T02:41:17.062+0000] {logging_mixin.py:137} INFO - [2023-06-06T02:41:17.059+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/redshift.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/redshift.py", line 12, in <module>
+    import sql
+ModuleNotFoundError: No module named 'sql'
+[2023-06-06T02:41:17.064+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/redshift.py
+[2023-06-06T02:41:17.091+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/redshift.py took 0.205 seconds
+[2023-06-06T04:18:16.908+0000] {processor.py:153} INFO - Started process (PID=31529) to work on /opt/airflow/dags/redshift.py
+[2023-06-06T04:18:16.911+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/redshift.py for tasks to queue
+[2023-06-06T04:18:16.913+0000] {logging_mixin.py:137} INFO - [2023-06-06T04:18:16.913+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/redshift.py
+[2023-06-06T04:18:17.413+0000] {logging_mixin.py:137} INFO - [2023-06-06T04:18:17.411+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/redshift.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/redshift.py", line 12, in <module>
+    import sql
+ModuleNotFoundError: No module named 'sql'
+[2023-06-06T04:18:17.414+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/redshift.py
+[2023-06-06T04:18:17.431+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/redshift.py took 0.527 seconds
+[2023-06-06T05:42:19.005+0000] {processor.py:153} INFO - Started process (PID=31612) to work on /opt/airflow/dags/redshift.py
+[2023-06-06T05:42:19.008+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/redshift.py for tasks to queue
+[2023-06-06T05:42:19.009+0000] {logging_mixin.py:137} INFO - [2023-06-06T05:42:19.009+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/redshift.py
+[2023-06-06T05:42:19.177+0000] {logging_mixin.py:137} INFO - [2023-06-06T05:42:19.175+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/redshift.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/redshift.py", line 12, in <module>
+    import sql
+ModuleNotFoundError: No module named 'sql'
+[2023-06-06T05:42:19.178+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/redshift.py
+[2023-06-06T05:42:19.203+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/redshift.py took 0.203 seconds
+[2023-06-06T07:23:05.882+0000] {processor.py:153} INFO - Started process (PID=31683) to work on /opt/airflow/dags/redshift.py
+[2023-06-06T07:23:05.884+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/redshift.py for tasks to queue
+[2023-06-06T07:23:05.885+0000] {logging_mixin.py:137} INFO - [2023-06-06T07:23:05.885+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/redshift.py
+[2023-06-06T07:23:05.968+0000] {logging_mixin.py:137} INFO - [2023-06-06T07:23:05.966+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/redshift.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/redshift.py", line 12, in <module>
+    import sql
+ModuleNotFoundError: No module named 'sql'
+[2023-06-06T07:23:05.969+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/redshift.py
+[2023-06-06T07:23:05.984+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/redshift.py took 0.105 seconds
+[2023-06-06T08:10:44.040+0000] {processor.py:153} INFO - Started process (PID=31768) to work on /opt/airflow/dags/redshift.py
+[2023-06-06T08:10:44.042+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/redshift.py for tasks to queue
+[2023-06-06T08:10:44.043+0000] {logging_mixin.py:137} INFO - [2023-06-06T08:10:44.043+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/redshift.py
+[2023-06-06T08:10:44.308+0000] {logging_mixin.py:137} INFO - [2023-06-06T08:10:44.306+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/redshift.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/redshift.py", line 12, in <module>
+    import sql
+ModuleNotFoundError: No module named 'sql'
+[2023-06-06T08:10:44.312+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/redshift.py
+[2023-06-06T08:10:44.332+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/redshift.py took 0.295 seconds
+[2023-06-06T09:33:26.205+0000] {processor.py:153} INFO - Started process (PID=31839) to work on /opt/airflow/dags/redshift.py
+[2023-06-06T09:33:26.213+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/redshift.py for tasks to queue
+[2023-06-06T09:33:26.215+0000] {logging_mixin.py:137} INFO - [2023-06-06T09:33:26.215+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/redshift.py
+[2023-06-06T09:33:26.373+0000] {logging_mixin.py:137} INFO - [2023-06-06T09:33:26.368+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/redshift.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/redshift.py", line 12, in <module>
+    import sql
+ModuleNotFoundError: No module named 'sql'
+[2023-06-06T09:33:26.376+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/redshift.py
+[2023-06-06T09:33:26.405+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/redshift.py took 0.204 seconds
+[2023-06-06T10:12:46.500+0000] {processor.py:153} INFO - Started process (PID=31922) to work on /opt/airflow/dags/redshift.py
+[2023-06-06T10:12:46.502+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/redshift.py for tasks to queue
+[2023-06-06T10:12:46.503+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:12:46.503+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/redshift.py
+[2023-06-06T10:12:46.588+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:12:46.586+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/redshift.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/redshift.py", line 12, in <module>
+    import sql
+ModuleNotFoundError: No module named 'sql'
+[2023-06-06T10:12:46.589+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/redshift.py
+[2023-06-06T10:12:46.606+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/redshift.py took 0.109 seconds
+[2023-06-06T10:13:17.321+0000] {processor.py:153} INFO - Started process (PID=31994) to work on /opt/airflow/dags/redshift.py
+[2023-06-06T10:13:17.323+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/redshift.py for tasks to queue
+[2023-06-06T10:13:17.324+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:13:17.324+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/redshift.py
+[2023-06-06T10:13:17.535+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:13:17.533+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/redshift.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/redshift.py", line 12, in <module>
+    import sql
+ModuleNotFoundError: No module named 'sql'
+[2023-06-06T10:13:17.536+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/redshift.py
+[2023-06-06T10:13:17.551+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/redshift.py took 0.232 seconds
+[2023-06-06T10:13:48.045+0000] {processor.py:153} INFO - Started process (PID=32077) to work on /opt/airflow/dags/redshift.py
+[2023-06-06T10:13:48.047+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/redshift.py for tasks to queue
+[2023-06-06T10:13:48.048+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:13:48.048+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/redshift.py
+[2023-06-06T10:13:48.128+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:13:48.126+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/redshift.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/redshift.py", line 12, in <module>
+    import sql
+ModuleNotFoundError: No module named 'sql'
+[2023-06-06T10:13:48.130+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/redshift.py
+[2023-06-06T10:13:48.145+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/redshift.py took 0.103 seconds
+[2023-06-06T10:14:19.090+0000] {processor.py:153} INFO - Started process (PID=32159) to work on /opt/airflow/dags/redshift.py
+[2023-06-06T10:14:19.092+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/redshift.py for tasks to queue
+[2023-06-06T10:14:19.093+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:14:19.093+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/redshift.py
+[2023-06-06T10:14:19.327+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:14:19.325+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/redshift.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/redshift.py", line 12, in <module>
+    import sql
+ModuleNotFoundError: No module named 'sql'
+[2023-06-06T10:14:19.328+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/redshift.py
+[2023-06-06T10:14:19.344+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/redshift.py took 0.257 seconds
+[2023-06-06T10:14:50.223+0000] {processor.py:153} INFO - Started process (PID=32236) to work on /opt/airflow/dags/redshift.py
+[2023-06-06T10:14:50.225+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/redshift.py for tasks to queue
+[2023-06-06T10:14:50.226+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:14:50.226+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/redshift.py
+[2023-06-06T10:14:50.446+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:14:50.444+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/redshift.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/redshift.py", line 12, in <module>
+    import sql
+ModuleNotFoundError: No module named 'sql'
+[2023-06-06T10:14:50.447+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/redshift.py
+[2023-06-06T10:14:50.462+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/redshift.py took 0.242 seconds
+[2023-06-06T10:15:20.819+0000] {processor.py:153} INFO - Started process (PID=32313) to work on /opt/airflow/dags/redshift.py
+[2023-06-06T10:15:20.821+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/redshift.py for tasks to queue
+[2023-06-06T10:15:20.822+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:15:20.822+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/redshift.py
+[2023-06-06T10:15:21.052+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:15:21.050+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/redshift.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/redshift.py", line 12, in <module>
+    import sql
+ModuleNotFoundError: No module named 'sql'
+[2023-06-06T10:15:21.054+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/redshift.py
+[2023-06-06T10:15:21.070+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/redshift.py took 0.253 seconds
+[2023-06-06T10:15:52.092+0000] {processor.py:153} INFO - Started process (PID=32395) to work on /opt/airflow/dags/redshift.py
+[2023-06-06T10:15:52.095+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/redshift.py for tasks to queue
+[2023-06-06T10:15:52.097+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:15:52.097+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/redshift.py
+[2023-06-06T10:15:52.185+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:15:52.184+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/redshift.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/redshift.py", line 12, in <module>
+    import sql
+ModuleNotFoundError: No module named 'sql'
+[2023-06-06T10:15:52.186+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/redshift.py
+[2023-06-06T10:15:52.204+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/redshift.py took 0.122 seconds
+[2023-06-06T10:24:54.456+0000] {processor.py:153} INFO - Started process (PID=32466) to work on /opt/airflow/dags/redshift.py
+[2023-06-06T10:24:54.458+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/redshift.py for tasks to queue
+[2023-06-06T10:24:54.459+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:24:54.459+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/redshift.py
+[2023-06-06T10:24:54.542+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:24:54.540+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/redshift.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/redshift.py", line 12, in <module>
+    import sql
+ModuleNotFoundError: No module named 'sql'
+[2023-06-06T10:24:54.543+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/redshift.py
+[2023-06-06T10:24:54.708+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/redshift.py took 0.256 seconds
+[2023-06-06T10:25:25.668+0000] {processor.py:153} INFO - Started process (PID=32549) to work on /opt/airflow/dags/redshift.py
+[2023-06-06T10:25:25.670+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/redshift.py for tasks to queue
+[2023-06-06T10:25:25.672+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:25:25.671+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/redshift.py
+[2023-06-06T10:25:25.867+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:25:25.865+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/redshift.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/redshift.py", line 12, in <module>
+    import sql
+ModuleNotFoundError: No module named 'sql'
+[2023-06-06T10:25:25.868+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/redshift.py
+[2023-06-06T10:25:25.882+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/redshift.py took 0.219 seconds
+[2023-06-06T10:25:55.956+0000] {processor.py:153} INFO - Started process (PID=32620) to work on /opt/airflow/dags/redshift.py
+[2023-06-06T10:25:55.959+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/redshift.py for tasks to queue
+[2023-06-06T10:25:55.961+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:25:55.961+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/redshift.py
+[2023-06-06T10:25:56.039+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:25:56.036+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/redshift.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/redshift.py", line 12, in <module>
+    import sql
+ModuleNotFoundError: No module named 'sql'
+[2023-06-06T10:25:56.040+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/redshift.py
+[2023-06-06T10:25:56.057+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/redshift.py took 0.107 seconds
+[2023-06-06T10:26:26.801+0000] {processor.py:153} INFO - Started process (PID=32704) to work on /opt/airflow/dags/redshift.py
+[2023-06-06T10:26:26.803+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/redshift.py for tasks to queue
+[2023-06-06T10:26:26.807+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:26:26.806+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/redshift.py
+[2023-06-06T10:26:27.002+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:26:26.999+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/redshift.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/redshift.py", line 12, in <module>
+    import sql
+ModuleNotFoundError: No module named 'sql'
+[2023-06-06T10:26:27.003+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/redshift.py
+[2023-06-06T10:26:27.018+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/redshift.py took 0.224 seconds
+[2023-06-06T10:26:57.237+0000] {processor.py:153} INFO - Started process (PID=32788) to work on /opt/airflow/dags/redshift.py
+[2023-06-06T10:26:57.239+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/redshift.py for tasks to queue
+[2023-06-06T10:26:57.241+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:26:57.241+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/redshift.py
+[2023-06-06T10:26:57.487+0000] {logging_mixin.py:137} INFO - [2023-06-06T10:26:57.485+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/redshift.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/redshift.py", line 12, in <module>
+    import sql
+ModuleNotFoundError: No module named 'sql'
+[2023-06-06T10:26:57.488+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/redshift.py
+[2023-06-06T10:26:57.501+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/redshift.py took 0.270 seconds
+[2023-06-06T11:23:21.630+0000] {processor.py:153} INFO - Started process (PID=32859) to work on /opt/airflow/dags/redshift.py
+[2023-06-06T11:23:21.634+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/redshift.py for tasks to queue
+[2023-06-06T11:23:21.636+0000] {logging_mixin.py:137} INFO - [2023-06-06T11:23:21.636+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/redshift.py
+[2023-06-06T11:23:22.059+0000] {logging_mixin.py:137} INFO - [2023-06-06T11:23:22.057+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/redshift.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/redshift.py", line 12, in <module>
+    import sql
+ModuleNotFoundError: No module named 'sql'
+[2023-06-06T11:23:22.061+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/redshift.py
+[2023-06-06T11:23:22.075+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/redshift.py took 0.455 seconds
+[2023-06-06T12:30:51.462+0000] {processor.py:153} INFO - Started process (PID=32941) to work on /opt/airflow/dags/redshift.py
+[2023-06-06T12:30:51.465+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/redshift.py for tasks to queue
+[2023-06-06T12:30:51.466+0000] {logging_mixin.py:137} INFO - [2023-06-06T12:30:51.466+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/redshift.py
+[2023-06-06T12:30:52.043+0000] {logging_mixin.py:137} INFO - [2023-06-06T12:30:52.038+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/redshift.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/redshift.py", line 12, in <module>
+    import sql
+ModuleNotFoundError: No module named 'sql'
+[2023-06-06T12:30:52.045+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/redshift.py
+[2023-06-06T12:30:52.067+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/redshift.py took 0.609 seconds
+[2023-06-06T13:55:35.749+0000] {processor.py:153} INFO - Started process (PID=33013) to work on /opt/airflow/dags/redshift.py
+[2023-06-06T13:55:35.751+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/redshift.py for tasks to queue
+[2023-06-06T13:55:35.754+0000] {logging_mixin.py:137} INFO - [2023-06-06T13:55:35.754+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/redshift.py
+[2023-06-06T13:55:35.949+0000] {logging_mixin.py:137} INFO - [2023-06-06T13:55:35.947+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/redshift.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/redshift.py", line 12, in <module>
+    import sql
+ModuleNotFoundError: No module named 'sql'
+[2023-06-06T13:55:35.950+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/redshift.py
+[2023-06-06T13:55:35.965+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/redshift.py took 0.219 seconds
+[2023-06-06T15:19:50.936+0000] {processor.py:153} INFO - Started process (PID=33096) to work on /opt/airflow/dags/redshift.py
+[2023-06-06T15:19:50.938+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/redshift.py for tasks to queue
+[2023-06-06T15:19:50.939+0000] {logging_mixin.py:137} INFO - [2023-06-06T15:19:50.938+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/redshift.py
+[2023-06-06T15:19:51.140+0000] {logging_mixin.py:137} INFO - [2023-06-06T15:19:51.138+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/redshift.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/redshift.py", line 12, in <module>
+    import sql
+ModuleNotFoundError: No module named 'sql'
+[2023-06-06T15:19:51.143+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/redshift.py
+[2023-06-06T15:19:51.159+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/redshift.py took 0.226 seconds
+[2023-06-06T16:41:25.828+0000] {processor.py:153} INFO - Started process (PID=33166) to work on /opt/airflow/dags/redshift.py
+[2023-06-06T16:41:25.830+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/redshift.py for tasks to queue
+[2023-06-06T16:41:25.831+0000] {logging_mixin.py:137} INFO - [2023-06-06T16:41:25.831+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/redshift.py
+[2023-06-06T16:41:26.276+0000] {logging_mixin.py:137} INFO - [2023-06-06T16:41:26.274+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/redshift.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/redshift.py", line 12, in <module>
+    import sql
+ModuleNotFoundError: No module named 'sql'
+[2023-06-06T16:41:26.277+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/redshift.py
+[2023-06-06T16:41:26.292+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/redshift.py took 0.467 seconds
+[2023-06-06T18:05:15.813+0000] {processor.py:153} INFO - Started process (PID=33249) to work on /opt/airflow/dags/redshift.py
+[2023-06-06T18:05:15.816+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/redshift.py for tasks to queue
+[2023-06-06T18:05:15.817+0000] {logging_mixin.py:137} INFO - [2023-06-06T18:05:15.817+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/redshift.py
+[2023-06-06T18:05:16.153+0000] {logging_mixin.py:137} INFO - [2023-06-06T18:05:16.151+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/redshift.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/redshift.py", line 12, in <module>
+    import sql
+ModuleNotFoundError: No module named 'sql'
+[2023-06-06T18:05:16.155+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/redshift.py
+[2023-06-06T18:05:16.170+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/redshift.py took 0.365 seconds
+[2023-06-06T19:27:18.186+0000] {processor.py:153} INFO - Started process (PID=33327) to work on /opt/airflow/dags/redshift.py
+[2023-06-06T19:27:18.188+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/redshift.py for tasks to queue
+[2023-06-06T19:27:18.190+0000] {logging_mixin.py:137} INFO - [2023-06-06T19:27:18.190+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/redshift.py
+[2023-06-06T19:27:18.639+0000] {logging_mixin.py:137} INFO - [2023-06-06T19:27:18.634+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/redshift.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/redshift.py", line 12, in <module>
+    import sql
+ModuleNotFoundError: No module named 'sql'
+[2023-06-06T19:27:18.640+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/redshift.py
+[2023-06-06T19:27:18.660+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/redshift.py took 0.477 seconds
+[2023-06-06T20:45:45.444+0000] {processor.py:153} INFO - Started process (PID=33404) to work on /opt/airflow/dags/redshift.py
+[2023-06-06T20:45:45.446+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/redshift.py for tasks to queue
+[2023-06-06T20:45:45.448+0000] {logging_mixin.py:137} INFO - [2023-06-06T20:45:45.448+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/redshift.py
+[2023-06-06T20:45:45.833+0000] {logging_mixin.py:137} INFO - [2023-06-06T20:45:45.824+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/redshift.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/redshift.py", line 12, in <module>
+    import sql
+ModuleNotFoundError: No module named 'sql'
+[2023-06-06T20:45:45.836+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/redshift.py
+[2023-06-06T20:45:45.911+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/redshift.py took 0.474 seconds
+[2023-06-06T22:08:29.077+0000] {processor.py:153} INFO - Started process (PID=33484) to work on /opt/airflow/dags/redshift.py
+[2023-06-06T22:08:29.080+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/redshift.py for tasks to queue
+[2023-06-06T22:08:29.081+0000] {logging_mixin.py:137} INFO - [2023-06-06T22:08:29.081+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/redshift.py
+[2023-06-06T22:08:29.755+0000] {logging_mixin.py:137} INFO - [2023-06-06T22:08:29.753+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/redshift.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/redshift.py", line 12, in <module>
+    import sql
+ModuleNotFoundError: No module named 'sql'
+[2023-06-06T22:08:29.756+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/redshift.py
+[2023-06-06T22:08:29.799+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/redshift.py took 0.726 seconds
+[2023-06-06T23:29:32.063+0000] {processor.py:153} INFO - Started process (PID=33558) to work on /opt/airflow/dags/redshift.py
+[2023-06-06T23:29:32.066+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/redshift.py for tasks to queue
+[2023-06-06T23:29:32.069+0000] {logging_mixin.py:137} INFO - [2023-06-06T23:29:32.069+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/redshift.py
+[2023-06-06T23:29:32.541+0000] {logging_mixin.py:137} INFO - [2023-06-06T23:29:32.539+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/redshift.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/redshift.py", line 12, in <module>
+    import sql
+ModuleNotFoundError: No module named 'sql'
+[2023-06-06T23:29:32.543+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/redshift.py
+[2023-06-06T23:29:32.566+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/redshift.py took 0.508 seconds

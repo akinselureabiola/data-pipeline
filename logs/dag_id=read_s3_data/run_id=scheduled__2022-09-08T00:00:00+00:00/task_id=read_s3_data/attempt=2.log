@@ -1,0 +1,49 @@
+[2023-12-17T15:19:53.215+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: read_s3_data.read_s3_data scheduled__2022-09-08T00:00:00+00:00 [queued]>
+[2023-12-17T15:19:53.506+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: read_s3_data.read_s3_data scheduled__2022-09-08T00:00:00+00:00 [queued]>
+[2023-12-17T15:19:53.515+0000] {taskinstance.py:1359} INFO - Starting attempt 2 of 4
+[2023-12-17T15:19:53.574+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): read_s3_data> on 2022-09-08 00:00:00+00:00
+[2023-12-17T15:19:53.685+0000] {standard_task_runner.py:57} INFO - Started process 26209 to run task
+[2023-12-17T15:19:54.311+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'read_s3_data', 'read_s3_data', 'scheduled__2022-09-08T00:00:00+00:00', '--job-id', '6444', '--raw', '--subdir', 'DAGS_FOLDER/read.py', '--cfg-path', '/tmp/tmp1tdufvwy']
+[2023-12-17T15:19:54.482+0000] {standard_task_runner.py:85} INFO - Job 6444: Subtask read_s3_data
+[2023-12-17T15:19:57.850+0000] {task_command.py:415} INFO - Running <TaskInstance: read_s3_data.read_s3_data scheduled__2022-09-08T00:00:00+00:00 [running]> on host 533efb53d454
+[2023-12-17T15:20:07.452+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='read_s3_data' AIRFLOW_CTX_TASK_ID='read_s3_data' AIRFLOW_CTX_EXECUTION_DATE='2022-09-08T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2022-09-08T00:00:00+00:00'
+[2023-12-17T15:20:07.624+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: generic_s3_clients() missing 2 required positional arguments: 'ACCESS_KEY' and 'SECRET_KEY'
+[2023-12-17T15:20:07.965+0000] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=read_s3_data, task_id=read_s3_data, execution_date=20220908T000000, start_date=20231217T151953, end_date=20231217T152007
+[2023-12-17T15:20:09.050+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 6444 for task read_s3_data (generic_s3_clients() missing 2 required positional arguments: 'ACCESS_KEY' and 'SECRET_KEY'; 26209)
+[2023-12-17T15:20:10.693+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-12-17T15:20:12.080+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-12-24T17:01:56.719+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: read_s3_data.read_s3_data scheduled__2022-09-08T00:00:00+00:00 [queued]>
+[2023-12-24T17:01:56.771+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: read_s3_data.read_s3_data scheduled__2022-09-08T00:00:00+00:00 [queued]>
+[2023-12-24T17:01:56.792+0000] {taskinstance.py:1359} INFO - Starting attempt 2 of 4
+[2023-12-24T17:01:56.825+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): read_s3_data> on 2022-09-08 00:00:00+00:00
+[2023-12-24T17:01:56.842+0000] {standard_task_runner.py:57} INFO - Started process 744 to run task
+[2023-12-24T17:01:56.863+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'read_s3_data', 'read_s3_data', 'scheduled__2022-09-08T00:00:00+00:00', '--job-id', '168', '--raw', '--subdir', 'DAGS_FOLDER/read.py', '--cfg-path', '/tmp/tmpy64ocrxu']
+[2023-12-24T17:01:56.869+0000] {standard_task_runner.py:85} INFO - Job 168: Subtask read_s3_data
+[2023-12-24T17:01:57.035+0000] {task_command.py:415} INFO - Running <TaskInstance: read_s3_data.read_s3_data scheduled__2022-09-08T00:00:00+00:00 [running]> on host 37dc6044b459
+[2023-12-24T17:01:57.211+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='read_s3_data' AIRFLOW_CTX_TASK_ID='read_s3_data' AIRFLOW_CTX_EXECUTION_DATE='2022-09-08T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2022-09-08T00:00:00+00:00'
+[2023-12-24T17:01:57.255+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/read.py", line 30, in read_s3_file
+    aws_secret_access_key=Variable.get('SECRET_KEY')
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/variable.py", line 140, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable SECRET_KEY does not exist'
+[2023-12-24T17:01:57.279+0000] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=read_s3_data, task_id=read_s3_data, execution_date=20220908T000000, start_date=20231224T170156, end_date=20231224T170157
+[2023-12-24T17:01:57.306+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 168 for task read_s3_data ('Variable SECRET_KEY does not exist'; 744)
+[2023-12-24T17:01:57.367+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-12-24T17:01:57.445+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check
