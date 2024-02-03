@@ -1,0 +1,34 @@
+[2024-02-03T19:33:07.694+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api-file-extract-and-upload.extract_file scheduled__2023-05-25T00:00:00+00:00 [queued]>
+[2024-02-03T19:33:07.725+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api-file-extract-and-upload.extract_file scheduled__2023-05-25T00:00:00+00:00 [queued]>
+[2024-02-03T19:33:07.729+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 4
+[2024-02-03T19:33:07.767+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): extract_file> on 2023-05-25 00:00:00+00:00
+[2024-02-03T19:33:07.793+0000] {standard_task_runner.py:57} INFO - Started process 2536 to run task
+[2024-02-03T19:33:07.799+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'api-file-extract-and-upload', 'extract_file', 'scheduled__2023-05-25T00:00:00+00:00', '--job-id', '4658', '--raw', '--subdir', 'DAGS_FOLDER/api_extract.py', '--cfg-path', '/tmp/tmp5pc_t1or']
+[2024-02-03T19:33:07.807+0000] {standard_task_runner.py:85} INFO - Job 4658: Subtask extract_file
+[2024-02-03T19:33:07.969+0000] {task_command.py:415} INFO - Running <TaskInstance: api-file-extract-and-upload.extract_file scheduled__2023-05-25T00:00:00+00:00 [running]> on host dbb3489df186
+[2024-02-03T19:33:08.176+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='api-file-extract-and-upload' AIRFLOW_CTX_TASK_ID='extract_file' AIRFLOW_CTX_EXECUTION_DATE='2023-05-25T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-25T00:00:00+00:00'
+[2024-02-03T19:37:09.527+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/api_extract.py", line 40, in extract_file
+    parsed = json.loads(data)
+             ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Unterminated string starting at: line 1 column 187130 (char 187129)
+[2024-02-03T19:37:09.653+0000] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=api-file-extract-and-upload, task_id=extract_file, execution_date=20230525T000000, start_date=20240203T193307, end_date=20240203T193709
+[2024-02-03T19:37:09.736+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 4658 for task extract_file (Unterminated string starting at: line 1 column 187130 (char 187129); 2536)
+[2024-02-03T19:37:09.802+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-02-03T19:37:09.982+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

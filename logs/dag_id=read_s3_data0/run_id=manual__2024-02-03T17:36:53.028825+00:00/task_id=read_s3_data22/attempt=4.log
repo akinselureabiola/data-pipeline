@@ -1,0 +1,124 @@
+[2024-02-03T19:17:48.808+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: read_s3_data0.read_s3_data22 manual__2024-02-03T17:36:53.028825+00:00 [queued]>
+[2024-02-03T19:17:48.830+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: read_s3_data0.read_s3_data22 manual__2024-02-03T17:36:53.028825+00:00 [queued]>
+[2024-02-03T19:17:48.835+0000] {taskinstance.py:1359} INFO - Starting attempt 4 of 4
+[2024-02-03T19:17:48.863+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): read_s3_data22> on 2024-02-03 17:36:53.028825+00:00
+[2024-02-03T19:17:48.872+0000] {standard_task_runner.py:57} INFO - Started process 419 to run task
+[2024-02-03T19:17:48.883+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'read_s3_data0', 'read_s3_data22', 'manual__2024-02-03T17:36:53.028825+00:00', '--job-id', '4256', '--raw', '--subdir', 'DAGS_FOLDER/old.py', '--cfg-path', '/tmp/tmpyv243wr8']
+[2024-02-03T19:17:48.889+0000] {standard_task_runner.py:85} INFO - Job 4256: Subtask read_s3_data22
+[2024-02-03T19:17:49.034+0000] {task_command.py:415} INFO - Running <TaskInstance: read_s3_data0.read_s3_data22 manual__2024-02-03T17:36:53.028825+00:00 [running]> on host dbb3489df186
+[2024-02-03T19:17:49.210+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='read_s3_data0' AIRFLOW_CTX_TASK_ID='read_s3_data22' AIRFLOW_CTX_EXECUTION_DATE='2024-02-03T17:36:53.028825+00:00' AIRFLOW_CTX_TRY_NUMBER='4' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-02-03T17:36:53.028825+00:00'
+[2024-02-03T19:20:01.780+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/urllib3/response.py", line 444, in _error_catcher
+    yield
+  File "/home/airflow/.local/lib/python3.11/site-packages/urllib3/response.py", line 567, in read
+    data = self._fp_read(amt) if not fp_closed else b""
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/urllib3/response.py", line 533, in _fp_read
+    return self._fp.read(amt) if amt is not None else self._fp.read()
+                                                      ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/http/client.py", line 482, in read
+    s = self._safe_read(self.length)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/http/client.py", line 631, in _safe_read
+    data = self.fp.read(amt)
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/ssl.py", line 1311, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/ssl.py", line 1167, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/botocore/response.py", line 99, in read
+    chunk = self._raw_stream.read(amt)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/urllib3/response.py", line 566, in read
+    with self._error_catcher():
+  File "/usr/local/lib/python3.11/contextlib.py", line 155, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/airflow/.local/lib/python3.11/site-packages/urllib3/response.py", line 449, in _error_catcher
+    raise ReadTimeoutError(self._pool, None, "Read timed out.")
+urllib3.exceptions.ReadTimeoutError: AWSHTTPSConnectionPool(host='staging-olist.s3.eu-central-1.amazonaws.com', port=443): Read timed out.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/old.py", line 37, in read_s3_file
+    df = wr.s3.read_csv(path='s3://staging-olist/customer/olist_customers_dataset.csv', boto3_session=session)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/awswrangler/_utils.py", line 176, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/awswrangler/s3/_read_text.py", line 293, in read_csv
+    return _read_text_format(
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/awswrangler/s3/_read_text.py", line 132, in _read_text_format
+    return _read_text(
+           ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/awswrangler/_distributed.py", line 105, in wrapper
+    return cls.dispatch_func(func)(*args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/awswrangler/s3/_read_text.py", line 58, in _read_text
+    tables = executor.map(
+             ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/awswrangler/_executor.py", line 51, in map
+    return list(self._exec.map(func, *iterables))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/awswrangler/s3/_read_text_core.py", line 112, in _read_text_file
+    df: pd.DataFrame = parser_func(f, **pandas_kwargs)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 948, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 611, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1448, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1723, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 579, in pandas._libs.parsers.TextReader.__cinit__
+  File "parsers.pyx", line 668, in pandas._libs.parsers.TextReader._get_header
+  File "parsers.pyx", line 879, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "parsers.pyx", line 890, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "parsers.pyx", line 2050, in pandas._libs.parsers.raise_parser_error
+  File "/home/airflow/.local/lib/python3.11/site-packages/botocore/response.py", line 102, in read
+    raise ReadTimeoutError(endpoint_url=e.url, error=e)
+botocore.exceptions.ReadTimeoutError: Read timeout on endpoint URL: "None"
+[2024-02-03T19:20:02.493+0000] {taskinstance.py:1398} INFO - Marking task as FAILED. dag_id=read_s3_data0, task_id=read_s3_data22, execution_date=20240203T173653, start_date=20240203T191748, end_date=20240203T192002
+[2024-02-03T19:20:02.812+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 4256 for task read_s3_data22 (Read timeout on endpoint URL: "None"; 419)
+[2024-02-03T19:20:03.058+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-02-03T19:20:03.636+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

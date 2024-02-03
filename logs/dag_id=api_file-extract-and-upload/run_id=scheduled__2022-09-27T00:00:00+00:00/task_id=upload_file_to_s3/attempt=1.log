@@ -1,0 +1,13 @@
+[2024-02-03T22:12:51.502+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_file-extract-and-upload.upload_file_to_s3 scheduled__2022-09-27T00:00:00+00:00 [queued]>
+[2024-02-03T22:12:51.684+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_file-extract-and-upload.upload_file_to_s3 scheduled__2022-09-27T00:00:00+00:00 [queued]>
+[2024-02-03T22:12:51.690+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 4
+[2024-02-03T22:12:51.922+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): upload_file_to_s3> on 2022-09-27 00:00:00+00:00
+[2024-02-03T22:12:52.070+0000] {standard_task_runner.py:57} INFO - Started process 7892 to run task
+[2024-02-03T22:12:53.402+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'api_file-extract-and-upload', 'upload_file_to_s3', 'scheduled__2022-09-27T00:00:00+00:00', '--job-id', '7792', '--raw', '--subdir', 'DAGS_FOLDER/api_extract.py', '--cfg-path', '/tmp/tmp6lwc39x_']
+[2024-02-03T22:12:53.446+0000] {standard_task_runner.py:85} INFO - Job 7792: Subtask upload_file_to_s3
+[2024-02-03T22:12:55.736+0000] {task_command.py:415} INFO - Running <TaskInstance: api_file-extract-and-upload.upload_file_to_s3 scheduled__2022-09-27T00:00:00+00:00 [running]> on host dbb3489df186
+[2024-02-03T22:12:58.922+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='api_file-extract-and-upload' AIRFLOW_CTX_TASK_ID='upload_file_to_s3' AIRFLOW_CTX_EXECUTION_DATE='2022-09-27T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2022-09-27T00:00:00+00:00'
+[2024-02-03T22:13:03.474+0000] {python.py:194} INFO - Done. Returned value was: None
+[2024-02-03T22:13:05.041+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=api_file-extract-and-upload, task_id=upload_file_to_s3, execution_date=20220927T000000, start_date=20240203T221251, end_date=20240203T221305
+[2024-02-03T22:13:06.853+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-02-03T22:13:07.354+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

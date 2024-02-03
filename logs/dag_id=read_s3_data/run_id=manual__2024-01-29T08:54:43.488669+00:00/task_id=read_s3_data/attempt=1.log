@@ -1,0 +1,72 @@
+[2024-01-29T08:55:02.704+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: read_s3_data.read_s3_data manual__2024-01-29T08:54:43.488669+00:00 [queued]>
+[2024-01-29T08:55:02.719+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: read_s3_data.read_s3_data manual__2024-01-29T08:54:43.488669+00:00 [queued]>
+[2024-01-29T08:55:02.722+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 4
+[2024-01-29T08:55:02.743+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): read_s3_data> on 2024-01-29 08:54:43.488669+00:00
+[2024-01-29T08:55:02.761+0000] {standard_task_runner.py:57} INFO - Started process 57949 to run task
+[2024-01-29T08:55:02.768+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'read_s3_data', 'read_s3_data', 'manual__2024-01-29T08:54:43.488669+00:00', '--job-id', '2727', '--raw', '--subdir', 'DAGS_FOLDER/read.py', '--cfg-path', '/tmp/tmpf_tvpx2s']
+[2024-01-29T08:55:02.772+0000] {standard_task_runner.py:85} INFO - Job 2727: Subtask read_s3_data
+[2024-01-29T08:55:02.840+0000] {task_command.py:415} INFO - Running <TaskInstance: read_s3_data.read_s3_data manual__2024-01-29T08:54:43.488669+00:00 [running]> on host dbb3489df186
+[2024-01-29T08:55:02.946+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='read_s3_data' AIRFLOW_CTX_TASK_ID='read_s3_data' AIRFLOW_CTX_EXECUTION_DATE='2024-01-29T08:54:43.488669+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-01-29T08:54:43.488669+00:00'
+[2024-01-29T09:05:58.115+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/read.py", line 41, in read_s3_file
+    new_df = df.to_sql("old_customer1", con=conn, schema="olist")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/pandas/core/generic.py", line 3008, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/pandas/io/sql.py", line 787, in to_sql
+    with pandasSQL_builder(con, schema=schema, need_transaction=True) as pandas_sql:
+  File "/home/airflow/.local/lib/python3.11/site-packages/pandas/io/sql.py", line 1585, in __exit__
+    self.exit_stack.close()
+  File "/usr/local/lib/python3.11/contextlib.py", line 597, in close
+    self.__exit__(None, None, None)
+  File "/usr/local/lib/python3.11/contextlib.py", line 589, in __exit__
+    raise exc_details[1]
+  File "/usr/local/lib/python3.11/contextlib.py", line 574, in __exit__
+    if cb(*exc_details):
+       ^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/util.py", line 235, in __exit__
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/util.py", line 233, in __exit__
+    self.commit()
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2469, in commit
+    self._do_commit()
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2659, in _do_commit
+    self._connection_commit_impl()
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2630, in _connection_commit_impl
+    self.connection._commit_impl()
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1096, in _commit_impl
+    self._handle_dbapi_exception(e, None, None, None, None)
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2138, in _handle_dbapi_exception
+    util.raise_(exc_info[1], with_traceback=exc_info[2])
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1094, in _commit_impl
+    self.engine.dialect.do_commit(self.connection)
+                                  ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 537, in connection
+    return self._revalidate_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 650, in _revalidate_connection
+    self._invalid_transaction()
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 622, in _invalid_transaction
+    raise exc.PendingRollbackError(
+sqlalchemy.exc.PendingRollbackError: Can't reconnect until invalid transaction is rolled back. (Background on this error at: https://sqlalche.me/e/14/8s2b)
+[2024-01-29T09:06:05.463+0000] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=read_s3_data, task_id=read_s3_data, execution_date=20240129T085443, start_date=20240129T085502, end_date=20240129T090605
+[2024-01-29T09:06:07.664+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 2727 for task read_s3_data (Can't reconnect until invalid transaction is rolled back. (Background on this error at: https://sqlalche.me/e/14/8s2b); 57949)
+[2024-01-29T09:06:08.346+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-01-29T09:06:10.386+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

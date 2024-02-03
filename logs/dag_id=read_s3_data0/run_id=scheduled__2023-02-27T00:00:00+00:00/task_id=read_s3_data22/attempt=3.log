@@ -1,0 +1,41 @@
+[2024-02-03T21:28:42.129+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: read_s3_data0.read_s3_data22 scheduled__2023-02-27T00:00:00+00:00 [queued]>
+[2024-02-03T21:28:42.290+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: read_s3_data0.read_s3_data22 scheduled__2023-02-27T00:00:00+00:00 [queued]>
+[2024-02-03T21:28:42.300+0000] {taskinstance.py:1359} INFO - Starting attempt 3 of 4
+[2024-02-03T21:28:42.483+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): read_s3_data22> on 2023-02-27 00:00:00+00:00
+[2024-02-03T21:28:42.669+0000] {standard_task_runner.py:57} INFO - Started process 4533 to run task
+[2024-02-03T21:28:42.694+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'read_s3_data0', 'read_s3_data22', 'scheduled__2023-02-27T00:00:00+00:00', '--job-id', '7189', '--raw', '--subdir', 'DAGS_FOLDER/old.py', '--cfg-path', '/tmp/tmp1i8zztik']
+[2024-02-03T21:28:42.725+0000] {standard_task_runner.py:85} INFO - Job 7189: Subtask read_s3_data22
+[2024-02-03T21:28:44.163+0000] {task_command.py:415} INFO - Running <TaskInstance: read_s3_data0.read_s3_data22 scheduled__2023-02-27T00:00:00+00:00 [running]> on host dbb3489df186
+[2024-02-03T21:28:45.129+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='read_s3_data0' AIRFLOW_CTX_TASK_ID='read_s3_data22' AIRFLOW_CTX_EXECUTION_DATE='2023-02-27T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-02-27T00:00:00+00:00'
+[2024-02-03T21:29:05.238+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/old.py", line 41, in read_s3_file
+    new_df = df.to_sql("old_customer44", con=conn, schema="olist")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/pandas/core/generic.py", line 3008, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/pandas/io/sql.py", line 788, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/pandas/io/sql.py", line 1948, in to_sql
+    table = self.prep_table(
+            ^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/pandas/io/sql.py", line 1852, in prep_table
+    table.create()
+  File "/home/airflow/.local/lib/python3.11/site-packages/pandas/io/sql.py", line 927, in create
+    raise ValueError(f"Table '{self.name}' already exists.")
+ValueError: Table 'old_customer44' already exists.
+[2024-02-03T21:29:05.707+0000] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=read_s3_data0, task_id=read_s3_data22, execution_date=20230227T000000, start_date=20240203T212842, end_date=20240203T212905
+[2024-02-03T21:29:05.892+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 7189 for task read_s3_data22 (Table 'old_customer44' already exists.; 4533)
+[2024-02-03T21:29:06.219+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-02-03T21:29:06.563+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

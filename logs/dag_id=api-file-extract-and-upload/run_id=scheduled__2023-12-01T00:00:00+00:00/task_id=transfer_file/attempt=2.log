@@ -1,0 +1,41 @@
+[2024-02-03T20:54:33.359+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api-file-extract-and-upload.transfer_file scheduled__2023-12-01T00:00:00+00:00 [queued]>
+[2024-02-03T20:54:33.370+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api-file-extract-and-upload.transfer_file scheduled__2023-12-01T00:00:00+00:00 [queued]>
+[2024-02-03T20:54:33.374+0000] {taskinstance.py:1359} INFO - Starting attempt 2 of 4
+[2024-02-03T20:54:33.406+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): transfer_file> on 2023-12-01 00:00:00+00:00
+[2024-02-03T20:54:33.435+0000] {standard_task_runner.py:57} INFO - Started process 332 to run task
+[2024-02-03T20:54:33.443+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'api-file-extract-and-upload', 'transfer_file', 'scheduled__2023-12-01T00:00:00+00:00', '--job-id', '6372', '--raw', '--subdir', 'DAGS_FOLDER/api_extract.py', '--cfg-path', '/tmp/tmpvo498s2o']
+[2024-02-03T20:54:33.452+0000] {standard_task_runner.py:85} INFO - Job 6372: Subtask transfer_file
+[2024-02-03T20:54:33.534+0000] {task_command.py:415} INFO - Running <TaskInstance: api-file-extract-and-upload.transfer_file scheduled__2023-12-01T00:00:00+00:00 [running]> on host dbb3489df186
+[2024-02-03T20:54:33.772+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='api-file-extract-and-upload' AIRFLOW_CTX_TASK_ID='transfer_file' AIRFLOW_CTX_EXECUTION_DATE='2023-12-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-01T00:00:00+00:00'
+[2024-02-03T20:54:41.992+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/api_extract.py", line 72, in transfer_file
+    new_df = df.to_sql("uni-file", con=conn, schema="olist")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/pandas/core/generic.py", line 3008, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/pandas/io/sql.py", line 788, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/pandas/io/sql.py", line 1948, in to_sql
+    table = self.prep_table(
+            ^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/pandas/io/sql.py", line 1852, in prep_table
+    table.create()
+  File "/home/airflow/.local/lib/python3.11/site-packages/pandas/io/sql.py", line 927, in create
+    raise ValueError(f"Table '{self.name}' already exists.")
+ValueError: Table 'uni-file' already exists.
+[2024-02-03T20:54:42.026+0000] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=api-file-extract-and-upload, task_id=transfer_file, execution_date=20231201T000000, start_date=20240203T205433, end_date=20240203T205442
+[2024-02-03T20:54:42.054+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 6372 for task transfer_file (Table 'uni-file' already exists.; 332)
+[2024-02-03T20:54:42.090+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-02-03T20:54:42.142+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

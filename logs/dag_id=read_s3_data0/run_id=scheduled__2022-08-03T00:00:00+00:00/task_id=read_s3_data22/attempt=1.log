@@ -1,0 +1,11 @@
+[2024-02-03T17:23:46.548+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: read_s3_data0.read_s3_data22 scheduled__2022-08-03T00:00:00+00:00 [queued]>
+[2024-02-03T17:23:46.729+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: read_s3_data0.read_s3_data22 scheduled__2022-08-03T00:00:00+00:00 [queued]>
+[2024-02-03T17:23:46.734+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 4
+[2024-02-03T17:23:46.936+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): read_s3_data22> on 2022-08-03 00:00:00+00:00
+[2024-02-03T17:23:46.967+0000] {standard_task_runner.py:57} INFO - Started process 498 to run task
+[2024-02-03T17:23:47.001+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'read_s3_data0', 'read_s3_data22', 'scheduled__2022-08-03T00:00:00+00:00', '--job-id', '3065', '--raw', '--subdir', 'DAGS_FOLDER/old.py', '--cfg-path', '/tmp/tmpyhr0lzjh']
+[2024-02-03T17:23:47.013+0000] {standard_task_runner.py:85} INFO - Job 3065: Subtask read_s3_data22
+[2024-02-03T17:23:47.206+0000] {task_command.py:415} INFO - Running <TaskInstance: read_s3_data0.read_s3_data22 scheduled__2022-08-03T00:00:00+00:00 [running]> on host dbb3489df186
+[2024-02-03T17:23:47.392+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='read_s3_data0' AIRFLOW_CTX_TASK_ID='read_s3_data22' AIRFLOW_CTX_EXECUTION_DATE='2022-08-03T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2022-08-03T00:00:00+00:00'
+[2024-02-03T17:26:02.176+0000] {local_task_job_runner.py:228} INFO - Task exited with return code -9
+[2024-02-03T17:26:02.525+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

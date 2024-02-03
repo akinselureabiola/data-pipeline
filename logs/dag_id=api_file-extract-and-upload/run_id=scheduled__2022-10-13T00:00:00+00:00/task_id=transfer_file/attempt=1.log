@@ -1,0 +1,41 @@
+[2024-02-03T22:23:30.671+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_file-extract-and-upload.transfer_file scheduled__2022-10-13T00:00:00+00:00 [queued]>
+[2024-02-03T22:23:30.729+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_file-extract-and-upload.transfer_file scheduled__2022-10-13T00:00:00+00:00 [queued]>
+[2024-02-03T22:23:30.745+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 4
+[2024-02-03T22:23:30.978+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): transfer_file> on 2022-10-13 00:00:00+00:00
+[2024-02-03T22:23:31.362+0000] {standard_task_runner.py:57} INFO - Started process 8741 to run task
+[2024-02-03T22:23:31.999+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'api_file-extract-and-upload', 'transfer_file', 'scheduled__2022-10-13T00:00:00+00:00', '--job-id', '7942', '--raw', '--subdir', 'DAGS_FOLDER/api_extract.py', '--cfg-path', '/tmp/tmpzkxp2ehq']
+[2024-02-03T22:23:32.048+0000] {standard_task_runner.py:85} INFO - Job 7942: Subtask transfer_file
+[2024-02-03T22:23:34.617+0000] {task_command.py:415} INFO - Running <TaskInstance: api_file-extract-and-upload.transfer_file scheduled__2022-10-13T00:00:00+00:00 [running]> on host dbb3489df186
+[2024-02-03T22:23:39.003+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='api_file-extract-and-upload' AIRFLOW_CTX_TASK_ID='transfer_file' AIRFLOW_CTX_EXECUTION_DATE='2022-10-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2022-10-13T00:00:00+00:00'
+[2024-02-03T22:24:00.625+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/api_extract.py", line 70, in transfer_file
+    new_df = df.to_sql("new-uni-file1", con=conn, schema="olist")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/pandas/core/generic.py", line 3008, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/pandas/io/sql.py", line 788, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/pandas/io/sql.py", line 1948, in to_sql
+    table = self.prep_table(
+            ^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/pandas/io/sql.py", line 1852, in prep_table
+    table.create()
+  File "/home/airflow/.local/lib/python3.11/site-packages/pandas/io/sql.py", line 927, in create
+    raise ValueError(f"Table '{self.name}' already exists.")
+ValueError: Table 'new-uni-file1' already exists.
+[2024-02-03T22:24:01.245+0000] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=api_file-extract-and-upload, task_id=transfer_file, execution_date=20221013T000000, start_date=20240203T222330, end_date=20240203T222401
+[2024-02-03T22:24:01.883+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 7942 for task transfer_file (Table 'new-uni-file1' already exists.; 8741)
+[2024-02-03T22:24:02.102+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-02-03T22:24:03.110+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

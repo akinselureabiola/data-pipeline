@@ -13,7 +13,7 @@ from sqlalchemy import create_engine
 
 
 
-DAG_ID = 'read_s3_data'
+DAG_ID = 'read_s3_data112'
 
 
 default_args = {
@@ -38,7 +38,7 @@ def read_s3_file():
     
     # create a connection from postgres URI
     conn = create_engine("postgresql+psycopg2://staging_db:DnrbWdUcaZxyIc7v@postgres.cnelwn14hnqh.eu-central-1.rds.amazonaws.com:5432/main")
-    new_df = df.to_sql("old_customer", con=conn, schema="olist")
+    new_df = df.to_sql("old_customer200", con=conn, schema="olist")
     return new_df
 
 

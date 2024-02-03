@@ -1,0 +1,93 @@
+[2024-02-03T17:07:26.934+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api-file-extract-and-upload.extract_file scheduled__2022-07-31T00:00:00+00:00 [queued]>
+[2024-02-03T17:07:27.320+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api-file-extract-and-upload.extract_file scheduled__2022-07-31T00:00:00+00:00 [queued]>
+[2024-02-03T17:07:27.376+0000] {taskinstance.py:1359} INFO - Starting attempt 4 of 4
+[2024-02-03T17:07:27.987+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): extract_file> on 2022-07-31 00:00:00+00:00
+[2024-02-03T17:07:28.385+0000] {standard_task_runner.py:57} INFO - Started process 523 to run task
+[2024-02-03T17:07:28.397+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'api-file-extract-and-upload', 'extract_file', 'scheduled__2022-07-31T00:00:00+00:00', '--job-id', '2807', '--raw', '--subdir', 'DAGS_FOLDER/api_extract.py', '--cfg-path', '/tmp/tmpt7sg58tb']
+[2024-02-03T17:07:28.405+0000] {standard_task_runner.py:85} INFO - Job 2807: Subtask extract_file
+[2024-02-03T17:07:48.877+0000] {task_command.py:415} INFO - Running <TaskInstance: api-file-extract-and-upload.extract_file scheduled__2022-07-31T00:00:00+00:00 [running]> on host dbb3489df186
+[2024-02-03T17:12:54.853+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='api-file-extract-and-upload' AIRFLOW_CTX_TASK_ID='extract_file' AIRFLOW_CTX_EXECUTION_DATE='2022-07-31T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='4' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2022-07-31T00:00:00+00:00'
+[2024-02-03T17:13:35.743+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/urllib3/connectionpool.py", line 714, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/urllib3/connectionpool.py", line 415, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/airflow/.local/lib/python3.11/site-packages/urllib3/connection.py", line 244, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/local/lib/python3.11/http/client.py", line 1286, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/lib/python3.11/http/client.py", line 1332, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.11/http/client.py", line 1281, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.11/http/client.py", line 1041, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.11/http/client.py", line 979, in send
+    self.connect()
+  File "/home/airflow/.local/lib/python3.11/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+           ^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0xffff716057d0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/urllib3/connectionpool.py", line 798, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='universities.hipolabs.com', port=80): Max retries exceeded with url: /search?country=United+States (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xffff716057d0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/api_extract.py", line 36, in extract_file
+    response = requests.get(url)
+               ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='universities.hipolabs.com', port=80): Max retries exceeded with url: /search?country=United+States (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xffff716057d0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+[2024-02-03T17:13:56.568+0000] {taskinstance.py:1398} INFO - Marking task as FAILED. dag_id=api-file-extract-and-upload, task_id=extract_file, execution_date=20220731T000000, start_date=20240203T170727, end_date=20240203T171356
+[2024-02-03T17:13:58.003+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 2807 for task extract_file (HTTPConnectionPool(host='universities.hipolabs.com', port=80): Max retries exceeded with url: /search?country=United+States (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xffff716057d0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')); 523)
+[2024-02-03T17:13:58.572+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-02-03T17:14:03.876+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

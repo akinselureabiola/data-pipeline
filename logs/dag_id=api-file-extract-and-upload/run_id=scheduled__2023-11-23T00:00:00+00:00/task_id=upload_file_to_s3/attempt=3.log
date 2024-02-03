@@ -1,0 +1,51 @@
+[2024-02-03T20:25:57.281+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api-file-extract-and-upload.upload_file_to_s3 scheduled__2023-11-23T00:00:00+00:00 [queued]>
+[2024-02-03T20:25:57.348+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api-file-extract-and-upload.upload_file_to_s3 scheduled__2023-11-23T00:00:00+00:00 [queued]>
+[2024-02-03T20:25:57.353+0000] {taskinstance.py:1359} INFO - Starting attempt 3 of 4
+[2024-02-03T20:25:57.376+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): upload_file_to_s3> on 2023-11-23 00:00:00+00:00
+[2024-02-03T20:25:57.493+0000] {standard_task_runner.py:57} INFO - Started process 9221 to run task
+[2024-02-03T20:25:57.500+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'api-file-extract-and-upload', 'upload_file_to_s3', 'scheduled__2023-11-23T00:00:00+00:00', '--job-id', '5921', '--raw', '--subdir', 'DAGS_FOLDER/api_extract.py', '--cfg-path', '/tmp/tmpwjxaa1y9']
+[2024-02-03T20:25:57.507+0000] {standard_task_runner.py:85} INFO - Job 5921: Subtask upload_file_to_s3
+[2024-02-03T20:25:57.592+0000] {task_command.py:415} INFO - Running <TaskInstance: api-file-extract-and-upload.upload_file_to_s3 scheduled__2023-11-23T00:00:00+00:00 [running]> on host dbb3489df186
+[2024-02-03T20:25:57.726+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='api-file-extract-and-upload' AIRFLOW_CTX_TASK_ID='upload_file_to_s3' AIRFLOW_CTX_EXECUTION_DATE='2023-11-23T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-23T00:00:00+00:00'
+[2024-02-03T20:27:31.113+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/boto3/s3/transfer.py", line 292, in upload_file
+    future.result()
+  File "/home/airflow/.local/lib/python3.11/site-packages/s3transfer/futures.py", line 103, in result
+    return self._coordinator.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/s3transfer/futures.py", line 266, in result
+    raise self._exception
+  File "/home/airflow/.local/lib/python3.11/site-packages/s3transfer/tasks.py", line 139, in __call__
+    return self._execute_main(kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/s3transfer/tasks.py", line 162, in _execute_main
+    return_value = self._main(**kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/s3transfer/upload.py", line 758, in _main
+    client.put_object(Bucket=bucket, Key=key, Body=body, **extra_args)
+  File "/home/airflow/.local/lib/python3.11/site-packages/botocore/client.py", line 535, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/botocore/client.py", line 980, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (SlowDown) when calling the PutObject operation (reached max retries: 4): Please reduce your request rate.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/api_extract.py", line 58, in upload_file_to_s3
+    transfer.upload_file('uni.parquet', 'staging-olist', 'uni.parquet',
+  File "/home/airflow/.local/lib/python3.11/site-packages/boto3/s3/transfer.py", line 298, in upload_file
+    raise S3UploadFailedError(
+boto3.exceptions.S3UploadFailedError: Failed to upload uni.parquet to staging-olist/uni.parquet: An error occurred (SlowDown) when calling the PutObject operation (reached max retries: 4): Please reduce your request rate.
+[2024-02-03T20:27:31.206+0000] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=api-file-extract-and-upload, task_id=upload_file_to_s3, execution_date=20231123T000000, start_date=20240203T202557, end_date=20240203T202731
+[2024-02-03T20:27:31.286+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 5921 for task upload_file_to_s3 (Failed to upload uni.parquet to staging-olist/uni.parquet: An error occurred (SlowDown) when calling the PutObject operation (reached max retries: 4): Please reduce your request rate.; 9221)
+[2024-02-03T20:27:31.379+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-02-03T20:27:31.542+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

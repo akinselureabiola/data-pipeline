@@ -1,0 +1,92 @@
+[2024-02-03T19:33:13.491+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api-file-extract-and-upload.extract_file scheduled__2023-05-26T00:00:00+00:00 [queued]>
+[2024-02-03T19:33:13.497+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api-file-extract-and-upload.extract_file scheduled__2023-05-26T00:00:00+00:00 [queued]>
+[2024-02-03T19:33:13.498+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 4
+[2024-02-03T19:33:13.506+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): extract_file> on 2023-05-26 00:00:00+00:00
+[2024-02-03T19:33:13.566+0000] {standard_task_runner.py:57} INFO - Started process 2552 to run task
+[2024-02-03T19:33:13.575+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'api-file-extract-and-upload', 'extract_file', 'scheduled__2023-05-26T00:00:00+00:00', '--job-id', '4662', '--raw', '--subdir', 'DAGS_FOLDER/api_extract.py', '--cfg-path', '/tmp/tmpnbjylol9']
+[2024-02-03T19:33:13.581+0000] {standard_task_runner.py:85} INFO - Job 4662: Subtask extract_file
+[2024-02-03T19:33:13.689+0000] {task_command.py:415} INFO - Running <TaskInstance: api-file-extract-and-upload.extract_file scheduled__2023-05-26T00:00:00+00:00 [running]> on host dbb3489df186
+[2024-02-03T19:33:13.767+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='api-file-extract-and-upload' AIRFLOW_CTX_TASK_ID='extract_file' AIRFLOW_CTX_EXECUTION_DATE='2023-05-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-26T00:00:00+00:00'
+[2024-02-03T19:36:00.251+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/urllib3/connectionpool.py", line 714, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/urllib3/connectionpool.py", line 466, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/airflow/.local/lib/python3.11/site-packages/urllib3/connectionpool.py", line 461, in _make_request
+    httplib_response = conn.getresponse()
+                       ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/http/client.py", line 1378, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.11/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/http/client.py", line 287, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/urllib3/connectionpool.py", line 798, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/urllib3/util/retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/home/airflow/.local/lib/python3.11/site-packages/urllib3/connectionpool.py", line 714, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/urllib3/connectionpool.py", line 466, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/airflow/.local/lib/python3.11/site-packages/urllib3/connectionpool.py", line 461, in _make_request
+    httplib_response = conn.getresponse()
+                       ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/http/client.py", line 1378, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.11/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/http/client.py", line 287, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/api_extract.py", line 36, in extract_file
+    response = requests.get(url)
+               ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/requests/adapters.py", line 501, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2024-02-03T19:36:00.728+0000] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=api-file-extract-and-upload, task_id=extract_file, execution_date=20230526T000000, start_date=20240203T193313, end_date=20240203T193600
+[2024-02-03T19:36:00.884+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 4662 for task extract_file (('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')); 2552)
+[2024-02-03T19:36:01.021+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-02-03T19:36:01.240+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check
